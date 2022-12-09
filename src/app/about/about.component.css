@@ -48,6 +48,23 @@
   border: 1px solid #fff;
   box-shadow: 10px 10px #c4c2bc;
 }
+.east, .west{
+  background-color: #c4c2bc;
+  padding: 2%;
+  width: 35%;
+  border-radius: 0px 30px;
+}
+.east ul, .west ul{
+  list-style-type: none;
+}
+ .east ul li, .west ul li{
+  border: 2px solid #fff;
+  padding: 3%;
+  margin-top: 3%;
+  background-color: #DAEAF1;
+  box-shadow: -5px 5px #132540;
+  border-radius: 20px 0px;
+}
 .miss{
   color: #811750;
   text-shadow: 2px 2px #fff;
