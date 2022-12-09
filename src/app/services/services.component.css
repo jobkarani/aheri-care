@@ -1,0 +1,135 @@
+/* start of services  */
+.head{
+    color: #132540;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 10px 10px #811750;
+    border-radius: 20px 0px;
+}
+.amb{
+  width: 50%;
+  font-weight: 600;
+}
+@media only screen and (max-width: 450px) {
+    .head{
+        font-size: small;
+        padding: 5%;
+    }
+    .serv .h5{
+        font-size: larger;
+        font-weight: 900;
+    }
+    .comm{
+        padding: 5%;
+    }
+    .comm .pant{
+        display: inline;
+    }
+    .comm .pant .left{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .comm .pant .left img{
+        box-shadow: none;
+    }
+    .comm .pant .lef{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .comm .pant .lef img{
+        box-shadow: none;
+    }
+    .comm .pant .right {
+        padding-left: 15%;
+    }
+    .comm .pant .rig {
+        padding-left: 15%;
+    }
+    .none{
+      display: none;
+    }
+    .amb{
+      width: inherit;
+    }
+}
+
+.h4{
+    font-weight: 900;
+}
+.comm{
+    background-color: #fff;
+    border: 2px solid #E5E3DD;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 2%;
+    border-radius: 10px 60px;
+}
+.h5{
+    color: #811750;
+    font-weight: 600;
+    font-size: xx-large;
+}
+.pant{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.left{
+    width: 50%;
+}
+.left>img{
+    border-radius: 20px;
+    box-shadow: -5px 5px #132540;
+}
+.left>img:hover{
+    box-shadow: none;
+}
+.right{
+    margin-left: 2%;
+    background-color: #E5E3DD;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    padding-right: 20%;
+    box-shadow: 0px 10px 10px #132540;
+    border-radius: 5%;
+}
+.right:hover{
+    box-shadow: none;
+}
+.lef{
+    width: 50%;
+    margin-left: 2%;
+}
+.lef>img{
+    border-radius: 20px;
+    box-shadow: 5px 5px #132540;
+}
+.lef>img:hover{
+    box-shadow: none;
+}
+.rig{
+    border-radius: 5%;
+    background-color: #E5E3DD;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    box-shadow: 0px 10px 10px #132540; 
+}
+.rig:hover{
+    box-shadow: none;
+}
+.icon{
+  font-size: xx-large;
+  font-weight: 900;
+  margin-bottom: 2%;
+}
+.prof{
+  font-weight: 700;
+}
+/* end of service page  */
