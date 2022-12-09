@@ -28,19 +28,19 @@
       <nav class="navbars">
         <ul class="nav-menu">
           <li class="nav-item">
-            <img  class="nav-link gogo" src="./Assets/aheri care.png" width="50%" height="50%" href="./index.html">
+            <img  class="nav-link gogo" src="./Assets/aheri care.png" width="50%" height="50%" routerLink="/">
             </li>
             <li class="nav-item one">
-              <a class="nav-link" href="./index.html">HOME</a>
+              <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" href="./service.html">SERVICES</a>
+              <a class="nav-link" [routerLink]="['services']" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" href="./about.html">ABOUT</a>
+              <a class="nav-link" routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" href="./contact.html">CONTACT</a>
+              <a class="nav-link" routerLink="contact-us" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT</a>
             </li>
         </ul>
       </nav>

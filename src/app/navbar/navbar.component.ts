@@ -25,7 +25,5 @@ export class NavbarComponent implements OnInit{
 
     hamburger!.addEventListener("click" , mobileMenu)
     navLink.forEach((l) => l.addEventListener("click",closeMenu))
-
   }  
-
 }
