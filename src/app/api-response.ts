@@ -9,4 +9,5 @@ export interface ApiResponse {
     old_price:Float32Array;
     is_available:boolean;
     category:string;
+    get_url:string;
 }
