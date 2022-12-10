@@ -1,4 +1,6 @@
-<p>shop works!</p>
-
-<p>{{prod | json}}</p>
-<p>{{cat | json}}</p>
+<div class="row">
+      <div class="card" *ngFor="let data of product">
+        <p class="text-black">{{data.name}}</p>
+        <p class="text-black">{{data.category}}</p>
+      </div>
+</div>
