@@ -9,8 +9,8 @@
                 <div class="product__items ">
                     <div class="product__items--thumbnail">
                         <a class="product__items--link" href="{{ product.get_url }}">
-                            <img class="product__items--img product__primary--img" src="https://img.freepik.com/premium-photo/modern-house-exterior-with-empty-background-real-estate-concept_258219-332.jpg?w=740" alt="product-img">
-                            <img class="product__items--img product__secondary--img" src="https://img.freepik.com/premium-photo/3d-rendering-modern-house_62754-1884.jpg?w=996" alt="product-img">
+                            <img class="product__items--img product__primary--img" src="{{ product.image }}" alt="product-img">
+                            <img class="product__items--img product__secondary--img" src="{{ product.image2 }}" alt="product-img">
                         </a>
                         <div class="product__badge">
                             <span class="product__badge--items sale">Sale</span>
@@ -22,9 +22,9 @@
                             <a href="{{ category.get_url }}">{{ category.category }}</a>
                         </ng-template> -->
 
-                        <span class="product__items--content__subtitle">{{ product.category }}</span>
+                        <span class="product__items--content__subtitle">{{ product.category_name }}</span>
                         
-                        <h3 class="product__items--content__title h4"><a class="prod-details" href="{{ product.get_url }}">{{ product.name }}</a></h3>
+                        <h3 class="product__items--content__title h4"><a class="prod-details" href="{{ product.slug }}">{{ product.name }}</a></h3>
                         <div class="product__items--price">
                             <span class="current__price">Ksh {{ product.new_price }}</span>
                             <span class="price__divided"></span>

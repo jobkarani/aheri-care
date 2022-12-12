@@ -8,6 +8,7 @@ export interface ApiResponse {
     new_price:Float32Array;
     old_price:Float32Array;
     is_available:boolean;
-    category:string;
+    category_name:string;
+    category_slug:string;
     get_url:string;
 }
