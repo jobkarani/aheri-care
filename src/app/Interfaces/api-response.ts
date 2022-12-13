@@ -1,5 +1,5 @@
 export interface ApiResponse {
-    product_id:number;
+    id:number;
     name:string;
     slug:string;
     image:string;

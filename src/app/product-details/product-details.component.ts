@@ -11,22 +11,24 @@ import { ProductServiceService } from '../Services/product-service.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  singleproduct!:Productdetails;
-  product_id:number = 0;
+  singleproduct:Productdetails[] = [];
+  id:number = 0;
 
   constructor(private api : ProductServiceService,private route:ActivatedRoute) { }
 
   ngOnInit(){
     this.route.params.subscribe(
       data =>{
-        this.product_id = data['product_id'];
+        this.id = data['id'];
+        console.log(this.id);
+        this.api.getProductDetails(this.id).subscribe(
+          datax =>{
+            this.singleproduct = datax;
+            console.log(this.singleproduct)
+          }
+        )
       }
     );
-    this.api.getProductDetails(this.product_id).subscribe(
-      data =>{
-        this.singleproduct = data;
-      }
-    )  
 
   }
 }

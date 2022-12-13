@@ -1,8 +1,8 @@
 <div *ngIf="singleproduct">
 
-    <h2>{{singleproduct.name | uppercase}} Details</h2>
-    <div><span>Description: </span>{{singleproduct.description}}</div>
-    <div><span>Price: </span>{{singleproduct.new_price}} | {{ singleproduct.old_price }}</div>
-    <div><span>Update Date: </span>{{singleproduct.category_slug | date}}</div>
+    <h2>{{singleproduct[0].name | uppercase}} Details</h2>
+    <div><span>Description: </span>{{singleproduct[0].description}}</div>
+    <div><span>Price: </span>{{singleproduct[0].new_price}} | {{ singleproduct[0].old_price }}</div>
+    <div><span>Update Date: </span>{{singleproduct[0].category_slug }}</div>
 
 </div>
