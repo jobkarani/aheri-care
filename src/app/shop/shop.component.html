@@ -1,37 +1,28 @@
 <h3 class="text-center medical">Buy Medical Equipments</h3>
 
-<section class="products row">
-    <div class="col-2" *ngFor="let cat of category">
-        <h3 class="text-dark">{{ cat.name }}</h3>
+<section class="product-page">
+    <div class="category-section">
+        <h3 class="text-center">Categories</h3>
+        <hr>
+        <ul class="categories" *ngFor="let cat of category">
+            <li class="cats text-dark">{{ cat.name }}</li>
+        </ul>
     </div>
-<div id="product_grid col-10" class="tab_pane active show col-md-10">
-    <div class="product__section--inner product__grid--inner">
-        <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-3 row-cols-2 mb--n30">
-            <div class="col mb-30"  *ngFor="let product of product" style="  box-shadow: 5px 5px 5px 5px #aaa8a8; margin: auto; padding-bottom: 2%; padding-top: 2%;">
-                <div class="product__items ">
-                    <div class="product__items--thumbnail">
-                        <a class="product__items--link" [routerLink]="['/product-details',product.id]">
-                            <img class="product__items--img product__primary--img" src="{{ product.image }}" alt="product-img">
-                            <img class="product__items--img product__secondary--img" src="{{ product.image2 }}" alt="product-img">
-                        </a>
-                        <div class="product__badge">
-                            <span class="product__badge--items sale">Sale</span>
-                        </div>
-                    </div>
-                    <div class="product__items--content">
-                        <span class="product__items--content__subtitle">{{ product.category_name | uppercase }}</span>
-                        <h3 class="product__items--content__title h4"><a class="prod-details" href="{{ product.get_url }}">{{ product.name }}</a></h3>
-                        <div class="product__items--price">
-                            <span class="current__price">Ksh {{ product.new_price }}</span>
-                            <span class="price__divided">-</span>
-                            <span class="old__price">Ksh {{ product.old_price }}</span>
-                        </div>
+
+    <div class="products">
+        <div class="card"  *ngFor="let product of product">
+            <div class="product__items ">
+                <div class="product__items--thumbnail">
+                    <a class="product__items--link" [routerLink]="['/product-details',product.id]">
+                        <img class="product__items--img product__primary--img" src="{{ product.image }}" alt="product-img">
+                        <img class="product__items--img product__secondary--img" src="{{ product.image2 }}" alt="product-img">
+                    </a>
+                    <div class="product__badge">
+                        <span class="product__badge--items sale">Sale</span>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
-</div>
-
+            
 </section>

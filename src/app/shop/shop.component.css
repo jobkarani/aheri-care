@@ -17,6 +17,127 @@
     color: #811750;
 }
 
+.product__items--thumbnail {
+    position: relative;
+    overflow: hidden
+}
+
+.product__items--link .product__items--img{
+    max-width: 100%;
+    max-height: 50rem;
+    object-fit: cover;
+}
+.product__items--link {
+    display: block
+}
+
+@media only screen and (max-width:991px) {
+    .product__items--link {
+        width: 100%
+    }
+}
+
+.product__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+@media only screen and (min-width:576px) {
+    .product__badge {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+.product__badge--items {
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 7px;
+    font-weight: 300;
+    background: #811750;
+    color: #fff;
+    border-radius: 6px 0 6px;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width:575px) {
+    .product__badge--items {
+        font-size: 1.3rem;
+    }
+}
+
+.product__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+@media only screen and (min-width:576px) {
+    .product__badge {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+.product__badge--items {
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 7px;
+    font-weight: 300;
+    background: #811750;
+    color: #fff;
+    border-radius: 6px 0 6px;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width:575px) {
+    .product__badge--items {
+        font-size: 1.3rem
+    }
+}
+
+.product-page{
+    display: flex;
+}
+.category-section{
+    width: 25%;
+    padding: 3%;
+    box-shadow: 0px 0px 5px #132540; 
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+.cats{
+    list-style-type: none;
+    padding: 3%;
+    border: 1px solid #B2B2B2;
+    text-align: center;
+    margin-left: -10%;
+    border-radius: 5px;
+}
+.cats:hover{
+    background-color: #ae6986;
+    color: #fff !important;
+    list-style-type: none;
+    padding: 3%;
+    border: 1px solid #B2B2B2;
+    text-align: center;
+    margin-left: -10%;
+    border-radius: 5px;
+}
+.products{
+    margin-left: 5%;
+    width: 60% !important;
+    display: flex;
+}
+
+
+
+
+
+
+
+
 
 .tab_pane {
     display: none;
@@ -80,6 +201,10 @@ a:focus, a:active {
             padding: 0 .6rem
         }
     }
+
+
+
+    
 
     
 .row {
@@ -422,16 +547,9 @@ a:focus, a:active {
 .product__items--action__list .product__items--action__btn:hover{
     background: #811750;
 }
-.product__items--link .product__items--img{
-    max-width: 100%;
-    max-height: 50rem;
-    object-fit: cover;
-}
 
-.product__items--thumbnail {
-    position: relative;
-    overflow: hidden
-}
+
+
 
 
 .product__secondary--img {
@@ -455,15 +573,7 @@ a:focus, a:active {
     visibility: visible
 }
 
-.product__items--link {
-    display: block
-}
 
-@media only screen and (max-width:991px) {
-    .product__items--link {
-        width: 100%
-    }
-}
 
 .product__items--img {
     display: block;
@@ -658,35 +768,7 @@ a:focus, a:active {
     color: var(--yellow-color);
 }
 
-.product__badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-}
 
-@media only screen and (min-width:576px) {
-    .product__badge {
-        top: 20px;
-        left: 20px;
-    }
-}
-
-.product__badge--items {
-    height: 2rem;
-    line-height: 2rem;
-    padding: 0 7px;
-    font-weight: 300;
-    background: #811750;
-    color: #fff;
-    border-radius: 6px 0 6px;
-    font-size: 1.4rem;
-}
-
-@media only screen and (max-width:575px) {
-    .product__badge--items {
-        font-size: 1.3rem;
-    }
-}
 
 .product__items:hover .product__items--action__style2 {
     opacity: 1;
@@ -871,35 +953,7 @@ a:focus, a:active {
     transform: inherit;
 }
 
-.product__badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-}
 
-@media only screen and (min-width:576px) {
-    .product__badge {
-        top: 20px;
-        left: 20px;
-    }
-}
-
-.product__badge--items {
-    height: 2rem;
-    line-height: 2rem;
-    padding: 0 7px;
-    font-weight: 300;
-    background: #811750;
-    color: #fff;
-    border-radius: 6px 0 6px;
-    font-size: 1.4rem;
-}
-
-@media only screen and (max-width:575px) {
-    .product__badge--items {
-        font-size: 1.3rem
-    }
-}
 
 @media only screen and (min-width:992px) {
     .product__list--items__content .current__price {
