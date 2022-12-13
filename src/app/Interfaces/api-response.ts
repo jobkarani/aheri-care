@@ -1,4 +1,5 @@
 export interface ApiResponse {
+    product_id:number;
     name:string;
     slug:string;
     image:string;

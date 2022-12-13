@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { ServicesComponent } from './services/services.component';
+import { ServicesComponent } from './services-page/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';

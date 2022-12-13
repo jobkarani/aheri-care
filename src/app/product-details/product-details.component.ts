@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ApiResponse } from '../api-response';
-import { ApiResponse2 } from '../api-response2';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Productdetails } from '../Interfaces/productdetails';
+import { ProductServiceService } from '../Services/product-service.service';
 
 @Component({
   selector: 'app-product-details',
@@ -10,29 +11,22 @@ import { ApiResponse2 } from '../api-response2';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  product:ApiResponse[] = [];
-  category:ApiResponse2[] = [];
+  singleproduct!:Productdetails;
+  product_id:number = 0;
 
-  constructor(private http:HttpClient) {}
+  constructor(private api : ProductServiceService,private route:ActivatedRoute) { }
 
   ngOnInit(){
-
-    this.http.get<ApiResponse[]>("https://ahericaredb.up.railway.app/api_products/").subscribe(
-
-      data => {
-        this.product = data
-        console.log(this.product)
+    this.route.params.subscribe(
+      data =>{
+        this.product_id = data['product_id'];
       }
-    )
-
-    this.http.get<ApiResponse2[]>("https://ahericaredb.up.railway.app/api_categories/").subscribe(
-
-      data => {
-        this.category = data
-        console.log(this.category)
+    );
+    this.api.getProductDetails(this.product_id).subscribe(
+      data =>{
+        this.singleproduct = data;
       }
-    )
-    
+    )  
+
   }
-
 }

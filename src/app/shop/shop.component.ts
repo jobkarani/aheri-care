@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { ApiResponse } from '../api-response';
-import { ApiResponse2 } from '../api-response2';
+import { ApiResponse } from '../Interfaces/api-response';
+import { ApiResponse2 } from '../Interfaces/api-response2';
 
 @Component({
   selector: 'app-shop',
@@ -17,7 +17,7 @@ export class ShopComponent implements OnInit {
 
   ngOnInit(){
 
-    this.http.get<ApiResponse[]>("https://ahericaredb.up.railway.app/api_products/").subscribe(
+    this.http.get<ApiResponse[]>("https://ahericaredbb.up.railway.app/api_products/").subscribe(
 
       data => {
         this.product = data
@@ -25,7 +25,8 @@ export class ShopComponent implements OnInit {
       }
     )
 
-    this.http.get<ApiResponse2[]>("https://ahericaredb.up.railway.app/api_categories/").subscribe(
+  
+    this.http.get<ApiResponse2[]>("https://ahericaredbb.up.railway.app/api_categories/").subscribe(
 
       data => {
         this.category = data

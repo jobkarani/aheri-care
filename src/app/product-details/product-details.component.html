@@ -1,2 +1,8 @@
-<h3 class="text-center medical">Buy Medical Equipments</h3>
+<div *ngIf="singleproduct">
 
+    <h2>{{singleproduct.name | uppercase}} Details</h2>
+    <div><span>Description: </span>{{singleproduct.description}}</div>
+    <div><span>Price: </span>{{singleproduct.new_price}} | {{ singleproduct.old_price }}</div>
+    <div><span>Update Date: </span>{{singleproduct.category_slug | date}}</div>
+
+</div>
