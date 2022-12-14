@@ -24,7 +24,6 @@ export class ShopComponent implements OnInit {
         console.log(this.product)
       }
     )
-
   
     this.http.get<ApiResponse2[]>("https://ahericaredbb.up.railway.app/api_categories/").subscribe(
 
