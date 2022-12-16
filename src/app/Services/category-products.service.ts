@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ApiResponse } from '../Interfaces/api-response';
+import { Categoryproducts } from '../Interfaces/categoryproducts';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class CategoryProductsService {
 
   constructor(private http :HttpClient) { }
 
-  getCategoryProducts(id:number): Observable<ApiResponse[]> {
-    return this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_categoryproducts/' + id);
+  getCategoryProducts(id:number): Observable<Categoryproducts[]> {
+    return this.http.get<Categoryproducts[]>('https://ahericaredbb.up.railway.app/api_categoryproducts/' + id);
   }
 }

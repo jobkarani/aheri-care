@@ -10,7 +10,7 @@
     </div>
 
     <div class="products">
-        <div class="card"  *ngFor="let product of product">
+        <div class="card"  *ngFor="let product of product | paginate: { itemsPerPage:itemscount, currentPage:page, totalItems:count};let i = index" >
             <div class="product__items ">
                 <div class="product__items--thumbnail">
                     <a class="product__items--link" [routerLink]="['/product-details',product.id]">
@@ -32,7 +32,12 @@
                 </div>
                 <a href=""  class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> Buy Via Whatsapp</a>
             </div>
-        </div>
+        </div> 
     </div>
-            
 </section>
+<div class="paginate">
+    <pagination-controls class="page"  previousLabel="Prev" nextLabel="Next" (pageChange)="onNextPageChange($event)">
+    </pagination-controls>
+</div>
+<div>
+</div>

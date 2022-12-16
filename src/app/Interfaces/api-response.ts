@@ -11,5 +11,4 @@ export interface ApiResponse {
     is_available:boolean;
     category_name:string;
     category_slug:string;
-    get_url:string;
 }

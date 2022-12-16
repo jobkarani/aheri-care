@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ApiResponse } from '../Interfaces/api-response';
+import { Categoryproducts } from '../Interfaces/categoryproducts';
 import { CategoryProductsService } from '../Services/category-products.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { CategoryProductsService } from '../Services/category-products.service';
 })
 export class CategoriesComponent implements OnInit {
 
-  catproducts:ApiResponse[] = [];
+  catproducts:Categoryproducts[] = [];
   id:number = 0;
 
 
