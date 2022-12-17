@@ -185,6 +185,7 @@
 }
 
 .whatsapp{
+    margin-left: 8%;
     background-color: #25d366;
     padding: 3%;
     color: #fff;
@@ -192,7 +193,7 @@
 }
 
 @media only screen and (max-width:500px) {
-    
+
 }
 
 
