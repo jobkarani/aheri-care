@@ -3,6 +3,11 @@
     padding-top: 5%;
     padding-bottom: 5%;
 }
+.medical{
+    color: #132540;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
 
 .current__price {
     font-size: 20px;
@@ -52,6 +57,78 @@
     color: #811750;
     font-weight: 600;
 }
+@media only screen and (max-width:500px) {
+    .medical{
+        margin-top: 10% !important;
+        margin-bottom: 5%;
+    }
+    .row{
+        display: block !important;
+    }
+    .product__details--info__title{
+        font-size: large;
+        text-align: center;
+    }
+    .product__details--info__price{
+        text-align: center;
+    }
+
+    .current__price,.old__price{
+        font-size: medium;
+    }
+    .product__details--info__desc{
+        line-height: 200%;
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+    }
+    .whatsapp{
+        font-size: small;
+    }
+    .back-shop{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .medical{
+        margin-top: 10% !important;
+        margin-bottom: 5%;
+    }
+    .row{
+        display: block !important;
+        width: 100% !important;
+        margin-left: 1% !important;
+    }
+    .product__details--info__title{
+        margin-top: 5%;
+        text-align: center;
+    }
+    .product__details--info__price{
+        text-align: center;
+    }
+    .current__price,.old__price{
+        font-size: xx-large !important;
+    }
+    .product__details--info__desc{
+        line-height: 200%;
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
+    }
+    .whatsapp{
+        font-size: large;
+    }
+    .back-shop{
+        margin-left: 45% !important;
+        font-size: large;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .container {
       width: calc( 100% - 30px);
