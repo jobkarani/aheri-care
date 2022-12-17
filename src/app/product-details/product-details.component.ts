@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Productdetails } from '../Interfaces/productdetails';
+import { ApiResponse } from '../Interfaces/api-response';
 import { ProductServiceService } from '../Services/product-service.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { ProductServiceService } from '../Services/product-service.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  singleproduct:Productdetails[] = [];
+  singleproduct:ApiResponse[] = [];
   id:number = 0;
 
   constructor(private api : ProductServiceService,private route:ActivatedRoute) { }
