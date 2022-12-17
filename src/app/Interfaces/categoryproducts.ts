@@ -1,13 +1,15 @@
 export interface Categoryproducts {
     id:number;
-    product_name:string;
-    product_id:string;
-    product_slug:string;
-    product_image:string;
-    product_image2:string;
-    product_description:string;
-    product_new_price:Float32Array;
-    product_old_price:Float32Array;
+    name:string;
+    slug:string;
+    image:string;
+    image2:string;
+    description:string;
+    new_price:number;
+    old_price:number;
     category_name:string;
     category_slug:string;
+    is_available:boolean;
+    get_url:string;
+    category_id:number;
 }

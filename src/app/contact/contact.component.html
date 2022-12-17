@@ -8,21 +8,21 @@
       <div class="contactForm">
         <h3 class="text-center" style="color: #132540; font-weight: 700;">Contact Form</h3>
         <div class="param">
-          <form class="row g-3">
+          <form class="row g-3" >
             <div class="col-md-12">
-              <input type="fname" class="form-control" id="inputEmail4" placeholder="Full Name" />
+              <input type="fname" class="form-control" id="inputEmail4" placeholder="Full Name" ngModel required />
             </div>
             <div class="col-md-12">
-              <input type="email" class="form-control" id="email" placeholder="Email" />
+              <input type="email" class="form-control" id="email" placeholder="Email" ngModel required/>
             </div>
             <div class="col-md-12">
-              <input type="text" class="form-control" id="inputCity" placeholder="Phone" />
+              <input type="text" class="form-control" id="inputCity" placeholder="Phone" ngModel required />
             </div>
             <div class="col-md-12">
-              <input type="location" class="form-control" id="location" placeholder="Location" />
+              <input type="location" class="form-control" id="location" placeholder="Location"ngModel />
             </div>
             <div class="col-md-12">
-              <textarea id="txtid" class="form-control" name="txtname" placeholder="Write something...." rows="4" cols="50" maxlength="2000"></textarea>
+              <textarea id="txtid" class="form-control" name="txtname" placeholder="Write something...." rows="4" cols="50" maxlength="2000" ngModel required></textarea>
             </div>
             <div class="col-12 mt-3 text-center">
               <a type="submit" class="btn submit text-center" href="mailto:info@ahericare.com">Submit</a>
