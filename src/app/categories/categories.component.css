@@ -13,6 +13,34 @@
     color: #811750;
 }
 
+@media only screen and (max-width:500px) {
+    .medical{
+        margin-top: 15% !important;
+    }
+    .products{
+        display: block !important;
+        margin-left: 15% !important ;
+        margin-bottom: 10% !important;
+    }
+    .card{
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .medical{
+        margin-top: 8%;
+    }
+    .products{
+        display: block !important;
+        margin-left: 15% !important ;
+        margin-bottom: 10% !important;
+    }
+    .card{
+        margin-top: 5%;
+    }
+}
+
 .product__items--thumbnail {
     position: relative;
     overflow: hidden
