@@ -14,6 +14,7 @@ export class ShopComponent implements OnInit {
   product:ApiResponse[] = [];
   category:ApiResponse2[] = [];
   prod:any;
+  phonenumber: number = 254745388023;
 
   title = 'pagination';
   page:number = 1;
@@ -38,18 +39,8 @@ export class ShopComponent implements OnInit {
 
     // pagination 
     this.getData();
-
-    // whatsapp 
-    this.fetchProduct();
-    
   }
 
-  fetchProduct(){
-    this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').subscribe(response => {
-    this.prod = response;
-    console.log(this.prod)
-  });
-}
 
   getData() {
     this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').subscribe(response => {
@@ -70,8 +61,7 @@ export class ShopComponent implements OnInit {
   }
 
   openWhatsApp() {
-    window.open(`https://api.whatsapp.com/send?phone=254745388023&text=I%20would%20like%20to%20purchase%20the%20${encodeURIComponent(this.prod.name)}%20/`, '_blank');
-    this.fetchProduct();
+    window.open(`https://wa.me/${this.phonenumber}?text=Hello%2C%20I%20want%20to%20purchase%3A%0D%0A%0D%0A%20%20%20%20%20%20%20%20*%20%C2%A0Buy:*%20${encodeURIComponent(this.product[0].name)}*%0A%20%20%20%20%20%20%20%20*Price:*%20KSh${encodeURIComponent(this.product[0].new_price)}%0A%20%20%20%20%20%20%20%20*URL:*%20${encodeURIComponent(this.product[0].get_url)}%2F%0D%0A%0D%0AThank%20you%21`, "_blank");
   }
 
 }

@@ -6,9 +6,10 @@ export interface ApiResponse {
     image2:string;
     image3:string;
     description:string;
-    new_price:Float32Array;
-    old_price:Float32Array;
+    new_price:string;
+    old_price:string;
     is_available:boolean;
     category_name:string;
     category_slug:string;
+    get_url:string;
 }
