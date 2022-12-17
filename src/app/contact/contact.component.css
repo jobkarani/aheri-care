@@ -1,6 +1,6 @@
 /* start contact us */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .contact .flex{
         display: inline;
     }
@@ -12,6 +12,26 @@
     .contact .flex .contactForm .param .row .form-control{
         margin-top: 5%;
     } 
+}
+@media only screen and (max-width: 850px) {
+  .us{
+    margin-top: 10% !important;
+  }
+  .contact .flex{
+      display: inline;
+  }
+  .contact .flex .contactForm{
+      margin-top: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+  .contact .flex .contactForm .param .row .form-control{
+      margin-top: 5%;
+  } 
+  .map{
+    margin-left: 10% !important;
+    width: 120% !important;
+  }
 }
 .flex{
     display: flex;
