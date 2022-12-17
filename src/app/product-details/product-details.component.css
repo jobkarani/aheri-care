@@ -1,11 +1,10 @@
 .container {
     width:100%;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 5%;
 }
 .medical{
     color: #132540;
-    margin-top: 2%;
     margin-bottom: 3%;
 }
 
@@ -84,10 +83,11 @@
         display: flex;
     }
     .whatsapp{
-        font-size: small;
+        font-size: small !important;
     }
     .back-shop{
-        font-size: small;
+        margin-left: 0% !important;
+        font-size: small !important;
     }
 }
 

@@ -87,24 +87,26 @@
     margin-left: 2%;
     height: auto;
 }
-.cats{
+.cats:hover{
     list-style-type: none;
     padding: 3%;
     border: 1px solid #B2B2B2;
+    background-color: transparent;
     text-align: center;
     margin-left: -10%;
     border-radius: 5px;
 }
-.cats a{
+.cats a:hover{
     text-decoration: none;
-    color: #132540;
+    color: #606060;
     font-weight: 500;
 }
-.cats a:hover{
+
+.cats a{
     text-decoration: none;
     color: #fff;
 }
-.cats:hover{
+.cats{
     background-color: #ae6986;
     color: #fff !important;
     list-style-type: none;
@@ -191,10 +193,160 @@
     color: #fff;
     font-weight: 600;
 }
+.whatsapp:hover{
+    margin-left: 8%;
+    background-color: transparent;
+    border: 1px solid #25d366;
+    padding: 3%;
+    color: #25d366;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width:850px) {
+    .medical{
+        margin-top: 15% !important;
+        margin-bottom: 5%;
+    }
+    .product-page{
+        display: block;
+    }
+    .category-section{
+        padding-left: 5%;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    .cats{
+        list-style-type: none;
+        padding: 3%;
+        border: 1px solid #B2B2B2;
+        background-color: transparent;
+        text-align: center;
+        margin-left: -10%;
+        border-radius: 5px;
+    }
+    .cats:hover{
+        background-color: #ae6986 !important;
+        color: #fff !important;
+        list-style-type: none;
+        padding: 3%;
+        border: 1px solid #B2B2B2;
+        text-align: center;
+        margin-left: -10%;
+        border-radius: 5px;
+    }
+    .cats a{
+        color: #606060;
+        font-size: x-large;
+    }
+    .products{
+        display: block;
+        margin-left: 10%;
+    }
+    .card{
+        margin-top: 5%;
+        width: 115%;
+    }
+    .cat-name{
+        text-align: left;
+        font-size: x-large;
+    }
+    .product-name{
+        text-align: left !important;
+        font-size: x-large;
+    }
+    .price-tag{
+        text-align: left;
+        margin-bottom: 5%;
+    }
+    .new-price,.old-price{
+        font-size: x-large;
+    }
+    .whatsapp{
+        margin-left: 30%;
+        font-size: x-large;
+    }
+    .product-page{
+        margin-bottom: 10%;
+    }
+    .paginate{
+        margin-left: -8%;
+        margin-bottom: 10%;
+    }
+}
 
 @media only screen and (max-width:500px) {
-
+    .medical{
+        margin-top: 15% !important;
+        margin-bottom: 5%;
+    }
+    .product-page{
+        display: block;
+    }
+    .category-section{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    .cats{
+        list-style-type: none;
+        padding: 3%;
+        border: 1px solid #B2B2B2;
+        background-color: transparent;
+        text-align: center;
+        margin-left: -10%;
+        border-radius: 5px;
+    }
+    .cats:hover{
+        background-color: #ae6986 !important;
+        color: #fff !important;
+        list-style-type: none;
+        padding: 3%;
+        border: 1px solid #B2B2B2;
+        text-align: center;
+        margin-left: -10%;
+        border-radius: 5px;
+    }
+    .cats a{
+        color: #606060;
+        font-size: medium;
+    }
+    .products{
+        display: block;
+        margin-left: 10%;
+    }
+    .card{
+        margin-top: 5%;
+        width: 115%;
+    }
+    .cat-name{
+        text-align: left;
+        font-size: larger;
+    }
+    .product-name{
+        text-align: left !important;
+        font-size: large;
+    }
+    .price-tag{
+        text-align: left;
+    }
+    .new-price,.old-price{
+        font-size: large;
+    }
+    .whatsapp{
+        margin-left: 20%;
+        font-size: large;
+    }
+    .product-page{
+        margin-bottom: 10%;
+    }
+    .paginate{
+        margin-left: -8%;
+        margin-bottom: 10%;
+    }
 }
+
 
 
 

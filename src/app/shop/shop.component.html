@@ -2,10 +2,10 @@
 
 <section class="product-page">
     <div class="category-section">
-        <h3 class="text-center">Categories</h3>
+        <h3 class="text-center">Shop by Categories</h3>
         <hr>
         <ul class="categories" *ngFor="let cat of category">
-            <li class="cats text-dark"><a [routerLink]="['/categoryproducts', cat.id]">{{ cat.slug }}</a></li>
+            <li class="cats"><a [routerLink]="['/categoryproducts', cat.id]">{{ cat.name }}</a></li>
         </ul>
     </div>
 
