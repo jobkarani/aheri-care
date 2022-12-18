@@ -5,8 +5,8 @@ export interface Productdetails {
     image2:string;
     image3:string;
     description:string;
-    new_price:Float32Array;
-    old_price:Float32Array;
+    new_price:number;
+    old_price:number;
     is_available:boolean;
     category_name:string;
     category_slug:string;

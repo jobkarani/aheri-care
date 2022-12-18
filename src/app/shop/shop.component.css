@@ -107,15 +107,16 @@
     color: #fff;
 }
 .cats{
-    background-color: #ae6986;
     color: #fff !important;
     list-style-type: none;
-    padding: 3%;
-    border: 1px solid #B2B2B2;
     text-align: center;
     margin-left: -10%;
+    padding: 3%;
+    border: 1px solid #B2B2B2;
+    background-color: #ae6986;
     border-radius: 5px;
 }
+
 .products{
     margin-left: 2%;
     width: 70% !important;

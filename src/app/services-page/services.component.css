@@ -14,7 +14,7 @@
   width: 50%;
   font-weight: 600;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .head{
         font-size: small;
         padding: 5%;

@@ -81,6 +81,7 @@
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 2px;
+    text-decoration: none;
   }
   .nav-menu-logos:hover{
     text-decoration: none;

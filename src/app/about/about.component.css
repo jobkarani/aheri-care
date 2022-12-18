@@ -7,7 +7,7 @@
     border-radius: 0px 20px;
     padding: 3%;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .about{
         margin-top: 15%;
         margin-left: 2%;
@@ -88,7 +88,7 @@
   font-size: larger;
   font-weight: 400;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .whychoose{
     display: inline;
     margin-top: 2%;
@@ -132,7 +132,7 @@ hr{
 .desc{
   margin-top: 5%;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .care{
     color: #811750;
     font-size: x-large;

@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CategoriesComponent } from './categories/categories.component';
     HttpClientModule,
     MatPaginatorModule,
     NgxPaginationModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

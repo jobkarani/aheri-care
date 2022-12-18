@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { ApiResponse } from '../Interfaces/api-response';
 import { ApiResponse2 } from '../Interfaces/api-response2';
-import { PaginationService } from '../Services/pagination.service';
+import { Productdetails } from '../Interfaces/productdetails';
 
 @Component({
   selector: 'app-shop',
@@ -13,8 +13,9 @@ export class ShopComponent implements OnInit {
 
   product:ApiResponse[] = [];
   category:ApiResponse2[] = [];
-  prod:any;
   phonenumber: number = 254745388023;
+  // prod:Productdetails[] = [];
+  // get_url:string = "https://ahericaredbb.up.railway.app/api_products/product-details" + this.product[0].id;
 
   title = 'pagination';
   page:number = 1;
@@ -61,7 +62,7 @@ export class ShopComponent implements OnInit {
   }
 
   openWhatsApp() {
-    window.open(`https://wa.me/${this.phonenumber}?text=Hello%2C%20I%20want%20to%20purchase%3A%0D%0A%0D%0A%20%20%20%20%20%20%20%20*%20%C2%A0Buy:*%20${encodeURIComponent(this.product[0].name)}*%0A%20%20%20%20%20%20%20%20*Price:*%20KSh${encodeURIComponent(this.product[0].new_price)}%0A%20%20%20%20%20%20%20%20*URL:*%20${encodeURIComponent(this.product[0].get_url)}%2F%0D%0A%0D%0AThank%20you%21`, "_blank");
+    window.open(`https://wa.me/${this.phonenumber}?text=Hello%2C%20I%20want%20to%20purchase%3A%0D%0A%0D%0A%20%20%20%20%20%20%20%20%20%C2%A0*Buy:*%20${encodeURIComponent(this.product[0].name)}%0A%20%20%20%20%20%20%20%20*Price:*%20KSh${encodeURIComponent(this.product[0].new_price)}%0A%20%20%20%20%20%20%20%20*URL:*%20${encodeURIComponent(this.product[0].get_url)}%2F%0D%0A%0D%0AThank%20you%21`, "_blank");
   }
 
 }
