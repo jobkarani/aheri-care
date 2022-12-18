@@ -28,6 +28,9 @@
   .contact .flex .contactForm .param .row .form-control{
       margin-top: 5%;
   } 
+  .form-control{
+    height: 8vh;
+  }
   .map{
     margin-left: 10% !important;
     width: 120% !important;
