@@ -14,16 +14,17 @@ export class NavbarComponent implements OnInit{
     const navLink = document.querySelectorAll(".nav-links");
 
     const mobileMenu = () => {
-      hamburger!.classList.toggle("active")
-      navMenu!.classList.toggle("active")
+      hamburger?.classList.toggle("active")
+      navMenu?.classList.toggle("active")
     }
 
     const closeMenu = () => {
-      hamburger!.classList.remove("active")
-      navMenu!.classList.remove("active")
+      hamburger?.classList.remove("active")
+      navMenu?.classList.remove("active")
     }
 
-    hamburger!.addEventListener("click" , mobileMenu)
+    hamburger?.addEventListener("click" , mobileMenu)
     navLink.forEach((l) => l.addEventListener("click",closeMenu))
   }  
+
 }
