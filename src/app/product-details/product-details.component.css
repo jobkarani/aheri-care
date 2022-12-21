@@ -104,7 +104,7 @@
         display: block !important;
     }
     .product__details--info__title{
-        font-size: large;
+        font-size: medium;
         text-align: center;
     }
     .product__details--info__price{
@@ -112,21 +112,22 @@
     }
 
     .current__price,.old__price{
-        font-size: medium;
+        font-size: medium !important;
     }
     .product__details--info__desc{
         line-height: 200%;
         text-align: center;
+        font-size: medium !important;
     }
     .buttons{
         display: flex;
     }
     .whatsapp{
-        font-size: small !important;
+        font-size: x-small !important;
     }
     .back-shop{
-        margin-left: 20% !important;
-        font-size: small !important;
+        margin-left: 30% !important;
+        font-size: x-small !important;
     }
 }
 

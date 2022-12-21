@@ -1,6 +1,9 @@
 /* start contact us */
 
 @media only screen and (max-width: 500px) {
+  .map{
+    margin-right: 60% !important;
+  }
     .contact .flex{
         display: inline;
     }

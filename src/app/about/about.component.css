@@ -106,6 +106,9 @@
     border: 1px solid #fff;
     box-shadow: none;
   }
+  .east, .west{
+    width: 100%;
+  }
 }
 hr{
   box-shadow: 0px 5px #DAEAF1;

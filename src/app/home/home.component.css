@@ -104,8 +104,8 @@
   .carousel .card {
     color: #101010;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin: 20px 0;
     font-size: small;
     font-weight: 600;
@@ -289,7 +289,7 @@
 
 @media only screen and (max-width: 500px) {
   .we{
-    margin-left: 5%;
+    margin-left: -2%;
     margin-right: 5%;
     padding-bottom: 3%;
   }
