@@ -70,6 +70,7 @@
     .product__details--info__title{
         margin-top: 5%;
         text-align: center;
+        color: #811750;
     }
     .product__details--info__price{
         text-align: center;
@@ -106,6 +107,7 @@
     .product__details--info__title{
         font-size: medium;
         text-align: center;
+        color: #811750;
     }
     .product__details--info__price{
         text-align: center;
