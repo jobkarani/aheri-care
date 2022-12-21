@@ -56,40 +56,6 @@
     color: #811750;
     font-weight: 600;
 }
-@media only screen and (max-width:500px) {
-    .medical{
-        margin-top: 10% !important;
-        margin-bottom: 5%;
-    }
-    .row{
-        display: block !important;
-    }
-    .product__details--info__title{
-        font-size: large;
-        text-align: center;
-    }
-    .product__details--info__price{
-        text-align: center;
-    }
-
-    .current__price,.old__price{
-        font-size: medium;
-    }
-    .product__details--info__desc{
-        line-height: 200%;
-        text-align: center;
-    }
-    .buttons{
-        display: flex;
-    }
-    .whatsapp{
-        font-size: small !important;
-    }
-    .back-shop{
-        margin-left: 0% !important;
-        font-size: small !important;
-    }
-}
 
 @media only screen and (max-width:850px) {
     .medical{
@@ -128,6 +94,43 @@
         font-size: large;
     }
 }
+
+@media only screen and (max-width:500px) {
+    .medical{
+        margin-top: 10% !important;
+        margin-bottom: 5%;
+    }
+    .row{
+        display: block !important;
+    }
+    .product__details--info__title{
+        font-size: large;
+        text-align: center;
+    }
+    .product__details--info__price{
+        text-align: center;
+    }
+
+    .current__price,.old__price{
+        font-size: medium;
+    }
+    .product__details--info__desc{
+        line-height: 200%;
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+    }
+    .whatsapp{
+        font-size: small !important;
+    }
+    .back-shop{
+        margin-left: 20% !important;
+        font-size: small !important;
+    }
+}
+
+
 
 @media screen and (max-width: 1200px) {
     .container {
