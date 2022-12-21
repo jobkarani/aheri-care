@@ -22,6 +22,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="details">
                 <p class="cat-name">{{ product.category_name }}</p>
                 <a [routerLink]="['/product-details',product.id]" class="product-name">{{ product.name }}</a>
@@ -35,6 +36,7 @@
         </div> 
     </div>
 </section>
+
 <div class="paginate">
     <pagination-controls class="page"  previousLabel="Prev" nextLabel="Next" (pageChange)="onNextPageChange($event)">
     </pagination-controls>
