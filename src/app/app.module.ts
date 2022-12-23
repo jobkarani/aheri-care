@@ -17,6 +17,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CategoriesComponent } from './categories/categories.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BlogsComponent } from './blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     ShopComponent,
     ProductDetailsComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
