@@ -13,6 +13,6 @@ export class CategoryProductsService {
   constructor(private http :HttpClient) { }
 
   getCategoryProducts(id:number): Observable<Categoryproducts[]> {
-    return this.http.get<Categoryproducts[]>('https://ahericaredbb.up.railway.app/api_categoryproducts/' + id);
+    return this.http.get<Categoryproducts[]>('http://127.0.0.1:8000/api_categoryproducts/' + id);
   }
 }

@@ -48,7 +48,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .nav-item {
+  .one {
     margin-left: 5rem;
   }
   
@@ -160,7 +160,7 @@
     }
   
     .nav-items {
-      margin: 1.5rem 0;
+      margin: 1rem 0;
     }
   
     .hamburger {

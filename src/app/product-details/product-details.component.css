@@ -5,7 +5,10 @@
 }
 .medical{
     color: #132540;
+    margin-top: 2%;
     margin-bottom: 3%;
+    font-size: xx-large;
+    font-weight: 800;
 }
 
 .current__price {
@@ -538,7 +541,6 @@
     max-width: 100%;
     max-height: 40rem;
     object-fit: cover;
-
 }
 
 .product__media--preview__items {

@@ -1,6 +1,6 @@
 <div class="container" >
     <h3 class="text-center medical">Blog Details Page</h3>
-    <div class="row" *ngIf="singleBlog">
+    <div class="row  blog-deets" *ngIf="singleBlog">
         <div class="col">
             <div class="product__details--media">
                 <div class="product__media--preview  swiper">
@@ -23,10 +23,11 @@
             <div class="product__details--info">
                 <form action="#">
                     <h2 class="product__details--info__title mb-15">{{ singleBlog[0].heading }}</h2>
+                    <p  class="cat-name">{{ singleBlog[0].created_at | date }}</p>
                     <p class="product__details--info__desc mb-15">{{ singleBlog[0].text }}</p>
                 </form>
                 <div class="buttons">
-                    <a routerLink="/blogs" class="back-shop btn">Back to Blogs</a>
+                    <a routerLink="/blogs" class="back-blogs btn">Back to Blogs</a>
                 </div>
             </div>
         </div>

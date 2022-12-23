@@ -13,6 +13,6 @@ export class ProductServiceService {
   constructor(private http :HttpClient) { }
 
   getProductDetails(id:number): Observable<ApiResponse[]> {
-    return this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/getProductDetails/' + id);
+    return this.http.get<ApiResponse[]>('http://127.0.0.1:8000/getProductDetails/' + id);
   }
 }

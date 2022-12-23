@@ -26,7 +26,7 @@ export class ShopComponent implements OnInit {
 
   ngOnInit(){
     // categories 
-      this.http.get<ApiResponse2[]>("https://ahericaredbb.up.railway.app/api_categories/").subscribe(
+      this.http.get<ApiResponse2[]>("http://127.0.0.1:8000/api_categories/").subscribe(
 
       data => {
         this.category = data
@@ -40,7 +40,7 @@ export class ShopComponent implements OnInit {
   }
 
   getData() {
-    this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').subscribe(response => {
+    this.http.get<ApiResponse[]>('http://127.0.0.1:8000/api_products/').subscribe(response => {
       this.product  = response;
       console.log(this.product)
     });
