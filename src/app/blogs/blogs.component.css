@@ -2,6 +2,8 @@
     color: #132540;
     margin-top: 2%;
     margin-bottom: 3%;
+    font-size: xx-large;
+    font-weight: 800;
 }
 .prod-details{
     text-decoration: none;
@@ -289,6 +291,8 @@
     .medical{
         margin-top: 15% !important;
         margin-bottom: 5%;
+        font-size: x-large;
+        font-weight: 800;
     }
     
     .category-section{

@@ -5,7 +5,7 @@
         <div class="card"  *ngFor="let blog of blogs " >
             <div class="product__items ">
                 <div class="product__items--thumbnail">
-                    <a class="product__items--link" [routerLink]="['/product-details',blog.id]">
+                    <a class="product__items--link" [routerLink]="['/blog-details',blog.id]">
                         <img class="product__items--img product__primary--img" src="{{ blog.image }}" alt="product-img">
                         <img class="product__items--img product__secondary--img" src="{{ blog.image }}" alt="product-img">
                     </a>
@@ -13,8 +13,8 @@
             </div>
             <div class="details">
                 <p  class="cat-name">{{ blog.created_at | date }}</p>
-                <a [routerLink]="['/product-details',blog.id]" class="product-name">{{ blog.heading }}</a> <br>
-                <a [routerLink]="['/product-details',blog.id]" class="btn blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
+                <a [routerLink]="['/blog-details',blog.id]" class="product-name">{{ blog.heading }}</a> <br>
+                <a [routerLink]="['/blog-details',blog.id]" class="btn blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
             </div>
         </div> 
     </div>

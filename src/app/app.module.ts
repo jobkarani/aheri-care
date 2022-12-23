@@ -18,6 +18,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BlogsComponent } from './blogs/blogs.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { BlogsComponent } from './blogs/blogs.component';
     ShopComponent,
     ProductDetailsComponent,
     CategoriesComponent,
-    BlogsComponent
+    BlogsComponent,
+    BlogDetailsComponent
   ],
   imports: [
     BrowserModule,
