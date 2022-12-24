@@ -197,16 +197,14 @@
     font-style: italic;
     color: #132540 !important;
     text-shadow: 1px 1px #fff !important;
-    margin: 0% !important;
+    margin-top: 10%;
    }
    .consult{
     margin: 0%;
     box-shadow: 0px 0px 0px !important;
    }
    .call{
-    font-size: xx-small !important;
-    font-weight: 100 !important;
-    margin: 0%;
+    display: none;
    }
    .tell{
     font-size: small;
@@ -306,10 +304,7 @@
   background-color: #E5E3DD;
   padding-top: 2%;
 }
-.vice{
-  color: #811750;
-  margin-bottom: 3%;
-}
+
 .direction{
   display: flex;
   justify-content: space-evenly;
@@ -343,10 +338,7 @@
   .service{
     padding-bottom: 5%;
   }
-  .vice{
-    color: #811750;
-    margin-top: 5%;
-  }
+  
   .direction{
     display: inline;
   }

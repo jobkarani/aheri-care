@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="details">
-                <p  class="cat-name">{{ blog.created_at | date }}</p>
+                <p  class="cat-name"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at | date }}</p>
                 <a [routerLink]="['/blog-details',blog.id]" class="product-name">{{ blog.heading }}</a> <br>
                 <a [routerLink]="['/blog-details',blog.id]" class="btn blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
             </div>
