@@ -1,4 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Contact } from '../classes/contact';
+import { Blogs } from '../Interfaces/blogs';
+import { LatestblogService } from '../Services/latestblog.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
 
-  constructor() { }
+  constructor(private http: HttpClient, private latestblogService: LatestblogService){}
+
+  latestBlogs: Blogs[] = [];
+
+  contactModel = new Contact('','','','','')
+  contacForm: any;
+
+  onSubmit(){
+    const formData = this.contacForm.value;
+    this.http.post('/send-email', formData).subscribe();
+    console.log(this.contactModel);
+  }
+
 
   ngOnInit(): void {
+
+    this.latestblogService.getLatestBlogs().subscribe(blogs => {
+      this.latestBlogs = blogs;
+    });
 
     let slideIndex = 0;
     showSlides();
@@ -60,7 +80,4 @@ export class HomeComponent implements OnInit{
       dots[carouselIndex-1].className += " active";
     }
   }
-
 }
-
-

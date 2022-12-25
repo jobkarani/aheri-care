@@ -372,4 +372,65 @@
   }
 }
 
+.appointment{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.latest,.make-apoint{
+  text-align: center;
+}
+
+.form,.blogs{
+  width: 50%;
+}
+
+.blogs{
+  margin-left: 5%;
+}
+
+.g-3{
+  margin-top: 10%;
+}
+
+.card1{
+  display: flex;
+  border: 1px solid transparent;
+  margin-top: 1%;
+  padding: 5%;
+  background: rgb(255,255,255, .5);
+  border-radius: 20px;
+}
+
+.img,.details{
+  width: 50% !important;
+}
+
+.details{
+  margin-left: 10%;
+}
+
+.product__items--img {
+  display: block;
+  width: 100%
+}
+
+.product__items--img {
+  -webkit-transform: inherit;
+  transform: inherit;
+}
+
+.product__items--img{
+  max-width: 100%;
+  max-height: 50rem;
+  object-fit: cover;
+}
+
+.product__items--img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04)
+}
 /* end of home page  */
