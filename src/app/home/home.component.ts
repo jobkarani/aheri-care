@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Contact } from '../classes/contact';
 import { Blogs } from '../Interfaces/blogs';
+import { Service } from '../Interfaces/service';
+import { HomeofferService } from '../Services/homeoffer.service';
 import { LatestblogService } from '../Services/latestblog.service';
 
 @Component({
@@ -11,9 +13,10 @@ import { LatestblogService } from '../Services/latestblog.service';
 })
 export class HomeComponent implements OnInit{
 
-  constructor(private http: HttpClient, private latestblogService: LatestblogService){}
+  constructor(private http: HttpClient, private latestblogService: LatestblogService,private homeofferService: HomeofferService){}
 
   latestBlogs: Blogs[] = [];
+  homeServices: Service[] = [];
 
   contactModel = new Contact('','','','','')
   contacForm: any;
@@ -29,6 +32,10 @@ export class HomeComponent implements OnInit{
 
     this.latestblogService.getLatestBlogs().subscribe(blogs => {
       this.latestBlogs = blogs;
+    });
+
+    this.homeofferService.getServicesToHome().subscribe(services => {
+      this.homeServices = services;
     });
 
     let slideIndex = 0;

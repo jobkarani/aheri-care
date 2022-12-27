@@ -143,6 +143,19 @@
     </div>
   </div>
 
+  <div class="container-fluid activity"> 
+    <div class="container ">
+      <h2 class="partners">Our Services</h2>
+       <section class="customer-logos slider">
+          <div class="card" *ngFor="let service of homeServices">
+            <div class="imgg">
+              <a [routerLink]="['/service-details',service.id]"><img class="product__items--img" src="{{ service.image }}" alt=""></a>
+            </div>
+          </div>
+       </section>
+    </div>
+  </div>
+
   <div class="testimonials text-center">
     <h1>Testimonials</h1>
     <div class="wrapper">

@@ -12,7 +12,7 @@ export class OfferService {
 
   constructor(private http:HttpClient) { }
 
-  getBlogDetails(id:number): Observable<Service[]> {
+  getServiceDetails(id:number): Observable<Service[]> {
     return this.http.get<Service[]>('https://ahericaredbb.up.railway.app/getServiceDetails/' + id);
   }
 }

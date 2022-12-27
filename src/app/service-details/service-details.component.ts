@@ -20,7 +20,7 @@ export class ServiceDetailsComponent {
       data =>{
         this.id = data['id'];
         console.log(this.id);
-        this.api.getBlogDetails(this.id).subscribe(
+        this.api.getServiceDetails(this.id).subscribe(
           datax =>{
             this.singleService = datax;
             console.log(datax)
@@ -29,5 +29,4 @@ export class ServiceDetailsComponent {
       }
     );
   }
-
 }
