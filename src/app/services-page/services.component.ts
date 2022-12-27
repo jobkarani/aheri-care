@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Service } from '../Interfaces/service';
 
 @Component({
@@ -7,7 +7,7 @@ import { Service } from '../Interfaces/service';
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit {
 
   constructor(private http:HttpClient) {}
 

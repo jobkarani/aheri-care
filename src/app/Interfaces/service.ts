@@ -2,7 +2,7 @@ export interface Service {
         id:number;
         image:string;
         name:string;
-        paragraph1:string;
-        paragraph2:string;
-        paragraph3:string;
+        paragrapagh1:string;
+        paragrapagh2:string;
+        paragrapagh3:string;
 }

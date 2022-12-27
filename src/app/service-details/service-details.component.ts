@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Service } from '../Interfaces/service';
 import { OfferService } from '../Services/offer.service';
@@ -8,7 +8,7 @@ import { OfferService } from '../Services/offer.service';
   templateUrl: './service-details.component.html',
   styleUrls: ['./service-details.component.css']
 })
-export class ServiceDetailsComponent {
+export class ServiceDetailsComponent implements OnInit {
 
   singleService:Service[] = [];
   id:number = 0;
