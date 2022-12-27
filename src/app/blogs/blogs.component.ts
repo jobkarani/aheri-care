@@ -14,7 +14,7 @@ export class BlogsComponent implements OnInit{
   blogs:Blogs[] = [];
 
   ngOnInit(): void {
-    this.http.get<Blogs[]>('http://127.0.0.1:8000/get_blogs/').subscribe(data =>{
+    this.http.get<Blogs[]>('https://ahericaredbb.up.railway.app/get_blogs/').subscribe(data =>{
       this.blogs = data;
       console.log(data);
     })

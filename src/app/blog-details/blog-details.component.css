@@ -1,5 +1,5 @@
 .medical{
-    color: #132540;
+    color: #243A73;
     margin-top: 2%;
     margin-bottom: 3%;
     font-size: xx-large;
@@ -18,7 +18,7 @@
     font-weight: 600;
 }
 .back-blogs:hover{
-    border: 1px solid #811750;
+    border: 1px solid #7C3E66;
     background-color: transparent;
     padding: 3%;
     color: #ae6986;
@@ -51,7 +51,7 @@
     .product__details--info__title{
         margin-top: 5%;
         text-align: center;
-        color: #811750;
+        color: #7C3E66;
     }
     .product__details--info__desc{
         line-height: 150%;
@@ -79,7 +79,7 @@
     .product__details--info__title{
         font-size: large;
         text-align: center;
-        color: #811750;
+        color: #7C3E66;
     }
     
     .product__details--info__desc{
@@ -130,7 +130,7 @@
     height: 3.5rem;
     line-height: 4.5rem;
     text-align: center;
-    background: #811750;
+    background: #7C3E66;
     border-radius: 50%;
     color: #fff;
 }

@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(){
-      this.http.get<ApiResponse2[]>("http://127.0.0.1:8000/api_categories/").subscribe(
+      this.http.get<ApiResponse2[]>("https://ahericaredbb.up.railway.app/api_categories/").subscribe(
 
       data => {
         this.category = data

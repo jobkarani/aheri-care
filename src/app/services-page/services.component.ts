@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Service } from '../Interfaces/service';
 
 @Component({
   selector: 'app-services',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class ServicesComponent {
 
+  constructor(private http:HttpClient) {}
+
+  service:Service[] = [];
+
+  ngOnInit(): void {
+    this.http.get<Service[]>('https://ahericaredbb.up.railway.app/get_blogs/').subscribe(data =>{
+      this.service = data;
+      console.log(data);
+    })
+  }
 }

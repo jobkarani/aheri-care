@@ -7,6 +7,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ServiceDetailsComponent } from './service-details/service-details.component';
 import { ServicesComponent } from './services-page/services.component';
 import { ShopComponent } from './shop/shop.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'blogs', component: BlogsComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'service-details/:id', component: ServiceDetailsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'product-details/:id', component: ProductDetailsComponent },

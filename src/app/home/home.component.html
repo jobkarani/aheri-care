@@ -40,6 +40,43 @@
     </div>
   </div>
 
+  <div class="chooseus pt-5">
+    <h1 class="text-center care">Why Choose Aheri Care?</h1>
+    <div class="three">
+      <div class="four">
+        <h5 class="will text-center">MORE EFFECTIVE TREATMENT</h5>
+        <div class="icon text-center"><i class="fas fa-check-circle"></i></div>
+        <p class="desc">There is continuity of care from hospital to home.Patient care is offered by trained and certified nurses who ensure drug compliance, adherence to doctor's appointment and regular procedures.The nurses are also able to identify any signs and symptoms and initiating prompt intervention.</p>
+      </div>
+      <div class="five">
+        <h5 class="will text-center">FAST RECOVERY</h5>
+        <div class="icon text-center"><i class="fas fa-heartbeat"></i></div>
+        <p class="desc">With the continuity of quality care even at home the patient conditions tends to improve within a shorter a time. This is also enabled by the early identification and management of symptoms as they occur.</p>
+      </div>
+      <div class="six">
+        <h5 class="will text-center">ZERO COMORBIDITIES</h5>
+        <div class="icon text-center"><i class="fas fa-fist-raised"></i></div>
+        <p class="desc">We strive to maintain emotional stability through the recovery process by offering regular counselling services to the patient and their families. Infection and prevention measures and early identification and management of arising symptoms.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="whychoose">
+    <div class="east">
+      <h4 class="miss">Our Mission</h4>
+      <p class="mission">To inspire hope,and contribute to health and well-being by providing exceptional care in an atmosphere of trust, safety and comfort.</p>
+    </div>
+    <div class="west">
+      <h4 class="viss">Our Vision</h4>
+      <p class="vision">To be a premier centre of holistic care for wholesome wellness.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="about">
+    <p class="pam text-center">Committed To You</p>
+    <p class="text-center bod">Aheri Care is the region's most trusted provider of community health <br> services. We have a highly trained team of medical experts, advanced <br> facilities, and an unwavering commitment to the welfare of our <br> communities and patients.</p>
+  </div>
+
   <div class="what mt-1">
     <h1 class="text-center h2">What We Do....</h1>
     <div class="we">
@@ -86,36 +123,10 @@
   <div class="appointment">
     <div class="form">
       <h2 class="make-apoint">Make an Appointment now!</h2>
-      <form class="row g-3" #contactForm = "ngForm" (ngSubmit)="onSubmit()" novalidate>
-        <div class="col-md-12">
-          <input name="fullName" class="form-control" id="inputEmail4" #fullName = "ngModel" [class.is-invalid]="fullName.invalid && fullName.touched" placeholder="Full Name" [(ngModel)] = "contactModel.fullName" required />
-          <small class="text-danger" [class.d-none]="fullName.valid || fullName.untouched">Name is required!</small>
-        </div>
-        <div class="col-md-12">
-          <input name="email" class="form-control" id="email" #email = "ngModel" [class.is-invalid]="email.invalid && email.touched" placeholder="Email" [(ngModel)] = "contactModel.email"  required/>
-          <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required!</small>
-        </div>
-        <div class="col-md-12">
-          <input name="phone" class="form-control" id="inputCity" #phone = "ngModel" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched" placeholder="Phone Number" [(ngModel)] = "contactModel.phone"  required />
-          <div *ngIf="phone.errors && (phone.invalid || phone.touched)">
-            <small class="text-danger" *ngIf="phone.errors?.['required']">Phone Number is required!</small>
-            <small class="text-danger" *ngIf="phone.errors?.['pattern']">Phone Number is must be 10 digits!</small>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <input name="location" class="form-control" id="Location" placeholder="Location" [(ngModel)] = "contactModel.location"  />
-        </div>
-        <div class="col-md-12">
-          <textarea id="txtid" #message = "ngModel" [class.is-invalid]="message.invalid && message.touched" class="form-control" name="message" placeholder="What do you want to tell us ...." rows="4" cols="50" maxlength="2000" [(ngModel)] = "contactModel.message"  required></textarea>
-          <small class="text-danger" [class.d-none]="message.valid || message.untouched">Message is required!</small>
-        </div>
-        <div class="col-12 mt-3 text-center">
-          <button name="submit" [disabled]="contactForm.form.invalid" class="btn submit text-center"  >Submit</button>
-        </div>
-      </form>
+      <p>We provide the most full medical services, so every person could have the opportunity to receive qualitative medical help. Our Clinic has grown to provide a world class facility for the treatment of tooth loss, dental cosmetics and bore advanced restorative dentistry. We are among the most qualified implant providers in the USA with over 35 years of quality training and experience.</p>
     </div>
     <div class="blogs">
-      <h2 class="latest">Latest News</h2>
+      <h2 class="latest"><span>Recent</span> News & Blogs</h2>
       <div class="products">
         <div class="card1" *ngFor="let blog of latestBlogs">
           <div class="img">
@@ -124,9 +135,10 @@
           <div class="details">
             <p  class="cat-name"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at | date }}</p>
             <a [routerLink]="['/blog-details',blog.id]" class="product-name">{{ blog.heading }}</a> <br>
-            <a [routerLink]="['/blog-details',blog.id]" class="btn blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
+            <a [routerLink]="['/blog-details',blog.id]" class="blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
           </div>
         </div>
+        <a [routerLink]="['/blogs']" class="more-blogs btn">More News</a>
       </div>
     </div>
   </div>

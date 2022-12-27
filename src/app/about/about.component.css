@@ -26,12 +26,12 @@
 .pam{
     font-size: xx-large;
     font-weight: 800;
-    color: #811750;
+    color: #7C3E66;
 }
 .bod{
     font-size: larger;
     font-weight: 600;
-    color: #132540;
+    color: #243A73;
 }
 .whychoose{
   display: flex;
@@ -40,11 +40,11 @@
 }
 .whychoose .east {
   border: 1px solid #fff;
-  box-shadow: -10px 10px #132540;
+  box-shadow: -10px 10px #243A73;
   background-color: #c4c2bc;
 }
 .whychoose .west{
-  background-color: #132540;
+  background-color: #243A73;
   border: 1px solid #fff;
   box-shadow: 10px 10px #c4c2bc;
 }
@@ -62,24 +62,24 @@
   padding: 3%;
   margin-top: 3%;
   background-color: #DAEAF1;
-  box-shadow: -5px 5px #132540;
+  box-shadow: -5px 5px #243A73;
   border-radius: 20px 0px;
 }
 .miss{
-  color: #811750;
+  color: #7C3E66;
   text-shadow: 2px 2px #fff;
   font-size: xx-large;
   font-weight: 600;
 }
 .viss{
-  color: #811750;
+  color: #7C3E66;
   text-shadow: 2px 2px #DAEAF1;
   font-size: xx-large;
   font-weight: 600;
 }
 
 .mission{
-  color: #132540;
+  color: #243A73;
   font-size: larger;
   font-weight: 400;
 }
@@ -102,7 +102,7 @@
     background-color: #c4c2bc;
   }
   .whychoose .west{
-    background-color: #132540;
+    background-color: #243A73;
     border: 1px solid #fff;
     box-shadow: none;
   }
@@ -114,7 +114,7 @@ hr{
   box-shadow: 0px 5px #DAEAF1;
 }
 .care{
-  color: #811750;
+  color: #7C3E66;
 }
 .three{
   display: flex;
@@ -122,7 +122,7 @@ hr{
   padding-top: 2%;
 }
 .will{
-  color: #811750;
+  color: #7C3E66;
   font-size: larger;
 }
 .four, .five, .six{
@@ -138,7 +138,7 @@ hr{
 }
 @media only screen and (max-width: 500px) {
   .care{
-    color: #811750;
+    color: #7C3E66;
     font-size: x-large;
   }
   .three{
@@ -154,7 +154,7 @@ hr{
     border-radius: 10px;
   }
   .will{
-    color: #811750;
+    color: #7C3E66;
     margin-top: 5%;
   }
 }

@@ -1,5 +1,5 @@
 .medical{
-    color: #132540;
+    color: #243A73;
     margin-top: 2%;
     margin-bottom: 3%;
     font-size: xx-large;
@@ -12,7 +12,7 @@
 
 .prod-details:hover{
     text-decoration: none;
-    color: #811750;
+    color: #7C3E66;
 }
 
 @media only screen and (max-width:500px) {
@@ -112,7 +112,7 @@
 .category-section{
     width: 25%;
     padding: 3%;
-    box-shadow: 0px 0px 5px #132540; 
+    box-shadow: 0px 0px 5px #243A73; 
     margin-bottom: 2%;
     margin-left: 2%;
     height: auto;
@@ -127,7 +127,7 @@
 }
 .cats a{
     text-decoration: none;
-    color: #132540;
+    color: #243A73;
     font-weight: 500;
 }
 .cats a:hover{
@@ -184,7 +184,7 @@
 }
 .product-name:hover{
     text-decoration: none;
-    color: #811750;
+    color: #7C3E66;
 }
 
 .price-tag{
@@ -621,7 +621,7 @@ a:focus, a:active {
 }
 
 .product__items--action__list .product__items--action__btn:hover{
-    background: #811750;
+    background: #7C3E66;
 }
 
 
@@ -762,9 +762,9 @@ a:focus, a:active {
 }
 
 .product__items--action__btn:hover {
-    background: #811750;
+    background: #7C3E66;
     color: #fff;
-    border-color: #811750
+    border-color: #7C3E66
 }
 
 .product__items--content {
@@ -880,7 +880,7 @@ a:focus, a:active {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #811750;
+    background: #7C3E66;
     color: #fff;
     text-align: center;
     padding: 0;
@@ -895,7 +895,7 @@ a:focus, a:active {
 }
 
 .product__add-to__cart--btn__style2:hover {
-    background-color: #811750;
+    background-color: #7C3E66;
     color: #fff!important;
 }
 
@@ -936,8 +936,8 @@ a:focus, a:active {
 }
 
 .product__items--action__style2--btn:hover {
-    background-color: #811750;
-    border-color: #811750;
+    background-color: #7C3E66;
+    border-color: #7C3E66;
     color: #fff;
 }
 
@@ -974,7 +974,7 @@ a:focus, a:active {
     content: "";
     width: 6rem;
     height: .2rem;
-    background: #811750;
+    background: #7C3E66;
     bottom: 0;
     left: 0;
 }

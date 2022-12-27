@@ -4,7 +4,7 @@
     padding-bottom: 5%;
 }
 .medical{
-    color: #132540;
+    color: #243A73;
     margin-top: 2%;
     margin-bottom: 3%;
     font-size: xx-large;
@@ -46,17 +46,17 @@
 }
 .back-shop{
     margin-left: 20%;
-    background-color: #811750;
+    background-color: #7C3E66;
     padding: 3%;
     color: #fff;
     font-weight: 600;
 }
 .back-shop:hover{
-    border: 1px solid #811750;
+    border: 1px solid #7C3E66;
     margin-left: 20%;
     background-color: transparent;
     padding: 3%;
-    color: #811750;
+    color: #7C3E66;
     font-weight: 600;
 }
 
@@ -73,7 +73,7 @@
     .product__details--info__title{
         margin-top: 5%;
         text-align: center;
-        color: #811750;
+        color: #7C3E66;
     }
     .product__details--info__price{
         text-align: center;
@@ -110,7 +110,7 @@
     .product__details--info__title{
         font-size: medium;
         text-align: center;
-        color: #811750;
+        color: #7C3E66;
     }
     .product__details--info__price{
         text-align: center;
@@ -572,7 +572,7 @@
     height: 3.5rem;
     line-height: 4.5rem;
     text-align: center;
-    background: #811750;
+    background: #7C3E66;
     border-radius: 50%;
     color: #fff;
 }
@@ -611,7 +611,7 @@
 .swiper__nav--btn {
     width: 4rem;
     height: 4rem;
-    background: #811750;
+    background: #7C3E66;
     border-radius: 50%;
     opacity: 0;
     visibility: hidden;
@@ -627,7 +627,7 @@
 }
 
 .swiper__nav--btn:hover {
-    background: #811750
+    background: #7C3E66
 }
 
 .swiper__nav--btn::after {
@@ -735,14 +735,14 @@
 @media only screen and (min-width:992px) {
     .product__details--info__title {
         font-size: 1.8rem;
-        color: #811750;
+        color: #7C3E66;
     }
 }
 
 @media only screen and (min-width:992px) {
     .product__details--info__title.style2 {
         font-size: 1.5rem;
-        color: #811750;
+        color: #7C3E66;
     }
 }
 

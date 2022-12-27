@@ -384,6 +384,14 @@
   text-align: center;
 }
 
+.latest{
+  color: #811750;
+}
+
+.latest span{
+  color: #132540;
+}
+
 .form,.blogs{
   width: 50%;
 }
@@ -393,16 +401,29 @@
 }
 
 .g-3{
-  margin-top: 10%;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  background-image: url("https://img.freepik.com/premium-photo/asking-about-well-being-pleasant-medical-attendant-wearing-uniform-asking-about-well-being-patient_259150-46810.jpg?w=360");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card1{
   display: flex;
   border: 1px solid transparent;
-  margin-top: 1%;
   padding: 5%;
   background: rgb(255,255,255, .5);
-  border-radius: 20px;
+}
+
+.more-blogs{
+  margin-top: 3%;
+  margin-left: 40%;
+  background-color: #ae6986;
+  border: 1px solid #ae6986;
+  color: #fff;
 }
 
 .img,.details{
@@ -411,6 +432,25 @@
 
 .details{
   margin-left: 10%;
+  margin-top: 5%;
+  line-height: 200%;
+}
+
+.cat-name{
+  color: #132540;
+}
+
+.product-name{
+  text-decoration: none;
+  color: #101010;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.blogs-btn{
+  color: #811750;
+  text-decoration: none;
+  font-size: large;
 }
 
 .product__items--img {
@@ -433,4 +473,244 @@
   -webkit-transform: scale(1.04);
   transform: scale(1.04)
 }
+
 /* end of home page  */
+
+@media only screen and (max-width: 500px) {
+    .contact .flex{
+        display: inline;
+    }
+    .contact .flex .contactForm{
+        margin-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .contact .flex .contactForm .param .row .form-control{
+        margin-top: 5%;
+    } 
+}
+@media only screen and (max-width: 850px) {
+  .us{
+    margin-top: 10% !important;
+  }
+  .contact .flex{
+      display: inline;
+  }
+  .contact .flex .contactForm{
+      margin-top: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+  .contact .flex .contactForm .param .row .form-control{
+      margin-top: 1%;
+  } 
+  .form-control{
+    height: 8vh;
+  }
+}
+.h3{
+  color: #132540; 
+  font-size: larger;
+  font-weight: 700;
+}
+.flex{
+    display: flex;
+}
+  .contactForm{
+    padding: 0 5rem;
+  }
+  .map{
+    margin-top: 8%;
+    margin-left: 3%;    
+  }
+  .param p{
+    font-size: 19px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  .form-control{
+    margin-top: 3%;
+    text-align: center;
+    box-shadow: 0px 5px 5px #132540;
+    border-radius: 0px 10px;
+    background: rgb(255,255,255, .5);
+  }
+  .us{
+    color: #811750;
+    margin-top: 2%;
+    font-size: xx-large;
+    font-weight: 600;
+  }
+  .submit{
+    background-color: #811750;
+    color: #fff;
+  }
+  @media screen and (max-width: 1366px){
+  .contactForm{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  }
+
+
+  /* about page  */
+
+.about{
+    margin-left: 20%;
+    margin-right: 20%;
+    /* margin-top: 3%;    */
+    border-radius: 0px 20px;
+    padding: 3%;
+}
+@media only screen and (max-width: 500px) {
+    .about{
+        margin-top: 15%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        border-radius: 0px 50px;
+    }
+    .about .pam{
+        font-size: xx-large;
+        font-weight: 500;
+    }
+    .about .bod{
+        font-size: large;
+    }
+}
+.pam{
+    font-size: xx-large;
+    font-weight: 800;
+    color: #811750;
+}
+.bod{
+    font-size: larger;
+    font-weight: 600;
+    color: #132540;
+}
+.whychoose{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.whychoose .east {
+  border: 1px solid #fff;
+  box-shadow: -10px 10px #132540;
+  background-color: #c4c2bc;
+}
+.whychoose .west{
+  background-color: #132540;
+  border: 1px solid #fff;
+  box-shadow: 10px 10px #c4c2bc;
+}
+.east, .west{
+  background-color: #c4c2bc;
+  padding: 2%;
+  width: 35%;
+  border-radius: 0px 30px;
+}
+.east ul, .west ul{
+  list-style-type: none;
+}
+ .east ul li, .west ul li{
+  border: 2px solid #fff;
+  padding: 3%;
+  margin-top: 3%;
+  background-color: #DAEAF1;
+  box-shadow: -5px 5px #132540;
+  border-radius: 20px 0px;
+}
+.miss{
+  color: #811750;
+  text-shadow: 2px 2px #fff;
+  font-size: xx-large;
+  font-weight: 600;
+}
+.viss{
+  color: #811750;
+  text-shadow: 2px 2px #DAEAF1;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.mission{
+  color: #132540;
+  font-size: larger;
+  font-weight: 400;
+}
+.vision{
+  color: #fff;
+  font-size: larger;
+  font-weight: 400;
+}
+@media only screen and (max-width: 500px) {
+  .whychoose{
+    display: inline;
+    margin-top: 2%;
+  }
+  .whychoose .east, .whychoose .west{
+    padding: 10%;
+  }
+  .whychoose .east {
+    border: 1px solid #fff;
+    box-shadow: none;
+    background-color: #c4c2bc;
+  }
+  .whychoose .west{
+    background-color: #132540;
+    border: 1px solid #fff;
+    box-shadow: none;
+  }
+  .east, .west{
+    width: 100%;
+  }
+}
+hr{
+  box-shadow: 0px 5px #DAEAF1;
+}
+.care{
+  color: #811750;
+}
+.three{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+.will{
+  color: #811750;
+  font-size: larger;
+}
+.four, .five, .six{
+  background-color: #c4c2bc;
+  padding: 2%;
+  margin: 1%;
+  border: 1px solid #fff;
+  box-shadow: 10px 10px #fff;
+  border-radius: 10px;
+}
+.desc{
+  margin-top: 5%;
+}
+@media only screen and (max-width: 500px) {
+  .care{
+    color: #811750;
+    font-size: x-large;
+  }
+  .three{
+    display: inline;
+    padding-top: 2%;
+  }
+  .four, .five, .six{
+    background-color: #c4c2bc;
+    padding: 5%;
+    margin: 10%;
+    border: 1px solid #fff;
+    box-shadow: 10px 10px #fff;
+    border-radius: 10px;
+  }
+  .will{
+    color: #811750;
+    margin-top: 5%;
+  }
+}
