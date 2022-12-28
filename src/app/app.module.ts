@@ -35,7 +35,7 @@ import { ServiceDetailsComponent } from './service-details/service-details.compo
     CategoriesComponent,
     BlogsComponent,
     BlogDetailsComponent,
-    ServiceDetailsComponent
+    ServiceDetailsComponent,
   ],
   imports: [
     BrowserModule,

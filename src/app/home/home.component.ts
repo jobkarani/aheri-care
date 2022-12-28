@@ -1,32 +1,24 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../classes/contact';
 import { Blogs } from '../Interfaces/blogs';
 import { Service } from '../Interfaces/service';
 import { HomeofferService } from '../Services/homeoffer.service';
 import { LatestblogService } from '../Services/latestblog.service';
-
+import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+declare const $: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
+
 export class HomeComponent implements OnInit{
 
-  constructor(private http: HttpClient, private latestblogService: LatestblogService,private homeofferService: HomeofferService){}
+  constructor( private latestblogService: LatestblogService,private homeofferService: HomeofferService){}
 
   latestBlogs: Blogs[] = [];
   homeServices: Service[] = [];
-
-  contactModel = new Contact('','','','','')
-  contacForm: any;
-
-  onSubmit(){
-    const formData = this.contacForm.value;
-    this.http.post('/send-email', formData).subscribe();
-    console.log(this.contactModel);
-  }
-
 
   ngOnInit(): void {
 
@@ -60,31 +52,34 @@ export class HomeComponent implements OnInit{
 
     // testimonials
 
-    let carouselIndex = 1;
-    showCarousels(carouselIndex);
+    // let carouselIndex = 1;
+    // showCarousels(carouselIndex);
 
-    function plusSlides(n: number) {
-      showCarousels(carouselIndex += n);
-    }
+    // function plusSlides(n: number) {
+    //   showCarousels(carouselIndex += n);
+    // }
 
-    function currentSlide(n: number) {
-      showCarousels(carouselIndex = n);
-    }
+    // function currentSlide(n: number) {
+    //   showCarousels(carouselIndex = n);
+    // }
 
-    function showCarousels(n: number) {
-      let i;
-      let slides = document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>;
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {carouselIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[carouselIndex-1].style.display = "block";  
-      dots[carouselIndex-1].className += " active";
-    }
+    // function showCarousels(n: number) {
+    //   let i;
+    //   let slides = document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>;
+    //   let dots = document.getElementsByClassName("dot");
+    //   if (n > slides.length) {slideIndex = 1}    
+    //   if (n < 1) {carouselIndex = slides.length}
+    //   for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";  
+    //   }
+    //   for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+    //   slides[carouselIndex-1].style.display = "block";  
+    //   dots[carouselIndex-1].className += " active";
+    // }
+
+
+   
   }
 }

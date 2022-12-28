@@ -41,7 +41,6 @@
   </div>
 
   <div class="chooseus pt-5">
-    <h1 class="text-center care">Why Choose Aheri Care?</h1>
     <div class="three">
       <div class="four">
         <h5 class="will text-center">MORE EFFECTIVE TREATMENT</h5>
@@ -60,37 +59,42 @@
       </div>
     </div>
   </div>
-  <hr>
   <div class="whychoose">
-    <div class="east">
+    <div class="eastt">
       <h4 class="miss">Our Mission</h4>
       <p class="mission">To inspire hope,and contribute to health and well-being by providing exceptional care in an atmosphere of trust, safety and comfort.</p>
     </div>
-    <div class="west">
+    <div class="westt">
       <h4 class="viss">Our Vision</h4>
       <p class="vision">To be a premier centre of holistic care for wholesome wellness.</p>
     </div>
   </div>
-  <hr>
-  <div class="about">
-    <p class="pam text-center">Committed To You</p>
-    <p class="text-center bod">Aheri Care is the region's most trusted provider of community health <br> services. We have a highly trained team of medical experts, advanced <br> facilities, and an unwavering commitment to the welfare of our <br> communities and patients.</p>
-  </div>
 
-  <div class="what mt-1">
-    <h1 class="text-center h2">What We Do....</h1>
-    <div class="we">
+  <div class="about">
+    <div class="left">
+      <h1 class="text-center h1">What We Do....</h1>
+      <p class="text-center bod">Aheri Care is the region's most trusted provider of community health services. We have a highly trained team of medical experts, advanced facilities, and an unwavering commitment to the welfare of our communities and patients.</p>
       <ul>
-        <li><i class="fa-solid text-danger fa-angles-right"></i> We facilitate staffing solutions to institutions (i.e Patient Attendants, Nurses and Therapists)</li>
-        <li><i class="fa-solid text-danger fa-angles-right"></i> We provide home based care services to elderly, terminally ill, sick or persons living with disabilities</li>
-        <li><i class="fa-solid text-danger fa-angles-right"></i> We provide patient attendants to hospitalized patients for personalized care</li>
-        <li><i class="fa-solid text-danger fa-angles-right"></i> Rehabilitational therapy. </li>
-        <li><i class="fa-solid text-danger fa-angles-right"></i> Nutrition education and professional counselling services</li>
-        <li><i class="fa-solid text-danger fa-angles-right"></i> Corporate consultancy services</li>
-        <li><i class="fa-solid text-danger fa-angles-right"></i> Lease, rent of personal & medical equipment.</li>
+        <li class="lis"><i class="fa-solid text-black fa-angles-right"></i> We facilitate staffing solutions to institutions (i.e Patient Attendants, Nurses and Therapists)</li>
+        <li class="lis"><i class="fa-solid text-black fa-angles-right"></i> We provide home based care services to elderly, terminally ill, sick or persons living with disabilities</li>
+        <li class="lis"><i class="fa-solid text-black fa-angles-right"></i> We provide patient attendants to hospitalized patients for personalized care</li>
+        <li class="lis"><i class="fa-solid text-black fa-angles-right"></i> Rehabilitational therapy. </li>
+        <li class="lis"><i class="fa-solid text-black fa-angles-right"></i> Nutrition education and professional counselling services</li>
+        <li class="lis"><i class="fa-solid text-black fa-angles-right"></i> Corporate consultancy services</li>
+        <li class="lis"><i class="fa-solid text-black fa-angles-right"></i> Lease, rent of personal & medical equipment.</li>
       </ul>
     </div>
+    <div class="right">
+      <img src="https://images.pexels.com/photos/6097806/pexels-photo-6097806.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+    </div>
   </div>
+
+  <!-- <div class="what mt-1">
+    
+    <div class="we">
+      
+    </div>
+  </div> -->
 
   <div class="service">
     <h1 class="text-center h2">Express Services</h1>
@@ -143,19 +147,25 @@
     </div>
   </div>
 
-  <div class="container-fluid activity"> 
-    <div class="container ">
-      <h2 class="partners">Our Services</h2>
-       <section class="customer-logos slider">
-          <div class="card" *ngFor="let service of homeServices">
-            <div class="imgg">
-              <a [routerLink]="['/service-details',service.id]"><img class="product__items--img" src="{{ service.image }}" alt=""></a>
-            </div>
-          </div>
-       </section>
-    </div>
-  </div>
 
+   <section class="product">
+    <div class="container-fluid">
+      <div class="slider-wrap">
+        <div class="slider-main">
+          <div class="item" *ngFor="let service of homeServices">
+              <a [routerLink]="['/service-details',service.id]"><img class="product__items--img" src="{{ service.image }}" alt=""></a>
+              <div class="details">
+                <a [routerLink]="['/service-details',service.id]" class="product-name">{{ service.name }}</a> <br>
+                <a [routerLink]="['/service-details',service.id]" class="btn blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  
+<!-- 
   <div class="testimonials text-center">
     <h1>Testimonials</h1>
     <div class="wrapper">
@@ -190,4 +200,4 @@
         </div>
       </div>
    </div>
-  </div>
+  </div> -->
