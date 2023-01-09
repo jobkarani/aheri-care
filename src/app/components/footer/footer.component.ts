@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ApiResponse2 } from '../Interfaces/api-response2';
+import { ApiResponse2 } from '../../Interfaces/api-response2';
 
 @Component({
   selector: 'app-footer',

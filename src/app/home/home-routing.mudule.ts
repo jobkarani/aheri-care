@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BlogsListComponent } from './blogs-list/blogs-list.component';
-import { BlogsComponent } from './blogs.component';
+import { HomeDetailsComponent } from './home-details/home-details.component';
+import { HomeComponent } from './home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: BlogsComponent,
+    component: HomeComponent,
     children: [
-        {path:"",component:BlogsListComponent},
+        {path:"",component:HomeDetailsComponent},
         // { path: 'country-details/:id', component: CountryDetailsComponent },
       ],
   }
@@ -18,4 +18,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class BlogsRoutingModule {}
+export class HomeRoutingModule {}

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ApiResponse } from '../Interfaces/api-response';
-import { ProductServiceService } from '../Services/product-service.service';
+import { ApiResponse } from '../../Interfaces/api-response';
+import { ProductServiceService } from '../../Services/product-service.service';
 
 @Component({
   selector: 'app-product-details',
