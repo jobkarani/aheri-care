@@ -5,12 +5,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ShopRoutingModule } from './shop-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { ShopComponent } from './shop.component';
 
 
 
 @NgModule({
   declarations: [
-    ProductListComponent
+    ProductListComponent,
+    ShopComponent
   ],
   imports: [
     CommonModule,

@@ -8,31 +8,31 @@
       <div class="contactForm">
         <h3 class="text-center h3">Contact Form</h3>
         <div class="param">
-          <form class="row g-3" #contactForm = "ngForm" (ngSubmit)="onSubmit()" novalidate>
+          <form class="row g-3"  (ngSubmit)="onSubmit()" novalidate>
             <div class="col-md-12">
-              <input name="fullName" class="form-control" id="inputEmail4" #fullName = "ngModel" [class.is-invalid]="fullName.invalid && fullName.touched" placeholder="Full Name" [(ngModel)] = "contactModel.fullName" required />
-              <small class="text-danger" [class.d-none]="fullName.valid || fullName.untouched">Name is required!</small>
+              <input name="fullName" class="form-control" id="inputEmail4"   placeholder="Full Name" required />
+              <small class="text-danger" >Name is required!</small>
             </div>
             <div class="col-md-12">
-              <input name="email" class="form-control" id="email" #email = "ngModel" [class.is-invalid]="email.invalid && email.touched" placeholder="Email" [(ngModel)] = "contactModel.email"  required/>
-              <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required!</small>
+              <input name="email" class="form-control" id="email"  placeholder="Email" required/>
+              <small class="text-danger">Email is required!</small>
             </div>
             <div class="col-md-12">
-              <input name="phone" class="form-control" id="inputCity" #phone = "ngModel" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched" placeholder="Phone Number" [(ngModel)] = "contactModel.phone"  required />
+              <input name="phone" class="form-control" id="inputCity"  pattern="^\d{10}$" placeholder="Phone Number"   required />
               <div *ngIf="phone.errors && (phone.invalid || phone.touched)">
                 <small class="text-danger" *ngIf="phone.errors?.['required']">Phone Number is required!</small>
                 <small class="text-danger" *ngIf="phone.errors?.['pattern']">Phone Number is must be 10 digits!</small>
               </div>
             </div>
             <div class="col-md-12">
-              <input name="location" class="form-control" id="Location" placeholder="Location" [(ngModel)] = "contactModel.location"  />
+              <input name="location" class="form-control" id="Location" placeholder="Location" />
             </div>
             <div class="col-md-12">
-              <textarea id="txtid" #message = "ngModel" [class.is-invalid]="message.invalid && message.touched" class="form-control" name="message" placeholder="What do you want to tell us ...." rows="4" cols="50" maxlength="2000" [(ngModel)] = "contactModel.message"  required></textarea>
-              <small class="text-danger" [class.d-none]="message.valid || message.untouched">Message is required!</small>
+              <textarea id="txtid"   class="form-control" name="message" placeholder="What do you want to tell us ...." rows="4" cols="50" maxlength="2000" required></textarea>
+              <small class="text-danger" >Message is required!</small>
             </div>
             <div class="col-12 mt-3 text-center">
-              <button name="submit" [disabled]="contactForm.form.invalid" class="btn submit text-center"  >Submit</button>
+              <button name="submit" class="btn submit text-center"  >Submit</button>
             </div>
           </form>
         </div>

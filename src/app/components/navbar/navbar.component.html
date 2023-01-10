@@ -7,19 +7,19 @@
                 <a class="nav-link active" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">SHOP</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" routerLink="services" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" routerLink="blogs" routerLinkActive="active" ariaCurrentWhenActive="page">BLOGS</a>
-            </li>
-            <li class="nav-items">
               <a class="nav-link" routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT US</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" routerLink="contact-us" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT US</a>
+              <a class="nav-link" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">SHOP</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" routerLink="/blogs" routerLinkActive="active" ariaCurrentWhenActive="page">BLOGS</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" routerLink="/blogs/contact" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT US</a>
             </li>
         </ul>
         <div class="hamburger">
@@ -43,17 +43,17 @@
               <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" [routerLink]="['shop']" routerLinkActive="active" ariaCurrentWhenActive="page">SHOP</a>
+              <a class="nav-link" [routerLink]="['/shop']" routerLinkActive="active" ariaCurrentWhenActive="page">SHOP</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" [routerLink]="['services']" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
+              <a class="nav-link" [routerLink]="['/services']" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" [routerLink]="['blogs']" routerLinkActive="active" ariaCurrentWhenActive="page">BLOGS</a>
+              <a class="nav-link" [routerLink]="['/blogs']" routerLinkActive="active" ariaCurrentWhenActive="page">BLOGS</a>
             </li>
             
             <li class="nav-item one">
-              <a class="nav-link" routerLink="contact-us" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT</a>
+              <a class="nav-link" routerLink="/blogs/contact" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT</a>
             </li>
         </ul>
       </nav>
