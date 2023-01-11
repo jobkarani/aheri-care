@@ -32,7 +32,7 @@ export class HomeDetailsComponent implements OnInit {
     function showSlides() {
       let i;
       let slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
-      let dots = document.getElementsByClassName("dot");
+      let dots = document.getElementsByClassName("dot") as HTMLCollectionOf<HTMLElement>;
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
@@ -43,7 +43,7 @@ export class HomeDetailsComponent implements OnInit {
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 5000); 
+      setTimeout(showSlides, 4000);
     }
   }
 }
