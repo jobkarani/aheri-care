@@ -4,7 +4,6 @@ import { BlogsRoutingModule } from './blogs-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { BlogsComponent } from './blogs.component';
 import { BlogsListComponent } from './blogs-list/blogs-list.component';
-import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -12,7 +11,6 @@ import { ContactComponent } from './contact/contact.component';
   declarations: [
     BlogsComponent,
     BlogsListComponent,
-    ContactComponent
   ],
   imports: [
     CommonModule,
