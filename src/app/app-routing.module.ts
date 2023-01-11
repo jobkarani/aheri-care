@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: 'home',
     canActivate: [],
-    loadChildren: ()=> import('./home/home.module').then((m)=>m.HomeModule)
+    loadChildren: ()=> import('./index/index.module').then((m)=>m.IndexModule)
   },
   {
     path: 'shop',
@@ -24,6 +24,11 @@ const routes: Routes = [
     path: 'blogs',
     canActivate: [],
     loadChildren: ()=> import('./blogs/blogs.module').then((m)=>m.BlogsModule)
+  },
+  {
+    path: 'contact',
+    canActivate: [],
+    loadChildren: ()=> import('./contact/contact.module').then((m)=>m.ContactModule)
   }
 ];
 

@@ -4,22 +4,22 @@
         <a  class="nav-menu-logos" routerLink="/">AHERI CARE</a>
         <ul class="nav-menus">
             <li class="nav-items">
-                <a class="nav-link active" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a>
+                <a class="nav-link active" routerLink="/" routerLinkActive="active-link">HOME</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT US</a>
+              <a class="nav-link" routerLink="about" routerLinkActive="active-link">ABOUT US</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">SHOP</a>
+              <a class="nav-link" routerLink="/shop" routerLinkActive="active-link">SHOP</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
+              <a class="nav-link" routerLink="/services" routerLinkActive="active-link">SERVICES</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" routerLink="/blogs" routerLinkActive="active" ariaCurrentWhenActive="page">BLOGS</a>
+              <a class="nav-link" routerLink="/blogs" routerLinkActive="active-link">BLOGS</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" routerLink="/blogs/contact" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT US</a>
+              <a class="nav-link" routerLink="/contact" routerLinkActive="active-link">CONTACT US</a>
             </li>
         </ul>
         <div class="hamburger">
@@ -30,31 +30,32 @@
       </nav>
     </header>
 
-    <header class="header">
+    <header class="header fixed-top">
       <nav class="navbars">
         <ul class="nav-menu">
           <li class="nav-item">
             <img  class="nav-link gogo" src="./assets/Assets/aheri care.png" width="50%" height="50%" routerLink="/">
             </li>
             <li class="nav-item one">
-              <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a>
+              <a class="nav-link"  routerLinkActive="active-link" routerLink="/home">HOME</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT</a>
+              <a class="nav-link"  routerLinkActive="active-link" routerLink="/home">ABOUT</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" [routerLink]="['/shop']" routerLinkActive="active" ariaCurrentWhenActive="page">SHOP</a>
+              <a class="nav-link"  routerLinkActive="active-link" [routerLink]="['/shop']" >SHOP</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" [routerLink]="['/services']" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
+              <a class="nav-link"  routerLinkActive="active-link" [routerLink]="['/services']" >SERVICES</a>
             </li>
             <li class="nav-item one">
-              <a class="nav-link" [routerLink]="['/blogs']" routerLinkActive="active" ariaCurrentWhenActive="page">BLOGS</a>
+              <a class="nav-link"  routerLinkActive="active-link" [routerLink]="['/blogs']" >BLOGS</a>
             </li>
             
             <li class="nav-item one">
-              <a class="nav-link" routerLink="/blogs/contact" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT</a>
+              <a class="nav-link"  routerLinkActive="active-link" routerLink="/contact" >CONTACT</a>
             </li>
         </ul>
       </nav>
     </header>
+</div>

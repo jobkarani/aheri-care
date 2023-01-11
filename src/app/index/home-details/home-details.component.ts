@@ -10,6 +10,7 @@ import { LatestblogService } from 'src/app/Services/latestblog.service';
   styleUrls: ['./home-details.component.css']
 })
 export class HomeDetailsComponent implements OnInit {
+  
   constructor( private latestblogService: LatestblogService,private homeofferService: HomeofferService){}
 
   latestBlogs: Blogs[] = [];

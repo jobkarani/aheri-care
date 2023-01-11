@@ -19,10 +19,10 @@
             </div>
             <div class="col-md-12">
               <input name="phone" class="form-control" id="inputCity"  pattern="^\d{10}$" placeholder="Phone Number"   required />
-              <div *ngIf="phone.errors && (phone.invalid || phone.touched)">
+              <!-- <div *ngIf="phone.errors && (phone.invalid || phone.touched)">
                 <small class="text-danger" *ngIf="phone.errors?.['required']">Phone Number is required!</small>
                 <small class="text-danger" *ngIf="phone.errors?.['pattern']">Phone Number is must be 10 digits!</small>
-              </div>
+              </div> -->
             </div>
             <div class="col-md-12">
               <input name="location" class="form-control" id="Location" placeholder="Location" />
