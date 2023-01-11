@@ -514,86 +514,6 @@
 .icon{
   font-size: medium;
 }
-
-.whychoose{
-  display: flex;
-  margin: 0 10%;
-}
-.eastt{
-  text-align: left;
-  background-color: #132540;
-  color: #fff;
-  padding: 2%;
-  width: 35%;
-  border-radius: 0px 30px;
-}
-.westt{
-  text-align: right;
-  margin-left: 30%;
-  background-color: #811750;
-  color: #fff;
-  padding: 2%;
-  width: 35%;
-  border-radius: 0px 30px;
-}
-
-.miss{
-  color: #fff;
-  font-weight: 700;
-  font-size: medium;
-  text-shadow: 0px 8px 8px #811750;
-  letter-spacing: .1rem;
-}
-.viss{
-  color: #fff;
-  font-weight: 700;
-  font-size: medium;
-  text-shadow: 0px 8px 8px #132540;
-  letter-spacing: .1rem;
-}
-
-.mission,.vission{
-  line-height: 200%;
-}
-
-.about{
-  display: flex;
-  margin: 4% 10%;
-  padding-bottom: 5%;
-}
-
-.right,.left{
-  width: 50%;
-}
-
-.left{
-  padding: 15% 5%;
-  background-color: #ae6986;
-  position: relative;
-  left: 0px;
-  top: 65px;
-  z-index: 1;
-}
-.lis{
-  line-height: 200%;
-  list-style-type: none;
-  color: #fff;
-  font-size: larger;
-}
-
-.bod{
-  font-weight: 400;
-  font-size: x-large;
-  color: #fff;
-  line-height: 150%;
-}
-
-.h1{
-  font-size: xx-large;
-  font-weight: 800;
-  color: #fff;
-}
-
 @media only screen and (max-width: 500px) {
   .chooseus{
     margin: 0;
@@ -612,6 +532,62 @@
     padding: 10px 30px;
   }
 }
+
+/* end of choose us  */
+
+/* about section  */
+
+.about{
+  display: flex;
+  padding: 10px 60px;
+}
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+  position: relative;
+  left: 0px;
+  top: -35px;
+  z-index: 1;
+  padding: 80px 40px;
+  background-color: #ae6986;
+}
+
+.eastt,.westt{
+  margin: 40px 0;
+}
+.miss,.viss{
+  font-size: 35px;
+  font-weight: 700;
+  color: #999999;
+}
+
+.mission,.vision{
+  font-size: 15px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  .about{
+    display: block;
+    padding: 0;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0;
+    z-index: 0;
+    padding: 10px 20px;
+    background-color: #ae6986;
+  }
+}
+
+/* end of about section  */
 
 /* rate card section  */
 
