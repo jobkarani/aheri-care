@@ -45,37 +45,5 @@ export class HomeDetailsComponent implements OnInit {
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 5000); 
     }
-
-    // testimonials
-
-    // let carouselIndex = 1;
-    // showCarousels(carouselIndex);
-
-    // function plusSlides(n: number) {
-    //   showCarousels(carouselIndex += n);
-    // }
-
-    // function currentSlide(n: number) {
-    //   showCarousels(carouselIndex = n);
-    // }
-
-    // function showCarousels(n: number) {
-    //   let i;
-    //   let slides = document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>;
-    //   let dots = document.getElementsByClassName("dot");
-    //   if (n > slides.length) {slideIndex = 1}    
-    //   if (n < 1) {carouselIndex = slides.length}
-    //   for (i = 0; i < slides.length; i++) {
-    //     slides[i].style.display = "none";  
-    //   }
-    //   for (i = 0; i < dots.length; i++) {
-    //     dots[i].className = dots[i].className.replace(" active", "");
-    //   }
-    //   slides[carouselIndex-1].style.display = "block";  
-    //   dots[carouselIndex-1].className += " active";
-    // }
-
-
-   
   }
 }

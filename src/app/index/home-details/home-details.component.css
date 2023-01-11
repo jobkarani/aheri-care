@@ -591,5 +591,135 @@
   color: #fff;
 }
 
-/* service slider  */
+/* rate card section  */
 
+.rate-card{
+  padding: 30px 60px;
+}
+
+.topper{
+  display: flex;
+  height: 14vh;
+}
+
+.reta{
+  float: left;
+  font-size: 40px;
+  font-weight: 700;
+  width: 50%;
+  padding: 20px 0;
+}
+
+.reeta{
+  float: right;
+  width: 50%;
+  padding: 20px 0;
+  padding-left: 40px;
+  font-size: 20px;
+  line-height: 150%;
+  border-left: 2px solid #999999;
+}
+
+.rate{
+  margin: 40px 0;
+}
+
+.li{
+  display: flex;
+  padding: 10px 0;
+  border-bottom: .2px solid #999999;
+}
+
+.rate-name{
+  float: left;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #999;
+}
+
+.rate-price{
+  text-align: right;
+  float: right;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #811750;
+}
+
+@media only screen and (max-width: 850px) {
+  .topper{
+    display: flex;
+    height: 7vh;
+  }
+
+  .reta{
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    width: 50%;
+    padding: 20px 0;
+  }
+
+  .reeta{
+    float: right;
+    width: 50%;
+    padding: 20px 0;
+    padding-left: 40px;
+    font-size: 15px;
+    border-left: 2px solid #999999;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .rate-card{
+    padding: 30px 10px;
+  }
+
+  .topper{
+    display: block;
+  }
+
+  .reta{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0;
+    float: none;
+    width: 100%;
+  }
+
+  .reeta{
+    padding: 0 0;
+    font-size: 15px;
+    border: 0;
+    float: none;
+    width: 100%;
+  }
+
+  .rate{
+    margin: 40px 0;
+  }
+
+  .li{
+    display: block;
+    padding: 10px 0;
+    border-bottom: .2px solid #999999;
+  }
+
+  .rate-name{
+    float: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #999;
+  }
+  
+  .rate-price{
+    text-align: none;
+    float: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #811750;
+  }
+}
