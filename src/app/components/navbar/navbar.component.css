@@ -106,9 +106,47 @@
     }
   }
 
+  @media only screen and (max-width: 850px) {
+    .menu-header{
+      display: block;
+      position: fixed;
+      top: 1.7%;
+      width: 100%;
+      z-index: 988;
+    }
+  }
+
   @media only screen and (max-width: 500px) {
     .nav-item {
       margin-left: 0 !important;
+    }
+
+    .menu-header{
+      display: block;
+      position: fixed;
+      top: 2.5%;
+      width: 100%;
+      z-index: 988;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .menu-header{
+      display: block;
+      position: fixed;
+      top: 2.2%;
+      width: 100%;
+      z-index: 988;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .menu-header{
+      display: block;
+      position: fixed;
+      top: 2%;
+      width: 100%;
+      z-index: 988;
     }
   }
   
@@ -126,12 +164,6 @@
         margin-top: 4rem;  
     }
     
-    .menu-header{
-      display: block;
-      position: fixed;
-      width: 100%;
-      z-index: 988;
-    }
     .nav-menus {
       position: fixed;
       left: -100%;
