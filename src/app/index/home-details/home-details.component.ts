@@ -3,6 +3,7 @@ import { Blogs } from 'src/app/Interfaces/blogs';
 import { Service } from 'src/app/Interfaces/service';
 import { HomeofferService } from 'src/app/Services/homeoffer.service';
 import { LatestblogService } from 'src/app/Services/latestblog.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home-details',
@@ -10,6 +11,8 @@ import { LatestblogService } from 'src/app/Services/latestblog.service';
   styleUrls: ['./home-details.component.css']
 })
 export class HomeDetailsComponent implements OnInit {
+  
+  countTo:any;
   
   constructor( private latestblogService: LatestblogService,private homeofferService: HomeofferService){}
 
