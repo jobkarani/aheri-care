@@ -1,20 +1,28 @@
 <h3 class="text-center medical">Aheri Care Services</h3>
 
-<section class="product-page">
-  <div class="products">
-      <div class="card"  *ngFor="let blog of service " >
-          <div class="product__items ">
-              <div class="product__items--thumbnail">
-                  <a class="product__items--link" >
-                      <img class="product__items--img product__primary--img" src="{{ blog.image }}" alt="product-img">
-                      <img class="product__items--img product__secondary--img" src="{{ blog.image }}" alt="product-img">
-                  </a>
-              </div>
-          </div>
-          <div class="details">
-              <a  class="product-name">{{ blog.name }}</a> <br>
-              <a  class="btn blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
-          </div>
-      </div> 
-  </div>
-</section>
+<div class="container-full">
+    <div class="section--light-grey">
+        <div class="container--mw1320">
+            <div class="list">
+                <div class="discovery col-md-6 col-sm-12" *ngFor="let service of service ">
+                    <div class="blog-cta">
+                        <a [routerLink]="['/blog/blog-details/',service.id]" class="content">
+                            <div class="blog-cta__image">
+                                <img src="{{service.image}}" alt="">
+                            </div>
+                            <div class="blog-cta__text">
+                                <div class="blog-cta__onscreen">
+                                    <p class="blog-cta__heading">{{service.name}}</p>
+                                </div>
+                                <div class="blog-cta__offscreen">
+                                    <p class="blog-cta__description">{{service.paragrapagh1}}</p>
+                                    <a [routerLink]="['/services/service-details/',service.id]" class="btn text-cta"><i class="fa-solid fa-angles-right"></i> Read more</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

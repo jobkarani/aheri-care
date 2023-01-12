@@ -566,7 +566,7 @@ count-to{
   font-size: 20px;
 }
 
-i {
+.col-md-4 i {
   font-size: 40px;
   color: #811750;
 }
