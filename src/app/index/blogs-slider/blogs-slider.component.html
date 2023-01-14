@@ -12,6 +12,7 @@
       <div class="car one" *ngFor="let blog of latestBlogs">
         <a [routerLink]="['/blogs/blog-details/',blog.id]"><img class="car-img-top" src="{{blog.image}}" alt="Car image cap"></a>
         <div class="car-body">
+          <p class="date"><i class="fa-solid fa-calendar-days"></i> {{blog.created_at | date}}</p>
           <a [routerLink]="['/blogs/blog-details/',blog.id]"><p class="car-title">{{blog.heading}}</p></a>
           <div class="readmore">
             <p class="car-text">{{blog.text}}</p>

@@ -121,6 +121,12 @@
     color: #fff;
     background-color: #ae6986;
   }
+
+  .date{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+  }
  
 
   @media only screen and (max-width: 850px) {

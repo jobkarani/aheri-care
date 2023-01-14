@@ -5,19 +5,19 @@
 }
 .medical{
     color: #243A73;
-    margin-top: 2%;
+    margin-top: 9%;
     margin-bottom: 3%;
     font-size: xx-large;
     font-weight: 800;
 }
 
 .current__price {
-    font-size: 20px;
+    font-size: 23px;
     color: #606060;
 }
 
 .old__price {
-    font-size: 20px;
+    font-size: 23px;
     color: #606060;
     text-decoration: line-through;
 }
@@ -35,21 +35,23 @@
     background-color: #25d366;
     padding: 3%;
     color: #fff;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
 }
 .whatsapp:hover{
     border: 1px solid #25d366;
     background-color: transparent;
     padding: 3%;
     color: #25d366;
-    font-weight: 600;
+    font-weight: 400;
 }
 .back-shop{
     margin-left: 20%;
     background-color: #7C3E66;
     padding: 3%;
     color: #fff;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
 }
 .back-shop:hover{
     border: 1px solid #7C3E66;
@@ -57,7 +59,7 @@
     background-color: transparent;
     padding: 3%;
     color: #7C3E66;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @media only screen and (max-width:850px) {
@@ -101,7 +103,7 @@
 
 @media only screen and (max-width:500px) {
     .medical{
-        margin-top: 10% !important;
+        margin-top: 20% !important;
         margin-bottom: 5%;
     }
     .row{
@@ -608,124 +610,6 @@
     object-fit: cover;
 }
 
-.swiper__nav--btn {
-    width: 4rem;
-    height: 4rem;
-    background: #7C3E66;
-    border-radius: 50%;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: var(--transition);
-    transition: var(--transition)
-}
-
-@media only screen and (max-width:767px) {
-    .swiper__nav--btn {
-        width: 3.5rem;
-        height: 3.5rem
-    }
-}
-
-.swiper__nav--btn:hover {
-    background: #7C3E66
-}
-
-.swiper__nav--btn::after {
-    background: url(../../assets/Assets/left-arrow-angle.png);
-    width: 9px;
-    height: 17px;
-    font-size: 0
-}
-
-.swiper__nav--btn.swiper-button-prev {
-    left: 0
-}
-
-.swiper__nav--btn.swiper-button-next {
-    right: 0
-}
-
-.swiper__nav--btn.swiper-button-next::after {
-    background: url(../../assets/Assets/right-arrow-angle.png);
-}
-.swiper:hover .swiper__nav--btn {
-    opacity: 1;
-    visibility: visible
-}
-.swiper__nav--btn.style3 {
-    opacity: 1;
-    visibility: visible;
-    top: inherit
-}
-
-@media only screen and (min-width:768px) {
-    .swiper__nav--btn.style3 {
-        bottom: 25px;
-        left: -116px
-    }
-}
-
-@media only screen and (min-width:992px) {
-    .swiper__nav--btn.style3 {
-        bottom: 15%;
-        left: -52%
-    }
-}
-
-@media only screen and (min-width:1200px) {
-    .swiper__nav--btn.style3 {
-        bottom: 0
-    }
-}
-
-@media only screen and (min-width:1366px) {
-    .swiper__nav--btn.style3 {
-        bottom: 10%;
-        left: -51%
-    }
-}
-
-@media only screen and (min-width:1600px) {
-    .swiper__nav--btn.style3 {
-        bottom: 25%
-    }
-}
-
-@media only screen and (max-width:767px) {
-    .swiper__nav--btn.style3 {
-        display: none
-    }
-}
-
-.swiper__nav--btn.style3.swiper-button-next {
-    left: -46%
-}
-
-@media only screen and (min-width:768px) {
-    .swiper__nav--btn.style3.swiper-button-next {
-        left: -70px
-    }
-}
-
-@media only screen and (min-width:992px) {
-    .swiper__nav--btn.style3.swiper-button-next {
-        left: -44%
-    }
-}
-
-@media only screen and (min-width:1200px) {
-    .swiper__nav--btn.style3.swiper-button-next {
-        left: -45%
-    }
-}
-
-@media only screen and (min-width:1600px) {
-    .swiper__nav--btn.style3.swiper-button-next {
-        left: -46%
-    }
-}
-
-
 @media only screen and (min-width:768px) {
     .product__details--info {
         font-size: 1.6rem
@@ -734,14 +618,14 @@
 
 @media only screen and (min-width:992px) {
     .product__details--info__title {
-        font-size: 1.8rem;
+        font-size: 25px;
         color: #7C3E66;
     }
 }
 
 @media only screen and (min-width:992px) {
     .product__details--info__title.style2 {
-        font-size: 1.5rem;
+        font-size: 25px;
         color: #7C3E66;
     }
 }
@@ -769,8 +653,8 @@
 
 @media only screen and (min-width:992px) {
     .product__details--info__desc {
-        font-size: 1.1rem;
-        line-height: 2.2rem
+        font-size: 18px;
+        line-height: 200%
     }
 }
 
