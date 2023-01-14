@@ -3,7 +3,7 @@ export interface Blogs {
     image:string;
     heading:string;
     created_at:Date;
-    text1:string;
-    text2:string;
+    text:string;
+    tex2:string;
     text3:string;
 }

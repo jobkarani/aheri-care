@@ -28,6 +28,10 @@
     margin: 0 20px;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   img{
     height: 30vh;
     width: 100%;
