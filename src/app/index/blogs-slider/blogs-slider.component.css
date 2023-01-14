@@ -21,11 +21,13 @@
   .car:hover{
     transition: transform 2s cubic-bezier(.19,1,.22,1),opacity 2s cubic-bezier(.19,1,.22,1);
     transform: translateY(25px);
+    background: rgba(255,255,255, .2);
   }
 
   .one{
     width: 30%;
     margin: 0 20px;
+    background: rgba(128,128,128, .2);
   }
 
   a{
@@ -168,6 +170,8 @@
 
     .left{
       width: 100%;
+      padding: 0;
+      margin: 0;
     }
 
     .right{
@@ -191,7 +195,7 @@
       width: 100%;
       margin: 10px 0;
     }
-  
+
     .reta{
       text-align: center;
       font-size: 25px;
@@ -202,6 +206,7 @@
     .what{
       text-align: center;
       padding: 0;
+      width: 100%;
     }
   
     .reeta{
