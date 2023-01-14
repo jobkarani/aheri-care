@@ -1,0 +1,23 @@
+ <div class="container-full">
+  <div class="topper">
+    <div class="left">
+      <p class="what">What we do</p>
+      <p class="reta">Our Services</p>
+    </div>
+    <div class="right">
+      <a routerLink="/services" class="btn reeta">MORE SERVICES <i class="fa-solid fa-angles-right"></i></a>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="car one" *ngFor="let service of homeServices">
+      <img class="car-img-top" src="{{service.image}}" alt="Car image cap">
+      <div class="car-body">
+        <p class="car-title">{{service.name}}</p>
+        <div class="readmore">
+          <p class="car-text">{{service.paragrapagh1}}</p>
+        </div>
+        <p class="text-center"><a class="btn btn-serve" routerLink="">read more <i class="fa-solid fa-angles-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+ </div>

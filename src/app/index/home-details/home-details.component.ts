@@ -14,7 +14,7 @@ export class HomeDetailsComponent implements OnInit {
   
   countTo:any;
   
-  constructor( private latestblogService: LatestblogService,private homeofferService: HomeofferService){}
+  constructor( private latestblogService: LatestblogService){}
 
   latestBlogs: Blogs[] = [];
   homeServices: Service[] = [];
@@ -23,10 +23,6 @@ export class HomeDetailsComponent implements OnInit {
 
     this.latestblogService.getLatestBlogs().subscribe(blogs => {
       this.latestBlogs = blogs;
-    });
-
-    this.homeofferService.getServicesToHome().subscribe(services => {
-      this.homeServices = services;
     });
 
     let slideIndex = 0;

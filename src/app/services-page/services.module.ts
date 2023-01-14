@@ -7,7 +7,6 @@ import { ServicesComponent } from './services.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
 
 
-
 @NgModule({
   declarations: [
     ServiceListComponent,

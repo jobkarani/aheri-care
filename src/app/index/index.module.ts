@@ -6,14 +6,17 @@ import { IndexRoutingModule } from './index-routing.module';
 import { HomeDetailsComponent } from './home-details/home-details.component';
 import { CountToModule } from 'angular-count-to';
 import { CountToComponent } from './count-to/count-to.component';
-
+import { ServiceSliderComponent } from './service-slider/service-slider.component';
+import { BlogsSliderComponent } from './blogs-slider/blogs-slider.component';
 
 
 @NgModule({
   declarations: [
     IndexComponent,
     HomeDetailsComponent,
-    CountToComponent
+    CountToComponent,
+    ServiceSliderComponent,
+    BlogsSliderComponent
   ],
   imports: [
     CommonModule,

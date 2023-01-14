@@ -88,6 +88,8 @@
     </div>
   </div>
 
+  <service-slider></service-slider>
+
   <div class="container counter">
     <div class="row">
       <div class="col-md-4" >
@@ -136,45 +138,7 @@
     </div>
   </div>
 
-  <div class="appointment">
-    <div class="form">
-      <h2 class="make-apoint">Make an Appointment now!</h2>
-      <p>We provide the most full medical services, so every person could have the opportunity to receive qualitative medical help. Our Clinic has grown to provide a world class facility for the treatment of tooth loss, dental cosmetics and bore advanced restorative dentistry. We are among the most qualified implant providers in the USA with over 35 years of quality training and experience.</p>
-    </div>
-    <div class="blogs">
-      <h2 class="latest"><span>Recent</span> News & Blogs</h2>
-      <div class="products">
-        <div class="card1" *ngFor="let blog of latestBlogs">
-          <div class="img">
-            <a ><img class="product__items--img" src="{{ blog.image }}" alt=""></a>
-          </div>
-          <div class="details">
-            <p  class="cat-name"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at}}</p>
-            <a  class="product-name">{{ blog.heading }}</a> <br>
-            <a  class="blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
-          </div>
-        </div>
-        <a  class="more-blogs btn">More News</a>
-      </div>
-    </div>
-  </div>
-
-
-   <!-- <section class="product">
-    <div class="container-fluid">
-      <div class="slider-wrap">
-        <div class="slider-main">
-          <div class="item" *ngFor="let service of homeServices">
-              <a ><img class="product__items--img" src="{{ service.image }}" alt=""></a>
-              <div class="details">
-                <a  class="product-name">{{ service.name }}</a> <br>
-                <a  class="btn blogs-btn">Read More <i class='fas fa-angle-double-right'></i></a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-   </section> -->
+  <blogs-slider></blogs-slider>
 
    <section class="rate-card">
     <div class="topper">

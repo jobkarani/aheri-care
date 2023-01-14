@@ -503,6 +503,7 @@
 .desc{
   text-align: center;
   line-height: 200%;
+  font-size: 15px;
 }
 
 .will{
@@ -666,6 +667,7 @@ count-to{
   font-weight: 700;
   width: 50%;
   padding: 20px 0;
+  color: #132540;
 }
 
 .reeta{

@@ -1,0 +1,23 @@
+<div class="container-full">
+    <div class="topper">
+      <div class="left">
+        <p class="what">See what we blog about</p>
+        <p class="reta">LATEST <span style="color: #811750;">NEWS & BLOGS</span></p>
+      </div>
+      <div class="right">
+        <a routerLink="/services" class="btn reeta">MORE NEWS <i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="car one" *ngFor="let blog of latestBlogs">
+        <img class="car-img-top" src="{{blog.image}}" alt="Car image cap">
+        <div class="car-body">
+          <p class="car-title">{{blog.heading}}</p>
+          <div class="readmore">
+            <p class="car-text">{{blog.text1}}</p>
+          </div>
+          <p class="text-center"><a class="btn btn-serve" routerLink="">read more <i class="fa-solid fa-angles-right"></i></a></p>
+        </div>
+      </div>
+    </div>
+   </div>
