@@ -12,7 +12,7 @@ export class HomeofferService {
 
   getServicesToHome() {
     return this.http.get<Service[]>('https://ahericaredbb.up.railway.app/get_services/').pipe(
-      map(services => services.slice(-6))
+      map(services => services.slice(-3))
     );
   }
 }
