@@ -62,7 +62,7 @@
   
   .footer-menu-name {
       color: #fffff2;
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 900;
       letter-spacing: .1em;
       line-height: 18px;
@@ -84,6 +84,7 @@
       color: #fffff2;
       margin-top: 10px;
       margin-bottom: 20px;
+      font-size: 15px;
   }
   .footer-call-to-action-button:hover {
       background-color: #fffff2;
@@ -235,6 +236,9 @@
   .footer-copyright-link {
       color: #fff;
       text-decoration: none;
+  }
+  .footer__links{
+    font-size: 15px;
   }
 
   .footer__links:hover{

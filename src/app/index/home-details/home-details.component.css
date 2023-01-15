@@ -259,8 +259,9 @@
 }
 
 .h2{
-  padding-top: 3%;
+  padding: 20px 0;
   color: #811750;
+  font-size: 30px;
   font-weight: 900;
   text-shadow: 2px 2px #ffff;
 }
@@ -278,6 +279,15 @@
   padding: 1%;
   background-color: #c4c2bc;
   box-shadow: 5px 5px #132540;
+}
+
+.li{
+  font-size: 15px;
+}
+
+.fa-hand-point-right{
+  margin-right: 20px;
+  padding-top: 5px;
 }
 
 .what{
@@ -334,6 +344,7 @@
   color: #fff;
   padding: 1%;
   box-shadow: -8px 8px #132540;
+  font-size: 16px;
   font-weight: 500;
 }
 @media only screen and (max-width: 500px) {
@@ -538,7 +549,7 @@
 
 /* counter section  */
 .counter{
-  width: 100%;
+  width: 91%;
   box-shadow: 0px 3px 8px #999999;
   margin: 20px 60px;
 }

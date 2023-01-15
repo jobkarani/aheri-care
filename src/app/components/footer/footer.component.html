@@ -9,22 +9,22 @@
             <h2 class="footer-menu-name"> QUICK LINKS</h2>
             <ul id="menu-get-started" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Home</a>
+                <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Home</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a [routerLink]="['shop']" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Shop</a>
+                <a [routerLink]="['/shop']" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Shop</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a [routerLink]="['services']" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Services</a>
+                <a [routerLink]="['/services']" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Services</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a [routerLink]="['blogs']" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Blogs</a>
+                <a [routerLink]="['/blogs']" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Blogs</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">About Us</a>
+                <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">About Us</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a routerLink="contact-us" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Contact Us</a>
+                <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" class="footer__links">Contact Us</a>
               </li>
 
             </ul>
@@ -33,21 +33,9 @@
         <div class="footer-content-column">
           <div class="footer-menu">
             <h2 class="footer-menu-name"> SERVICES</h2>
-            <ul id="menu-quick-links" class="footer-menu-list">
+            <ul id="menu-quick-links" class="footer-menu-list" *ngFor="let service of service">
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a [routerLink]="['services']" class="footer__links">Community</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a [routerLink]="['services']" class="footer__links">Home Nursing</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a [routerLink]="['services']" class="footer__links">Physiotherapy</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a [routerLink]="['services']" class="footer__links">Colostomy Care</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a [routerLink]="['services']" class="footer__links">Nutrition Counselling</a>
+                <a [routerLink]="['/services/service-details/',service.id]" class="footer__links">{{service.name | titlecase}}</a>
               </li>
             </ul>
           </div>
@@ -57,7 +45,7 @@
             <h2 class="footer-menu-name">PRODUCT CATEGORIES</h2>
             <ul id="menu-company" class="footer-menu-list"  *ngFor="let cat of category">
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a class="footer__links" [routerLink]="['/categoryproducts', cat.id]">{{ cat.name }}</a>
+                <a class="footer__links" [routerLink]="['/shop/category-products/',cat.id]" >{{ cat.name | titlecase}}</a>
               </li>
             </ul>
           </div>
