@@ -94,14 +94,14 @@
     list-style-type: none;
     padding: 3%;
     border: 1px solid #B2B2B2;
-    background-color: transparent;
+    background-color: #243A73;
     text-align: center;
     margin-left: -10%;
     border-radius: 5px;
 }
 .cats a:hover{
     text-decoration: none;
-    color: #606060;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -135,10 +135,9 @@
 }
 
 .paginate{
-    margin-top: 3%;
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: larger;
+    margin: 3% 40px;
+    text-align: right;
+    font-size: 14px;
     font-weight: 700;
     color: #ae6986;
 }
@@ -153,6 +152,11 @@
             box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
+
+.card:hover{
+    transition: transform 2s cubic-bezier(.19,1,.22,1),opacity 2s cubic-bezier(.19,1,.22,1);
+    transform: translateX(5px);
+  }
 
 .details{
     display: block;
@@ -195,18 +199,16 @@
 }
 
 .whatsapp{
-    margin-left: 8%;
     background-color: #25d366;
-    padding: 3%;
+    padding: 3% 6%;
     color: #fff;
     font-size: 13px;
     font-weight: 400;
 }
 .whatsapp:hover{
-    margin-left: 8%;
     background-color: transparent;
     border: 1px solid #25d366;
-    padding: 3%;
+    padding: 3% 6%;
     color: #25d366;
     font-weight: 400;
 }

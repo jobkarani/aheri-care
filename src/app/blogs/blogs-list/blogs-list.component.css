@@ -207,19 +207,17 @@
 }
 
 .whatsapp{
-    margin-left: 8%;
     background-color: #25d366;
-    padding: 3%;
+    padding: 3% 6%;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
 }
 .whatsapp:hover{
-    margin-left: 8%;
     background-color: transparent;
     border: 1px solid #25d366;
-    padding: 3%;
+    padding: 3% 6%;
     color: #25d366;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 

@@ -3,11 +3,9 @@
 }
 
 .contact .heading h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-
+    color: #243A73;
+    font-size: xx-large;
+    font-weight: 800;
 }
 
 .contact .heading h2 span {

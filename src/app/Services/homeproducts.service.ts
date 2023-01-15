@@ -12,7 +12,7 @@ export class HomeproductsService {
 
   getProductsToHome() {
     return this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').pipe(
-      map(products => products.slice(-4))
+      map(products => products.slice(0, 4))
     );
   }
 }

@@ -1,7 +1,8 @@
 .medical{
+    color: #243A73;
     margin-top: 10%;
-    font-size: 40px;
-    color: #132540;
+    font-size: xx-large;
+    font-weight: 800;
 }
 
 .container-full{
@@ -123,10 +124,11 @@
     position: relative;
     display: block;
     color: #811750;
+    border: 1px solid #811750;
     text-decoration: none;
     transition: transform .4s;
     transform: translateX(0);
-    font-size: .875em;
+    font-size: 14px;
     font-weight: 800;
     line-height: 1.5;
     text-transform: uppercase;
@@ -224,7 +226,7 @@
         text-decoration: none;
         transition: transform .4s;
         transform: translateX(0);
-        font-size: .875em;
+        font-size: 14px;
         font-weight: 800;
         line-height: 1.5;
         text-transform: uppercase;
@@ -333,7 +335,7 @@
         text-decoration: none;
         transition: transform .4s;
         transform: translateX(0);
-        font-size: .875em;
+        font-size: 14px;
         font-weight: 800;
         line-height: 1.5;
         text-transform: uppercase;
