@@ -777,7 +777,7 @@ count-to{
   .rate-name{
     float: none;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #999;
   }
@@ -786,7 +786,7 @@ count-to{
     text-align: none;
     float: none;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #811750;
   }

@@ -7,7 +7,6 @@
     color: white;
   }
   .header {
-    /* border-bottom: 3px solid #fff; */
     background-color: #c4c2bc;
   }
   .navbars {
@@ -42,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
   }
   .nav-menu {
     display: flex;
@@ -167,7 +167,7 @@
     .nav-menus {
       position: fixed;
       left: -100%;
-      top: 4rem;
+      top: 70px;
       padding-top: 10%;
       padding-bottom: 10%;
       flex-direction: column;
@@ -192,7 +192,7 @@
       color: #811750;
     }
     
-      .nav-menus.active {
+    .nav-menus.active {
       left: 0;
     }
   
