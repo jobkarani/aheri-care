@@ -234,10 +234,7 @@
     padding: 40px 20px;
   }
    .pink{
-    color: #811750;
-    font-weight: 900;
-    font-size: 20px;
-    margin: 0;
+    display: none;
     }
   
   .magenta{
@@ -245,7 +242,7 @@
     margin: 0;
     font-size: 20px;
     font-weight: 600;
-    font-style: italic;
+    font-style: normal;
     text-shadow: 2px 2px #fff;
   }
    .consult{
