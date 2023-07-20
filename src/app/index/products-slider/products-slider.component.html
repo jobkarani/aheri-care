@@ -5,11 +5,11 @@
         <div class="car-body">
           <p class="date"> {{prod.category_name | titlecase}}</p>
           <a [routerLink]="['/shop/product-details/',prod.id]"><p class="car-title">{{prod.name | titlecase}}</p></a>
-          <div class="price-tag">
+          <!-- <div class="price-tag">
             <p class="new-price">Kes {{ prod.new_price}}</p>
             <span>-</span>
             <p class="old-price">Kes {{ prod.old_price }}</p>
-          </div>
+          </div> -->
             <button (click)="openWhatsApp(i)"  class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> Buy Via Whatsapp</button>        
         </div>
       </div>

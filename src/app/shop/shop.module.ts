@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ShopComponent } from './shop.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -24,6 +25,7 @@ import { CategoriesComponent } from './categories/categories.component';
     ShopRoutingModule,
     // MatPaginatorModule,
     NgxPaginationModule,
+    MatDialogModule,
   ]
 })
 export class ShopModule { }

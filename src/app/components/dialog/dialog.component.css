@@ -1,0 +1,57 @@
+.modaL{
+
+    width: 308px;
+
+    height: 152px;
+
+    border: 1px solid #000;
+
+    background: #F7F9FC;
+}
+
+.modal-contenT{
+
+    padding: 7px 7px;
+}
+
+.flexeD{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 150px;
+
+    padding-bottom: 20px;
+}
+
+.header-onE{
+
+    color: #000;
+
+    font-size: 14px;
+
+    font-style: normal;
+
+    font-weight: 700;
+
+    line-height: 26px; 
+}
+
+.modal.contenT .texT{
+
+    color: #000;
+
+    font-size: 13px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: 26px; 
+
+    width: 297px;
+
+    height: 108px;
+
+}

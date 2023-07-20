@@ -1,3 +1,7 @@
+.container-fluid{
+    display: block;
+    overflow-y: hidden;
+}
 .medical{
     color: #243A73;
     margin-top: 9%;

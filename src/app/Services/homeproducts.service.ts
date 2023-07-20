@@ -12,7 +12,22 @@ export class HomeproductsService {
 
   getProductsToHome() {
     return this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').pipe(
-      map(products => products.slice(0, 4))
+      map(products => this.getRandomProducts(products, 4))
     );
+  }
+
+  getRandomProducts(products: ApiResponse[], count: number): ApiResponse[] {
+    const randomProducts: ApiResponse[] = [];
+    const maxIndex = products.length - 1;
+  
+    while (randomProducts.length < count) {
+      const randomIndex = Math.floor(Math.random() * maxIndex);
+      const product = products[randomIndex];
+      if (!randomProducts.includes(product)) {
+        randomProducts.push(product);
+      }
+    }
+      
+    return randomProducts;
   }
 }

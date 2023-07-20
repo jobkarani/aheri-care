@@ -16,3 +16,4 @@ export class BlogService {
     return this.http.get<Blogs[]>('https://ahericaredbb.up.railway.app/getBlogDetails/' + id);
   }
 }
+
