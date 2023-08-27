@@ -20,6 +20,11 @@ export class ProductsSliderComponent implements OnInit {
     });
   }
 
+  getDiscountPercentage(index:number) {
+    const discountPercentage =  ((this.products[index].old_price - this.products[index].new_price) / this.products[index].new_price) * 100;
+    return parseFloat(discountPercentage.toFixed(0));
+  }
+
   // whatsapp 
   openWhatsApp( index:number) {
     window.open(`https://wa.me/${this.phonenumber}?text=Hello%2C%20I%20want%20to%20purchase%3A%0D%0A%0D%0A%20%20%20%20%20%20%20%20%20%C2%A0*Buy:*%20${this.products[index].name}%0A%20%20%20%20%20%20%20%20*Price:*%20KSh${this.products[index].new_price}%0A%20%20%20%20%20%20%20%20*URL:*%20https://www.ahericare.com/shop/product-details/${this.products[index].id}%2F%0D%0A%0D%0AThank%20you%21`, "_blank");
