@@ -44,6 +44,11 @@ export class ProductListComponent implements OnInit {
 
   }
 
+  getDiscountPercentage(index:number) {
+    const discountPercentage =  ((this.product[index].old_price - this.product[index].new_price) / this.product[index].new_price) * 100;
+    return parseFloat(discountPercentage.toFixed(0));
+  }
+
   getData() {
     this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').subscribe(response => {
       this.product  = response;

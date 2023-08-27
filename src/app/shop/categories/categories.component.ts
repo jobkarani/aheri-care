@@ -32,4 +32,9 @@ export class CategoriesComponent implements OnInit {
     );
   }
 
+  getDiscountPercentage(index:number) {
+    const discountPercentage =  ((this.catproducts[index].old_price - this.catproducts[index].new_price) / this.catproducts[index].new_price) * 100;
+    return parseFloat(discountPercentage.toFixed(0));
+  }
+
 }

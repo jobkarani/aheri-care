@@ -23,14 +23,14 @@
                             <img class="product__items--img product__primary--img" src="{{ product.image }}" alt="product-img">
                         </a>
                         <div class="product__badge">
-                            <span class="product__badge--items sale">Sale</span>
+                            <span class="product__badge--items sale">{{ getDiscountPercentage(i) }}% Offer</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="details">
                     <p class="cat-name">{{ product.category_name | titlecase}}</p>
-                    <a [routerLink]="['/shop/product-details/',product.id]" class="product-name">{{ product.name | titlecase}}</a>
+                    <a [routerLink]="['/shop/product-details/',product.id]" class="product-name">{{ product.name | titlecase}}</a> <br>
 
                     <!-- <div class="price-tag">
                         <button mat-button (click)="openDialog()">Open dialog</button>

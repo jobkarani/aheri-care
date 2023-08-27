@@ -6,8 +6,8 @@ export interface ApiResponse {
     image2:string;
     image3:string;
     description:string;
-    new_price:string;
-    old_price:string;
+    new_price:number;
+    old_price:number;
     is_available:boolean;
     category_name:string;
     category_slug:string;

@@ -1,7 +1,7 @@
 <h3 class="text-center medical" *ngIf="catproducts">{{catproducts[0].category_name | uppercase}}</h3>
 <section class="product-page">
     <div class="products">
-        <div class="card"  *ngFor="let product of catproducts">
+        <div class="card"  *ngFor="let product of catproducts;let i = index">
             <div class="product__items ">
                 <div class="product__items--thumbnail">
                     <a class="product__items--link" [routerLink]="['/shop/product-details/',product.id]">
@@ -9,7 +9,7 @@
                         <img class="product__items--img product__secondary--img" src="{{ product.image2 }}" alt="product-img">
                     </a>
                     <div class="product__badge">
-                        <span class="product__badge--items sale">Sale</span>
+                        <span class="product__badge--items sale">{{ getDiscountPercentage(i) }}% Offer</span>
                     </div>
                 </div>
             </div>

@@ -54,14 +54,14 @@
 }
 
 .product__badge--items {
-    height: 2rem;
+    height: 3rem;
     line-height: 2rem;
-    padding: 0 7px;
-    font-weight: 300;
+    padding: 7px 7px;
+    font-weight: 500;
     background: #ae6986;
     color: #fff;
     border-radius: 6px 0 6px;
-    font-size: 1.0rem;
+    font-size: 1.3rem;
 }
 
 @media only screen and (max-width:575px) {
