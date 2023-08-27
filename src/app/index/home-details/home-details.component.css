@@ -5,7 +5,7 @@
 /* dsls;k;ldsk */
 
 .mySlides {display: none;}
-.fade>img {vertical-align: middle;}
+.fade>img {vertical-align: middle; object-fit: cover;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -23,9 +23,10 @@
   bottom: 30%;
 }
 
-.slideimg{
+.slideimg img{
     width:100%;
     height: 100vh;
+    object-fit: cover;
   }
 
 .para{
@@ -189,7 +190,7 @@
 
 .tell{
   color: #fff;
-  background-color: #5FD068;
+  background-color: #bfd631;
   padding: 4% 10%;
   font-size: 20px;
   border: 1px solid #132540;
