@@ -11,7 +11,7 @@ export class HomeproductsService {
   constructor(private http: HttpClient) {}
 
   getProductsToHome() {
-    return this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').pipe(
+    return this.http.get<ApiResponse[]>('https://products-be-api-production.up.railway.app/api_products/').pipe(
       map(products => this.getRandomProducts(products, 4))
     );
   }

@@ -31,7 +31,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(){
     // categories 
-      this.http.get<ApiResponse2[]>("https://ahericaredbb.up.railway.app/api_categories/").subscribe(
+      this.http.get<ApiResponse2[]>("https://products-be-api-production.up.railway.app/api_categories/").subscribe(
 
       data => {
         this.category = data
@@ -50,7 +50,7 @@ export class ProductListComponent implements OnInit {
   }
 
   getData() {
-    this.http.get<ApiResponse[]>('https://ahericaredbb.up.railway.app/api_products/').subscribe(response => {
+    this.http.get<ApiResponse[]>('https://products-be-api-production.up.railway.app/api_products/').subscribe(response => {
       this.product  = response;
       console.log(this.product)
     });

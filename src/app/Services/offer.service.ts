@@ -13,6 +13,6 @@ export class OfferService {
   constructor(private http:HttpClient) { }
 
   getServiceDetails(id:number): Observable<Service[]> {
-    return this.http.get<Service[]>('https://ahericaredbb.up.railway.app/getServiceDetails/' + id);
+    return this.http.get<Service[]>('https://products-be-api-production.up.railway.app/getServiceDetails/' + id);
   }
 }

@@ -13,7 +13,7 @@ export class BlogService {
   constructor(private http:HttpClient) { }
 
   getBlogDetails(id:number): Observable<Blogs[]> {
-    return this.http.get<Blogs[]>('https://ahericaredbb.up.railway.app/getBlogDetails/' + id);
+    return this.http.get<Blogs[]>('https://products-be-api-production.up.railway.app/getBlogDetails/' + id);
   }
 }
 

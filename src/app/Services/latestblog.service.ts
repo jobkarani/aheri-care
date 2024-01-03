@@ -11,7 +11,7 @@ export class LatestblogService {
   constructor(private http: HttpClient) {}
 
   getLatestBlogs() {
-    return this.http.get<Blogs[]>('https://ahericaredbb.up.railway.app/get_blogs/').pipe(
+    return this.http.get<Blogs[]>('https://products-be-api-production.up.railway.app/get_blogs/').pipe(
       map(blogs => blogs.slice(-3))
     );
   }

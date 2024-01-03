@@ -14,7 +14,7 @@ export class BlogsListComponent implements OnInit{
   blogs:Blogs[] = [];
 
   ngOnInit(): void {
-    this.http.get<Blogs[]>('https://ahericaredbb.up.railway.app/get_blogs/').subscribe(data =>{
+    this.http.get<Blogs[]>('https://products-be-api-production.up.railway.app/get_blogs/').subscribe(data =>{
       this.blogs = data;
       console.log(data);
     })

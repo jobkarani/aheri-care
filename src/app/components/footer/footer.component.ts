@@ -17,13 +17,13 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.http.get<ApiResponse2[]>("https://ahericaredbb.up.railway.app/api_categories/").subscribe(
+    this.http.get<ApiResponse2[]>("https://products-be-api-production.up.railway.app/api_categories/").subscribe(
     data => {
       this.category = data
       console.log(this.category)
     });
 
-    this.http.get<Service[]>('https://ahericaredbb.up.railway.app/get_services/').subscribe(data =>{
+    this.http.get<Service[]>('https://products-be-api-production.up.railway.app/get_services/').subscribe(data =>{
       this.service = data;
       console.log(data);
     })

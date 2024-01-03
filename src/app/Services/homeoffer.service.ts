@@ -11,7 +11,7 @@ export class HomeofferService {
   constructor(private http: HttpClient) {}
 
   getServicesToHome() {
-    return this.http.get<Service[]>('https://ahericaredbb.up.railway.app/get_services/').pipe(
+    return this.http.get<Service[]>('https://products-be-api-production.up.railway.app/get_services/').pipe(
       map(services => services.slice(-3))
     );
   }
