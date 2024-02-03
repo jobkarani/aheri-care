@@ -3,7 +3,6 @@ import { Component, Inject, OnInit } from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialog} from '@angular/material/dialog';
 import { ApiResponse } from 'src/app/Interfaces/api-response';
 import { ApiResponse2 } from 'src/app/Interfaces/api-response2';
-import { DialogComponent } from 'src/app/components/dialog/dialog.component';
 
 @Component({
   selector: 'app-product-list',
@@ -25,9 +24,6 @@ export class ProductListComponent implements OnInit {
 
   constructor(private http:HttpClient, public dialog: MatDialog) {}
 
-  openDialog() {
-    this.dialog.open(DialogComponent, {data: this.product});
-    }
 
   ngOnInit(){
     // categories 

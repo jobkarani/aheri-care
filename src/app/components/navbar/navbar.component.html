@@ -1,72 +1,66 @@
-<div class="container-full">
-    <header class="menu-header">
-      <nav class="navbars">
-        <a  class="nav-menu-logos" routerLink="/home">AHERI CARE</a>
-        <ul class="nav-menus">
-            <li class="nav-items">
-                <a class="nav-link active" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT US</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">SHOP</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page">SERVICES</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" routerLink="/blogs" routerLinkActive="active" ariaCurrentWhenActive="page">BLOGS</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT US</a>
-            </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+<nav class="flex-no-wrap fixed top-0 flex w-full z-40 bg-[#c4c2bc] items-center justify-between py-2 px-8">
+  <a href="/" class="text-2xl font-[900] no-underline text-white">
+    <img class="h-[12vh]" src="../../../assets/Assets/aheri_logo.png" alt="">
+  </a>
 
-    <header class="header fixed-top">
-      <nav class="navbars">
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <img  class="nav-link gogo" src="./assets/Assets/aheri care.png" width="50%" height="50%" routerLink="/home">
-            </li>
-            <li class="nav-item one">
-              <a class="nav-link"  routerLinkActive="active-link" routerLink="/home">HOME</a>
-            </li>
-            <li class="nav-item one">
-              <a class="nav-link"  routerLinkActive="active-link" routerLink="/home">ABOUT</a>
-            </li>
-            <li class="nav-item one">
-              <a class="nav-link"  routerLinkActive="active-link" [routerLink]="['/shop']" >SHOP</a>
-            </li>
-            <li class="nav-item one">
-              <a class="nav-link"  routerLinkActive="active-link" [routerLink]="['/services']" >SERVICES</a>
-            </li>
-            <li class="nav-item one">
-              <a class="nav-link"  routerLinkActive="active-link" [routerLink]="['/blogs']" >BLOGS</a>
-            </li>
-            
-            <li class="nav-item one">
-              <a class="nav-link"  routerLinkActive="active-link" routerLink="/contact" >CONTACT US</a>
-            </li>
-        </ul>
+  <ul class="hidden md:flex space-x-10 font-medium">
+    <li class="text-[#811750] font-[600] hover:text-white focus:text-white text-[20px]">
+      <a routerLinkActive="active" routerLink="/home">HOME</a>
+    </li>
+    <li class="text-[#811750] font-[600] hover:text-white focus:text-white text-[20px]">
+      <a routerLinkActive="active" routerLink="/home">ABOUT</a>
+    </li>
+    <li class="text-[#811750] font-[600] hover:text-white focus:text-white text-[20px]">
+      <a routerLinkActive="active" [routerLink]="['/shop']" >SHOP</a>
+    </li>
+    <li class="text-[#811750] font-[600] hover:text-white focus:text-white text-[20px]">
+      <a routerLinkActive="active" [routerLink]="['/services']" >SERVICES</a>
+    </li>
+    <li class="text-[#811750] font-[600] hover:text-white focus:text-white text-[20px]">
+      <a routerLinkActive="active" routerLink="/contact" >CONTACT US</a>
+    </li>
+  </ul>
 
-        <div class='content'>
-          <div class='content__container'>
-            <ul class="content__container__list">
-              <li class="content__container__list__item">Call Us Via</li>
-              <li class="content__container__list__item"><a href="tel:+254742964456">0742964456</a></li>
-              <li class="content__container__list__item">Mail Us Via</li>
-              <li class="content__container__list__item"><a href="mailto:info@ahericare.com">info@ahericare.com</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-</div>
+  <button (click)="toggleMobileMenu()" class="md:hidden text-[20px] text-[#811750] focus:outline-none">
+    <svg
+      class="w-6 h-6"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+  </button>
+
+  <div
+    *ngIf="showMobileMenu"
+    class="fixed bg-[#c4c2bc] top-0 left-0 w-full z-40 h-screen px-8 py-4 overflow-y-auto md:hidden"
+  >
+    <button (click)="toggleMobileMenu()" class="absolute top-4 right-4 text-[40px] text-[#811750]">
+      &times;
+    </button>
+    <ul class="mt-8 space-y-4 text-lg font-medium">
+      <li class="text-[#811750] hover:text-white focus:text-white text-[20px]">
+        <a routerLinkActive="active" routerLink="/home">HOME</a>
+      </li>
+      <li class="text-[#811750] hover:text-white focus:text-white text-[20px]">
+        <a routerLinkActive="active" routerLink="/home">ABOUT</a>
+      </li>
+      <li class="text-[#811750] hover:text-white focus:text-white text-[20px]">
+        <a routerLinkActive="active" [routerLink]="['/shop']" >SHOP</a>
+      </li>
+      <li class="text-[#811750] hover:text-white focus:text-white text-[20px]">
+        <a routerLinkActive="active" [routerLink]="['/services']" >SERVICES</a>
+      </li>
+      <li class="text-[#811750] hover:text-white focus:text-white text-[20px]">
+        <a routerLinkActive="active" routerLink="/contact" >CONTACT US</a>
+      </li>
+    </ul>
+  </div>
+</nav>
