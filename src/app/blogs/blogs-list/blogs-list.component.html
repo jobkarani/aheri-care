@@ -1,21 +1,20 @@
-<h3 class="text-center medical">Aheri Care Blogs</h3>
+<div class="xl:mt-[10%] md:mt-[15%] mt-[30%] xl:mx-[30px] md:mx-[20px] mx-[20px]">
+    <p class="text-center text-[#243A73] mb-[3%] font-[800] xl:text-[40px] md:text-[40px] text-[30px]">Aheri Care Blogs</p>
 
-<section class="product-page">
-    <div class="products">
-        <div class="card"  *ngFor="let blog of blogs " >
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[20px] my-[5%]">
+        <div class="inline-block bg-[#FFFFFF14] hover:bg-[#F5BBD1] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100 shadow-md shadow-[#00000019]"  *ngFor="let blog of blogs " >
             <div class="product__items ">
                 <div class="product__items--thumbnail">
-                    <a [routerLink]="['/blogs/blog-details/',blog.id]" class="product__items--link">
-                        <img class="product__items--img product__primary--img" src="{{ blog.image }}" alt="product-img">
-                        <img class="product__items--img product__secondary--img" src="{{ blog.image }}" alt="product-img">
+                    <a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]">
+                        <img class="h-[30vh] w-full object-cover" src="{{ blog.image }}" alt="product-img">
                     </a>
                 </div>
             </div>
-            <div class="details">
-                <p  class="cat-name"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at | date }}</p>
-                <a  [routerLink]="['/blogs/blog-details/',blog.id]" class="product-name">{{ blog.heading }}</a> <br>
-                <a  [routerLink]="['/blogs/blog-details/',blog.id]" class="btn blogs-btn">Learn More <i class='fas fa-angle-double-right'></i></a>
+            <div class="p-[20px]">
+                <p  class="text-center text-[13px] text-[#ae6986]"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at | date }}</p>
+                <p  class="text-[16px] font-[700] text-center"><a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]">{{ blog.heading }}</a></p>
+                <a  [routerLink]="['/blogs/blog-details/',blog.id]" class="no-underline flex justify-center items-center bg-[#7C3E66] py-[3%] px-[6%] text-[#fff] text-[13px] font-[400] hover:bg-[transparent] border border-1 hover:border hover:border-1 hover:border-[#bfd631] hover:text-[#bfd631] btn">Learn More <i class='fas fa-angle-double-right'></i></a>
             </div>
         </div> 
     </div>
-</section>
+</div>

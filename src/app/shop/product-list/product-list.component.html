@@ -21,7 +21,7 @@
             <div class="inline-block bg-[#FFFFFF14] hover:bg-[#D1E270] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100 shadow-md shadow-[#00000019]"  *ngFor="let product of product | paginate: { itemsPerPage:itemscount, currentPage:page, totalItems:count};let i = index" >
                 <div class="product__items ">
                     <div class="product__items--thumbnail">
-                        <a class="no-underline" [routerLink]="['/shop/product-details/',product.id]" class="product__items--link" >
+                        <a class="no-underline" [routerLink]="['/shop/product-details/',product.id]" >
                             <img class="h-[30vh] w-full object-cover" src="{{ product.image }}" alt="product-img">
                         </a>
                         <div class="absolute top-[12px] left-[12px]">
