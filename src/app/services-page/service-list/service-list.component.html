@@ -1,26 +1,23 @@
-<h3 class="text-center medical">Aheri Care Services</h3>
-
-<div class="container-full">
+<div class="xl:mt-[10%] md:mt-[15%] mt-[30%] xl:mx-[30px] md:mx-[20px] mx-[20px]">
+    <p class="text-center text-[#243A73] mb-[3%] font-[800] xl:text-[40px] md:text-[40px] text-[30px]">Aheri Care Services</p>
     <div class="section--light-grey">
-        <div class="container--mw1320">
-            <div class="list">
-                <div class="discovery col-md-6 col-sm-12" *ngFor="let service of service ">
-                    <div class="blog-cta">
-                        <a [routerLink]="['/services/service-details/',service.id]" class="content">
-                            <div class="blog-cta__image">
-                                <img src="{{service.image}}" alt="">
+        <div class="list">
+            <div class="discovery col-md-6 col-sm-12" *ngFor="let service of service ">
+                <div class="blog-cta">
+                    <a [routerLink]="['/services/service-details/',service.id]" class="content">
+                        <div class="blog-cta__image">
+                            <img src="{{service.image}}" alt="">
+                        </div>
+                        <div class="blog-cta__text">
+                            <div class="blog-cta__onscreen">
+                                <p class="blog-cta__heading">{{service.name}}</p>
                             </div>
-                            <div class="blog-cta__text">
-                                <div class="blog-cta__onscreen">
-                                    <p class="blog-cta__heading">{{service.name}}</p>
-                                </div>
-                                <div class="blog-cta__offscreen">
-                                    <p class="blog-cta__description">{{service.paragrapagh1}}</p>
-                                    <a [routerLink]="['/services/service-details/',service.id]" class="btn text-cta"><i class="fa-solid fa-angles-right"></i> Read more</a>
-                                </div>
+                            <div class="blog-cta__offscreen">
+                                <p class="blog-cta__description">{{service.paragrapagh1}}</p>
+                                <a [routerLink]="['/services/service-details/',service.id]" class="btn text-cta flex justify-center text-center gap-[20px]">Read more <i class="fa-solid fa-angles-right"></i></a>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

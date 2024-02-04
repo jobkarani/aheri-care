@@ -1,23 +1,5 @@
-.medical{
-    color: #243A73;
-    margin-top: 10%;
-    font-size: xx-large;
-    font-weight: 800;
-}
-
-.container-full{
-    background-color: #fff;
-}
-
 .section--light-grey {
     background-color: #fff;
-}
-.container--mw1320 {
-    max-width: 1320px!important;
-    position: relative!important;
-    padding:55px 20px;
-    margin: 0 auto;
-    max-width: 1320px!important;
 }
 
 .list{
@@ -137,18 +119,6 @@
 
 @media only screen and (max-width: 850px) {
 
-    .medical{
-        margin-top: 15%;
-        font-size: 40px;
-        color: #132540;
-    }
-
-    .container--mw1320 {
-        position: relative!important;
-        padding:0 20px;
-        margin: 0 auto;
-    }
-    
     .discovery{
         margin-top: 5%;
         padding: 0;
@@ -237,18 +207,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-
-    .medical{
-        margin-top: 25%;
-        font-size: 20px;
-        color: #132540;
-    }
-
-    .container--mw1320 {
-        position: relative!important;
-        padding:0 20px;
-        margin: 0 auto;
-    }
 
     .discovery{
         margin: 5% 0;
