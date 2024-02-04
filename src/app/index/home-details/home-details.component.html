@@ -1,73 +1,65 @@
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <img src="./assets/Assets/nurse.webp" style="width:100%">
-    <div class="background">
-      <div class="para">
-        <p class="pink">Aheri Care</p>
-        <h4 class="magenta">Improving Lives Together</h4>
-        <div class="flex">
-          <p><a class="btn consult" routerLink="/contact">Book A Consultation</a></p>
-          <p><a class="btn tell" href="tel:+254742964456">Call Us</a></p>
-        </div>
+<div class="slideshow-container xl:mt-[7%] md:mt-[7%] mt-[20%]">
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <div class="relative xl:h-[90vh] md:h-[70vh] h-[40vh] overflow-hidden">
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./assets/Assets/nurse.webp" class="absolute block w-full object-cover" alt="...">
       </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./assets/Assets/slider2.jpeg" class="absolute block w-full object-cover" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./assets/Assets/slider4.jpeg" class="absolute block w-full object-cover" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="./assets/Assets/slider3.jpeg" class="absolute block w-full object-cover" alt="...">
+    </div>
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="./assets/Assets/community.jpeg" class="absolute block w-full object-cover" alt="...">
     </div>
   </div>
-  
-  <div class="mySlides fade">
-    <img src="./assets/Assets/slider2.jpeg" style="width:100%">
-    <div class="background">
-      <div class="para">
-        <p class="pink">Aheri Care</p>
-        <h4 class="magenta">Improving Lives Together</h4>
-        <div class="flex">
-          <p><a class="btn consult" routerLink="/contact">Book A Consultation</a></p>
-          <p><a class="btn tell" href="tel:+254742964456">Call Us</a></p>
-        </div>
-      </div>
-    </div>
+  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
   </div>
-  
-  <div class="mySlides fade">
-    <img src="./assets/Assets/slider4.jpeg" style="width:100%">
-    <div class="background">
-      <div class="para">
-        <p class="pink">Aheri Care</p>
-        <h4 class="magenta">Improving Lives Together</h4>
-        <div class="flex">
-          <p><a class="btn consult" routerLink="/contact">Book A Consultation</a></p>
-          <p><a class="btn tell" href="tel:+254742964456">Call Us</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  </div>
-  <br>
-  
-  <div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-  </div>
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
 
 
-  <div class="chooseus pt-5">
+
+  <div class="chooseus pt-5 z-30">
     <div class="three">
       <div class="four">
         <h5 class="will text-center">MORE EFFECTIVE TREATMENT</h5>
         <div class="icon text-center"><i class="fas fa-check-circle"></i></div>
-        <p class="desc">There is continuity of care from hospital to home.Patient care is offered by trained and certified nurses who ensure drug compliance, adherence to doctor's appointment and regular procedures.The nurses are also able to identify any signs and symptoms and initiating prompt intervention.</p>
+        <p class="desc">Our innovative approach integrates cutting-edge medical advancements with personalized care, ensuring optimal outcomes for our patients.</p>
       </div>
       <div class="five">
         <h5 class="will text-center">FAST RECOVERY</h5>
         <div class="icon text-center"><i class="fas fa-heartbeat"></i></div>
-        <p class="desc">With the continuity of quality care even at home the patient conditions tends to improve within a shorter a time. This is also enabled by the early identification and management of symptoms as they occur.</p>
+        <p class="desc">Our specialized healthcare team focuses on personalized preventive care strategies, lifestyle modifications, and evidence-based interventions to ensure that you not only recover from existing health challenges but also maintain a state of well-being</p>
       </div>
       <div class="six">
         <h5 class="will text-center">ZERO COMORBIDITIES</h5>
         <div class="icon text-center"><i class="fas fa-fist-raised"></i></div>
-        <p class="desc">We strive to maintain emotional stability through the recovery process by offering regular counselling services to the patient and their families. Infection and prevention measures and early identification and management of arising symptoms.</p>
+        <p class="desc">We go beyond treating individual symptoms to address the root causes of health issues, promoting longevity and a higher quality of life. Trust us to guide you towards a future where your health is optimized, and comorbidities are minimized.</p>
       </div>
     </div>
   </div>

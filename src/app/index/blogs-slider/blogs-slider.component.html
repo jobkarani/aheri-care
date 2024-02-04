@@ -1,23 +1,23 @@
-<div class="container-full">
-    <div class="topper">
-      <div class="left">
-        <p class="what">Read what we blog about</p>
-        <p class="reta">LATEST <span style="color: #811750;">NEWS & BLOGS</span></p>
+<div class="block py-[10px] xl:px-[10px] md:px-[0px] px-[0px]">
+    <div class="xl:flex md:flex block justify-between xl:m-[20px] md:my-[20px] my[20px] xl:px-[40px] md:px-[20px] px-[20px] shadow-md shadow-gray-200">
+      <div class="lblock xl:py-[20px] md:py-[20px] py-[10px]">
+        <p class="text-[20px] py-[5px] capitalize text-[#999999]">Read what we blog about</p>
+        <p class="py-[5px] xl:text-[40px] md:text-[40px] text-[30px] xl:font-[700] md:font-[700] font-[500] text-[#132540]">Latest <span style="color: #811750;">News & Blogs</span></p>
       </div>
-      <div class="right">
-        <a routerLink="/blogs" class="btn reeta">MORE NEWS <i class="fa-solid fa-angles-right"></i></a>
+      <div class="xl:py-[20px] md:py-[20px] pb-[20px] flex items-center">
+        <a routerLink="/blogs" class="btn btn py-[10px] px-[20px] text-[20px] border border-2 border-[#132540] hover:bg-[#132540] hover:text-[#fff]">MORE NEWS <i class="fa-solid fa-angles-right"></i></a>
       </div>
     </div>
-    <div class="bottom">
-      <div class="car one" *ngFor="let blog of latestBlogs">
-        <a [routerLink]="['/blogs/blog-details/',blog.id]"><img class="car-img-top" src="{{blog.image}}" alt="Car image cap"></a>
-        <div class="car-body">
-          <p class="date"><i class="fa-solid fa-calendar-days"></i> {{blog.created_at | date}}</p>
-          <a [routerLink]="['/blogs/blog-details/',blog.id]"><p class="car-title">{{blog.heading}}</p></a>
-          <div class="readmore">
+    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[40px] xl:m-[20px] md:my-[20px] my[20px] xl:px-[0px] md:px-[20px] px-[20px] pb-[20px]">
+      <div class="inline-block shadow-md shadow-[#00000019] my-[20px] bg-[#FFFFFF14] hover:bg-[#D1E270] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100" *ngFor="let blog of latestBlogs">
+        <a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]"><img class="h-[30vh] w-full object-cover" src="{{blog.image}}" alt="Car image cap"></a>
+        <div class="my-[20px]">
+          <p class="text-center text-[13px]"><i class="fa-solid fa-calendar-days"></i> {{blog.created_at | date}}</p>
+          <a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]"><p class="text-center pt-[10px] text-[20px] font-[600] text-[#811750]">{{blog.heading}}</p></a>
+          <div class="py-[10px] px-[20px] text-center text-[15px]">
             <p class="car-text">{{blog.text}}</p>
           </div>
-          <p class="text-center"><a  [routerLink]="['/blogs/blog-details/',blog.id]"  class="btn btn-serve" routerLink="">read more <i class="fa-solid fa-angles-right"></i></a></p>
+          <p class="text-center"><a  [routerLink]="['/blogs/blog-details/',blog.id]"  class="btn py-[5px] px-[10px] capitalize text-[15px] font-[400] text-[#811750] border border-1 border-[#ae6986] hover:bg-[#ae6986] hover:text-[#fff]" routerLink="">read more <i class="fa-solid fa-angles-right"></i></a></p>
         </div>
       </div>
     </div>
