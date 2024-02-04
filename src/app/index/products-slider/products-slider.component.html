@@ -1,7 +1,9 @@
 <div class="py-[10px] xl:mx-[30px] md:mx-[20px] mx-[20px] block">
     <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[40px] my-[20px] p-0">
-      <div class="inline-block bg-[#FFFFFF14] hover:bg-[#D1E270] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100 shadow-md shadow-[#00000019] one" *ngFor="let prod of products; let i = index">
-        <a class="no-underline" [routerLink]="['/shop/product-details/',prod.id]"><img class="h-[30vh] w-full object-cover" src="{{prod.image}}" alt="Car image cap"></a>
+      <div class="inline-block bg-[#FFFFFF14] hover:bg-[#D1E270] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100 shadow-md shadow-[#00000019]" *ngFor="let prod of products; let i = index">
+        <a class="no-underline" [routerLink]="['/shop/product-details/',prod.id]">
+          <img class="h-[30vh] w-full object-cover" src="{{prod.image}}" alt="Car image cap">
+        </a>
         <div class="absolute top-[12px] left-[12px]">
           <span class="h-[3rem] p-[7px] font-[500] bg-[#ae6986] text-[#fff] text-[10px] rounded-t-lg rounded-b-lg">{{ getDiscountPercentage(i) }}% Offer</span>
         </div>

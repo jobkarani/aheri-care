@@ -1,44 +1,46 @@
-<div class="container-fluid">
-    <h3 class="text-center medical">Aheri Care Shop</h3>
+<div class="block overflow-hidden xl:mt-[10%] md:mt-[15%] mt-[30%] py-[10px] xl:mx-[30px] md:mx-[20px] mx-[20px]">
+    <p class="text-center text-[#243A73] mb-[3%] font-[800] xl:text-[40px] md:text-[40px] text-[30px]">Aheri Care Shop</p>
 
-    <div class="paginate">
+    <div class="xl:mx-[40px] md:ml-[0] xl:text-right md:text-right text-center ml-[-8%] xl:my-[3%] md:my-[3%] my-[7%] text-[14px] font-[700] text-[#ae6986] hover:text-[#606060]">
         <pagination-controls class="page"  previousLabel="Prev" nextLabel="Next" (pageChange)="onNextPageChange($event)">
         </pagination-controls>
     </div>
     
-    <div class="product-page">
-        <div class="category-section">
+    <div class="xl:flex md:flex gap-[20px] block">
+        <div class="xl:w-1/4 md:w-1/4 w-4/4 h-[auto] p-[3%] mb-[2%] shadow shadow-sm shadow-[#243A73] flex-col justify-center">
             <h3 class="text-center">Shop by Categories</h3>
             <hr>
             <ul class="categories" *ngFor="let cat of category">
-                <li class="cats" ><a [routerLink]="['/shop/category-products/',cat.id]" class="cattss" >{{ cat.name | uppercase}}</a></li>
+                <li class="my-[5%] text-center text-[#fff] p-[3%] bg-[#ae6986] hover:bg-[#243A73] rounded-[5px] text-[13px] list-none border border-[#B2B2B2 ]border-solid border-1" >
+                    <a class="no-underline xl:text-[#fff] md:text-[#fff] text-[#606060] hover:no-underline hover:text-[#fff] hover:font-[500]" [routerLink]="['/shop/category-products/',cat.id]" class="cattss" >{{ cat.name | uppercase}}</a>
+                </li>
             </ul>
         </div>
 
-        <div class="products">
-            <div class="card"  *ngFor="let product of product | paginate: { itemsPerPage:itemscount, currentPage:page, totalItems:count};let i = index" >
+        <div class="xl:w-3/4 md:w-3/4 w-4/4  grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[20px] my-[20px] p-0">
+            <div class="inline-block bg-[#FFFFFF14] hover:bg-[#D1E270] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100 shadow-md shadow-[#00000019]"  *ngFor="let product of product | paginate: { itemsPerPage:itemscount, currentPage:page, totalItems:count};let i = index" >
                 <div class="product__items ">
                     <div class="product__items--thumbnail">
-                        <a [routerLink]="['/shop/product-details/',product.id]" class="product__items--link" >
-                            <img class="product__items--img product__primary--img" src="{{ product.image }}" alt="product-img">
+                        <a class="no-underline" [routerLink]="['/shop/product-details/',product.id]" class="product__items--link" >
+                            <img class="h-[30vh] w-full object-cover" src="{{ product.image }}" alt="product-img">
                         </a>
-                        <div class="product__badge">
-                            <span class="product__badge--items sale">{{ getDiscountPercentage(i) }}% Offer</span>
+                        <div class="absolute top-[12px] left-[12px]">
+                            <span class="h-[3rem] p-[7px] font-[500] bg-[#ae6986] text-[#fff] text-[10px] rounded-t-lg rounded-b-lg">{{ getDiscountPercentage(i) }}% Offer</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="details">
-                    <p class="cat-name">{{ product.category_name | titlecase}}</p>
-                    <a [routerLink]="['/shop/product-details/',product.id]" class="product-name">{{ product.name | titlecase}}</a> <br>
+                <div class="p-[20px]">
+                    <p class="text-[13px]">{{ product.category_name | titlecase}}</p>
+                    <a class="no-underline" [routerLink]="['/shop/product-details/',product.id]" class="text-[18px] font-[800] text-[#811750]">{{ product.name | titlecase}}</a> <br>
 
-                    <div class="price-tag">
-                        <p class="new-price">Kes {{ product.new_price}}</p>
+                    <div class="flex gap-[20px] mt-[5%]">
+                        <p class="mr-[10%] text-[15px]">Kes {{ product.new_price}}</p>
                         <span>-</span>
-                        <p class="old-price">Kes {{ product.old_price }}</p>
+                        <p class="mr-[10%] text-[15px] line-through">Kes {{ product.old_price }}</p>
                     </div>
 
-                    <button (click)="openWhatsApp(i)"  class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> Buy Via Whatsapp</button>
+                    <button (click)="openWhatsApp(i)"  class="bg-[#bfd631] py-[3%] px-[6%] text-[#fff] text-[13px] font-[400] hover:bg-[transparent] hover:border hover:border-1 hover:border-[#811750] hover:text-[#811750] btn"><i class="fa-brands fa-whatsapp"></i> Buy Via Whatsapp</button>
                 </div>
             </div> 
         </div>

@@ -1,59 +1,28 @@
-<div class="container" >
-    <h3 class="text-center medical">Product Details Page</h3>
-    <div class="row" *ngIf="singleproduct">
-        <div class="col">
-            <div class="product__details--media">
-                <div class="product__media--preview  swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product__media--preview__items">
-                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ singleproduct[0].image }}"><img class="product__media--preview__items--img" src="{{ singleproduct[0].image }}" alt="product-media-img"></a>
-                                <div class="product__media--view__icon">
-                                    <a class="product__media--view__icon--link glightbox" href="{{ singleproduct[0].image}}" data-gallery="product-media-preview">
-                                        <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product__media--preview__items">
-                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ singleproduct[0].image2 }}"><img class="product__media--preview__items--img" src="{{ singleproduct[0].image2}}" alt="product-media-img"></a>
-                                <div class="product__media--view__icon">
-                                    <a class="product__media--view__icon--link glightbox" href="{{ singleproduct[0].image2 }}" data-gallery="product-media-preview">
-                                        <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product__media--preview__items">
-                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ singleproduct[0].image3 }}"><img class="product__media--preview__items--img" src="{{ singleproduct[0].image3}}" alt="product-media-img"></a>
-                                <div class="product__media--view__icon">
-                                    <a class="product__media--view__icon--link glightbox" href="{{ singleproduct[0].image3 }}" data-gallery="product-media-preview">
-                                        <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
-                                    </a>
-                                </div>
-                            </div>
+<div class="xl:mt-[10%] md:mt-[15%] mt-[30%] xl:mx-[30px] md:mx-[20px] mx-[20px]" >
+    <p class="text-center text-[#243A73] mb-[3%] font-[800] xl:text-[40px] md:text-[40px] text-[30px]">Product Details Page</p>
+    <div class="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-[20px] my-[3%]" *ngIf="singleproduct">
+        <div class="product__details--media">
+            <div class="product__media--preview  swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product__media--preview__items">
+                            <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ singleproduct[0].image }}"><img class="product__media--preview__items--img" src="{{ singleproduct[0].image }}" alt="product-media-img"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="product__details--info">
-                <form action="#">
-                    <h2 class="product__details--info__title mb-15">{{ singleproduct[0].name | titlecase }}</h2>
-                    <div class="product__details--info__price mb-10">
-                        <span class="current__price">Kes {{ singleproduct[0].new_price }}</span>
-                        <span class="price__divided">-</span>
-                        <span class="old__price">Kes {{ singleproduct[0].old_price }}</span>
-                    </div>
-                    <p class="product__details--info__desc mb-15">{{ singleproduct[0].description }}</p>
-                </form>
-                <div class="buttons">
-                    <button (click)="openWhatsApp()" class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> Buy Via Whatsapp</button>
-                    <a routerLink="/shop" class="back-shop btn">Back to Shop</a>
-                </div>
+        <div class="flex-col items-center justify-center">
+            <h2 class="text-[#7C3E66]">{{ singleproduct[0].name | titlecase }}</h2>
+            <div class="flex gap-[20px] my-[5%]">
+                <span class="text-[23px] text-[#606060]">Kes {{ singleproduct[0].new_price }}</span>
+                <span>-</span>
+                <span class="text-[23px] text-[#606060] line-through">Kes {{ singleproduct[0].old_price }}</span>
+            </div>
+            <p class="text-[20px] my-[15%]">{{ singleproduct[0].description }}</p>
+            <div class="grid grid-cols-2 xl:gap-[80px] md:gap-[20px] gap-[20px] mt-[5%]">
+                <button (click)="openWhatsApp()" class="no-underline flex gap-[5px] justify-center items-center bg-[#bfd631] py-[3%] px-[6%] text-[#fff] text-[16px] font-[400] hover:bg-[transparent] border border-1 hover:border hover:border-1 hover:border-[#811750] hover:text-[#811750] btn">Buy Via Whatsapp <i class="fa-brands fa-whatsapp"></i></button>
+                <a routerLink="/shop" class="no-underline flex justify-center items-center bg-[#7C3E66] py-[3%] px-[6%] text-[#fff] text-[16px] font-[400] hover:bg-[transparent] border border-1 hover:border hover:border-1 hover:border-[#bfd631] hover:text-[#bfd631] btn">Back to Shop</a>
             </div>
         </div>
     </div>
