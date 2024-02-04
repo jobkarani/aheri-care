@@ -168,65 +168,6 @@
 
 /* end of choose us  */
 
-/* counter section  */
-.counter{
-  width: 91%;
-  box-shadow: 0px 3px 8px #999999;
-  margin: 20px 60px;
-}
-
-.col-md-4 {
-  text-align: center;
-  padding: 50px 0;
-  border-right: 1px solid #811750;
-}
-
-.col-md-4:last-child {
-  border-right: 0px solid #811750;
-}
-
-.counter {
-  animation-duration: 1s;
-  animation-delay: 0s;
-}
-
-count-to{
-  font-size: 30px;
-  color: #811750;
-}
-
-.h3{
-  font-size: 20px;
-}
-
-.col-md-4 i {
-  font-size: 40px;
-  color: #811750;
-}
-
-@media (max-width: 991px) {
-  .col-md-4 {
-    border-right: 0px solid #811750;
-    border-bottom: 1px solid #811750;
-    width: 50%;
-    margin: auto auto;
-  }
-  
-  .col-md-4:last-child {
-    border-bottom: 0px solid #811750;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .counter{
-    width: 100%;
-    box-shadow: 0px 3px 8px #999999;
-    margin: 20px 0px;
-  }
-}
-
-/* end of counter section  */
-
 /* about section  */
 
 .about{

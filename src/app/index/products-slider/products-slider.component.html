@@ -1,25 +1,25 @@
-<div class="container-full">
-    <div class="bottom">
-      <div class="car one" *ngFor="let prod of products; let i = index">
-        <a [routerLink]="['/shop/product-details/',prod.id]"><img class="car-img-top" src="{{prod.image}}" alt="Car image cap"></a>
-        <div class="product__badge">
-          <span class="product__badge--items sale">{{ getDiscountPercentage(i) }}% Offer</span>
+<div class="py-[10px] xl:mx-[30px] md:mx-[20px] mx-[20px] block">
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[40px] my-[20px] p-0">
+      <div class="inline-block bg-[#FFFFFF14] hover:bg-[#D1E270] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100 shadow-md shadow-[#00000019] one" *ngFor="let prod of products; let i = index">
+        <a class="no-underline" [routerLink]="['/shop/product-details/',prod.id]"><img class="h-[30vh] w-full object-cover" src="{{prod.image}}" alt="Car image cap"></a>
+        <div class="absolute top-[12px] left-[12px]">
+          <span class="h-[3rem] p-[7px] font-[500] bg-[#ae6986] text-[#fff] text-[10px] rounded-t-lg rounded-b-lg">{{ getDiscountPercentage(i) }}% Offer</span>
         </div>
-        <div class="car-body">
-          <p class="date"> {{prod.category_name | titlecase}}</p>
-          <a [routerLink]="['/shop/product-details/',prod.id]"><p class="car-title">{{prod.name | titlecase}}</p></a>
-          <div class="price-tag">
-            <p class="new-price">Kes {{ prod.new_price}}</p>
+        <div class="p-[20px]">
+          <p class="text-[13px]"> {{prod.category_name | titlecase}}</p>
+          <a class="no-underline" [routerLink]="['/shop/product-details/',prod.id]"><p class="text-[18px] font-[800] text-[#811750]">{{prod.name | titlecase}}</p></a>
+          <div class="flex gap-[20px] mt-[5%]">
+            <p class="mr-[10%] text-[15px]">Kes {{ prod.new_price}}</p>
             <span>-</span>
-            <p class="old-price">Kes {{ prod.old_price }}</p>
+            <p class="mr-[10%] text-[15px] line-through">Kes {{ prod.old_price }}</p>
           </div>
-            <button (click)="openWhatsApp(i)"  class="whatsapp btn"><i class="fa-brands fa-whatsapp"></i> Buy Via Whatsapp</button>        
+            <button (click)="openWhatsApp(i)"  class="bg-[#bfd631] py-[3%] px-[6%] text-[#fff] text-[13px] font-[400] hover:bg-[transparent] hover:border hover:border-1 hover:border-[#811750] hover:text-[#811750] btn"><i class="fa-brands fa-whatsapp"></i> Buy Via Whatsapp</button>        
         </div>
       </div>
     </div>
-    <div class="topper">
-        <div class="center">
-            <a routerLink="/shop" class="btn reeta">View more products <i class="fa-solid fa-angles-right"></i></a>
+    <div class="my-[20px] xl:mx-[40px] md:mx-[40px] mx-[20px] xl:px-[40px] md:px-[40px] px-[20px]">
+        <div class="text-center py-[40px]">
+            <a routerLink="/shop" class="btn py-[10px] px-[20px] text-[15px] text-[#811750] capitalize border border-2 border-[#811750] hover:bg-[#811750] hover:text-[#fff]">View more products <i class="fa-solid fa-angles-right"></i></a>
         </div>
     </div>
    </div>
