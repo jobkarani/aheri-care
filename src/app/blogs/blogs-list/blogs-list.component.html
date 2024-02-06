@@ -13,7 +13,7 @@
             <div class="p-[20px]">
                 <p  class="text-center text-[13px] text-[#ae6986]"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at | date }}</p>
                 <p  class="text-[16px] font-[700] text-center"><a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]">{{ blog.heading }}</a></p>
-                <a  [routerLink]="['/blogs/blog-details/',blog.id]" class="no-underline flex justify-center items-center bg-[#7C3E66] py-[3%] px-[6%] text-[#fff] text-[13px] font-[400] hover:bg-[transparent] border border-1 hover:border hover:border-1 hover:border-[#bfd631] hover:text-[#bfd631] btn">Learn More <i class='fas fa-angle-double-right'></i></a>
+                <a  [routerLink]="['/blogs/blog-details/',blog.id]" class="no-underline flex justify-center items-center bg-[#7C3E66] py-[3%] px-[6%] text-[#fff] text-[13px] font-[400] border border-1 btn">Learn More <i class='fas fa-angle-double-right'></i></a>
             </div>
         </div> 
     </div>

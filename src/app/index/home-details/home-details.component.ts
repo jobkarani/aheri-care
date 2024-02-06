@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Blogs } from 'src/app/Interfaces/blogs';
 import { Service } from 'src/app/Interfaces/service';
-import { HomeofferService } from 'src/app/Services/homeoffer.service';
 import { LatestblogService } from 'src/app/Services/latestblog.service';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home-details',
@@ -25,5 +23,11 @@ export class HomeDetailsComponent implements OnInit {
       this.latestBlogs = blogs;
     });
 
+    // Get the currently active carousel item (remove "hidden" class)
+    const activeItem = document.querySelector('.carousel-item:not(.hidden)') as HTMLElement;
+
+    if (activeItem) {
+      activeItem.classList.remove('hidden');
+    }
   }
 }
