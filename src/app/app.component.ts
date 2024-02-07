@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,5 @@ import { initFlowbite } from 'flowbite';
 export class AppComponent implements OnInit {
   title = 'ahericareNG';
 
-  ngOnInit(): void {
-    initFlowbite();
-  }
+  ngOnInit(): void {  }
 }
