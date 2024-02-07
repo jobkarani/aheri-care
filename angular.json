@@ -26,9 +26,12 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/flowbite/css/flowbite.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/flowbite/dist/flowbite.js"
+            ]
           },
           "configurations": {
             "production": {
