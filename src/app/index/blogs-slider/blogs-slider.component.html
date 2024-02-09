@@ -15,7 +15,7 @@
           <p class="text-center text-[13px]"><i class="fa-solid fa-calendar-days"></i> {{blog.created_at | date}}</p>
           <a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]"><p class="text-center pt-[10px] text-[20px] font-[600] text-[#811750]">{{blog.heading}}</p></a>
           <div class="py-[10px] px-[20px] text-center text-[15px]">
-            <p class="car-text">{{blog.text}}</p>
+            <p class="car-text text-left">{{blog.text}}</p>
           </div>
           <p class="text-center"><a  [routerLink]="['/blogs/blog-details/',blog.id]"  class="btn py-[5px] px-[10px] capitalize text-[15px] font-[400] text-[#811750] border border-1 border-[#ae6986] hover:bg-[#ae6986] hover:text-[#fff]" routerLink="">read more <i class="fa-solid fa-angles-right"></i></a></p>
         </div>
