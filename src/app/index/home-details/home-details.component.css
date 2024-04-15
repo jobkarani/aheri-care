@@ -22,7 +22,7 @@ ul>li{
   color: #fff;
   padding: 1%;
   box-shadow: -8px 8px #132540;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
 }
 @media only screen and (max-width: 500px) {
@@ -53,9 +53,6 @@ ul>li{
 .care{
   color: #811750;
   font-weight: 500;
-}
-.three{
-  display: flex;
 }
 
 .four,.five,.six{

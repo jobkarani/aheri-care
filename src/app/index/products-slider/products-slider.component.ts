@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { ApiResponse } from 'src/app/Interfaces/api-response';
 import { HomeproductsService } from 'src/app/Services/homeproducts.service';
 
@@ -9,7 +10,7 @@ import { HomeproductsService } from 'src/app/Services/homeproducts.service';
 })
 export class ProductsSliderComponent implements OnInit {
 
-  constructor(private homeproductsService: HomeproductsService) { }
+  constructor(private homeproductsService: HomeproductsService, private meta: Meta) { }
 
   products: ApiResponse[] = [];
   phonenumber: number = 254742964456;
@@ -18,6 +19,11 @@ export class ProductsSliderComponent implements OnInit {
     this.homeproductsService.getProductsToHome().subscribe(data => {
       this.products = data;
     });
+
+    this.meta.addTags([ 
+      { name: 'description', content: 'Aheri Care' }, 
+      { name: 'keywords', content: 'Home Nurse, Home doctor, near me nursing services, nairobi home care services, home nursing services, nairobi care givers, home care givers, nairobi care givers, home care givers, nairobi home care givers' } 
+    ]);
   }
 
   getDiscountPercentage(index:number) {

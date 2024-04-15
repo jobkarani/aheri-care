@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialog} from '@angular/material/dialog';
+import { Meta } from '@angular/platform-browser';
 import { ApiResponse } from 'src/app/Interfaces/api-response';
 import { ApiResponse2 } from 'src/app/Interfaces/api-response2';
 
@@ -22,7 +23,7 @@ export class ProductListComponent implements OnInit {
   itemscount:number = 12;
   itemcounts: any = [4,8,12,16,20]
 
-  constructor(private http:HttpClient, public dialog: MatDialog) {}
+  constructor(private http:HttpClient, public dialog: MatDialog, private meta: Meta) {}
 
 
   ngOnInit(){
@@ -38,6 +39,10 @@ export class ProductListComponent implements OnInit {
     // pagination 
     this.getData();
 
+    this.meta.addTags([ 
+      { name: 'description', content: 'Aheri Care' }, 
+      { name: 'keywords', content: 'Home Nurse, Home doctor, near me nursing services, nairobi home care services, home nursing services, nairobi care givers, home care givers, nairobi care givers, home care givers, nairobi home care givers' } 
+    ]);
   }
 
   getDiscountPercentage(index:number) {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Categoryproducts } from '../../Interfaces/categoryproducts';
 import { CategoryProductsService } from '../../Services/category-products.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-categories',
@@ -14,7 +15,7 @@ export class CategoriesComponent implements OnInit {
   id:number = 0;
 
 
-  constructor(private api : CategoryProductsService,private route:ActivatedRoute) { }
+  constructor(private api : CategoryProductsService,private route:ActivatedRoute, private meta: Meta) { }
 
   ngOnInit(){
 
@@ -30,6 +31,11 @@ export class CategoriesComponent implements OnInit {
         )
       }
     );
+
+    this.meta.addTags([ 
+      { name: 'description', content: 'Aheri Care' }, 
+      { name: 'keywords', content: 'Home Nurse, Home doctor, near me nursing services, nairobi home care services, home nursing services, nairobi care givers, home care givers, nairobi care givers, home care givers, nairobi home care givers' } 
+    ]);
   }
 
   getDiscountPercentage(index:number) {

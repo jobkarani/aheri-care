@@ -3,6 +3,7 @@ import { Blogs } from 'src/app/Interfaces/blogs';
 import { Service } from 'src/app/Interfaces/service';
 import { LatestblogService } from 'src/app/Services/latestblog.service';
 import { interval, Subscription } from 'rxjs';
+import { Meta } from '@angular/platform-browser';
 
 interface Image {
   src: string;
@@ -18,7 +19,7 @@ export class HomeDetailsComponent implements OnInit, OnDestroy {
   
   countTo:any;
   
-  constructor( private latestblogService: LatestblogService){}
+  constructor( private latestblogService: LatestblogService, private meta: Meta){}
 
   latestBlogs: Blogs[] = [];
   homeServices: Service[] = [];
@@ -41,6 +42,10 @@ export class HomeDetailsComponent implements OnInit, OnDestroy {
       this.latestBlogs = blogs;
     });
 
+    this.meta.addTags([ 
+      { name: 'description', content: 'Aheri Care' }, 
+      { name: 'keywords', content: 'Home Nurse, Home doctor, near me nursing services, nairobi home care services, home nursing services, nairobi care givers, home care givers, nairobi care givers, home care givers, nairobi home care givers' } 
+    ]);
   }
   
   ngOnDestroy() {

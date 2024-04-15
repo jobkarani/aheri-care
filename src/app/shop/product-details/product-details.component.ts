@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiResponse } from '../../Interfaces/api-response';
 import { ProductServiceService } from '../../Services/product-service.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-product-details',
@@ -15,7 +16,7 @@ export class ProductDetailsComponent implements OnInit {
   id:number = 0;
   phonenumber: number = 254742964456;
 
-  constructor(private api : ProductServiceService,private route:ActivatedRoute) { }
+  constructor(private api : ProductServiceService,private route:ActivatedRoute, private meta: Meta) { }
 
   ngOnInit(){
     this.route.params.subscribe(
@@ -31,6 +32,10 @@ export class ProductDetailsComponent implements OnInit {
       }
     );
 
+    this.meta.addTags([ 
+      { name: 'description', content: 'Aheri Care' }, 
+      { name: 'keywords', content: 'Home Nurse, Home doctor, near me nursing services, nairobi home care services, home nursing services, nairobi care givers, home care givers, nairobi care givers, home care givers, nairobi home care givers' } 
+    ]);
   }
 
   openWhatsApp() {
