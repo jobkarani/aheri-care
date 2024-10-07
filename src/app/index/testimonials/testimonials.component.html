@@ -1,0 +1,20 @@
+<div class="block py-10 xl:px-4 md:px-0 px-0">
+    <div class="xl:flex md:flex block justify-center items-center xl:m-5 md:my-5 my-5 xl:px-10 md:px-5 px-5">
+      <div class="block xl:py-5 md:py-5 py-2">
+        <p class="text-lg text-center py-1 capitalize text-[#999999]">What our clients say</p>
+        <p class="py-1 text-center text-3xl xl:font-bold md:font-bold font-semibold text-[#132540]">Testimonials <span style="color: #811750;">from Our Clients</span></p>
+      </div>
+    </div>
+  
+    <div class="flex justify-center items-center">
+      <div class="relative w-full xl:w-1/2 md:w-3/4 bg-[#F5BBD1] hover:bg-[#D1E270] transition duration-200 ease-in-out shadow-md shadow-[#00000019] p-10">
+        <div *ngFor="let testimonial of visibleTestimonials">
+          <div class="text-center">
+            <p class="text-lg text-[#811750] font-semibold mt-4">{{testimonial.name}}</p>
+            <p class="mt-4 text-md text-[#606060]">{{testimonial.content}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

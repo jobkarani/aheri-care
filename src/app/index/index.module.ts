@@ -9,6 +9,7 @@ import { CountToComponent } from './count-to/count-to.component';
 import { ServiceSliderComponent } from './service-slider/service-slider.component';
 import { BlogsSliderComponent } from './blogs-slider/blogs-slider.component';
 import { ProductsSliderComponent } from './products-slider/products-slider.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ProductsSliderComponent } from './products-slider/products-slider.compo
     CountToComponent,
     ServiceSliderComponent,
     BlogsSliderComponent,
-    ProductsSliderComponent
+    ProductsSliderComponent,
+    TestimonialsComponent
   ],
   imports: [
     CommonModule,

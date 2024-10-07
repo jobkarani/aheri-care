@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Blogs } from '../Interfaces/blogs';
 
 @Injectable({
@@ -10,9 +10,8 @@ export class LatestblogService {
 
   constructor(private http: HttpClient) {}
 
-  getLatestBlogs() {
-    return this.http.get<Blogs[]>('https://products-be-api-production.up.railway.app/get_blogs/').pipe(
-      map(blogs => blogs.slice(-3))
-    );
+  // Fetch all blogs without limiting the number
+  getLatestBlogs(): Observable<Blogs[]> {
+    return this.http.get<Blogs[]>('https://products-be-api-production.up.railway.app/get_blogs/');
   }
 }
