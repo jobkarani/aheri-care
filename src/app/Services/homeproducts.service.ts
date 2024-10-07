@@ -12,7 +12,7 @@ export class HomeproductsService {
 
   getProductsToHome() {
     return this.http.get<ApiResponse[]>('https://products-be-api-production.up.railway.app/api_products/').pipe(
-      map(products => this.getRandomProducts(products, 4))
+      map(products => this.getRandomProducts(products, 8))
     );
   }
 

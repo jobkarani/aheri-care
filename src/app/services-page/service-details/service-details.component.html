@@ -1,25 +1,33 @@
-<div class="xl:mt-[10%] md:mt-[15%] mt-[30%] xl:mx-[30px] md:mx-[20px] mx-[20px]" >
-    <p class="text-center text-[#243A73] mb-[3%] font-[800] xl:text-[40px] md:text-[40px] text-[30px]">Service Details Page</p>
-    <div class="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-[20px] my-[3%]" *ngIf="singleService">
-        <div class="product__details--media">
-            <div class="product__media--preview  swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="product__media--preview__items">
-                            <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ singleService[0].image }}"><img class="product__media--preview__items--img" src="{{ singleService[0].image }}" alt="product-media-img"></a>
-                        </div>
-                    </div>
-                </div>
+<div class="xl:mt-10 md:mt-15 mt-30 xl:mx-8 md:mx-6 mx-4 py-8">
+    <!-- <p class="text-center text-[#243A73] mb-8 font-extrabold text-3xl md:text-4xl xl:text-5xl">Service Details Page</p> -->
+    <div class="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 my-8" *ngIf="singleService">
+      <!-- Service Media Section -->
+      <div class="product__details--media">
+        <div class="product__media--preview swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product__media--preview__items">
+                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ singleService[0].image }}">
+                  <img class="product__media--preview__items--img" src="{{ singleService[0].image }}" alt="service-media-img">
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="flex-col items-center justify-center">
-            <h2 class="text-[#7C3E66]">{{ singleService[0].name }}</h2>
-            <p class="text-[20px] my-[15%]">{{ singleService[0].paragrapagh1 }}</p>
-            <p class="text-[20px] my-[15%]">{{ singleService[0].paragrapagh2 }}</p>
-            <p class="text-[20px] my-[15%]">{{ singleService[0].paragrapagh3 }}</p>
-            <div class="mt-[5%]">
-                <a routerLink="/services" class="no-underline flex xl:w-1/2 md:w-1/2 w-2/2 justify-center items-center bg-[#7C3E66] py-[3%] px-[6%] text-[#fff] text-[16px] font-[400] hover:bg-[transparent] border border-1 hover:border hover:border-1 hover:border-[#bfd631] hover:text-[#bfd631] btn">Back to Services</a>
-            </div>
+      </div>
+  
+      <!-- Service Details Section -->
+      <div class="flex-col items-center justify-center">
+        <h2 class="text-[#7C3E66] font-bold text-2xl md:text-3xl xl:text-4xl">{{ singleService[0].name }}</h2>
+        <p class="text-base md:text-md my-8 text-[#606060]">{{ singleService[0].paragrapagh1 }}</p>
+        <p class="text-base md:text-md my-8 text-[#606060]">{{ singleService[0].paragrapagh2 }}</p>
+        <p class="text-base md:text-md my-8 text-[#606060]">{{ singleService[0].paragrapagh3 }}</p>
+        <div class="mt-8">
+          <!-- Back to Services Button -->
+          <a routerLink="/services" class="no-underline flex md:w-1/3 w-full justify-center items-center bg-[#7C3E66] py-3 px-6 text-white text-sm md:text-md font-medium hover:bg-transparent border border-1 border-[#7C3E66] hover:text-[#7C3E66]">
+            Back to Services
+          </a>
         </div>
+      </div>
     </div>
-</div>
+</div>  

@@ -1,70 +1,74 @@
 <div class="xl:mt-[7%] md:mt-[7%] mt-[20%]">
+  <!-- Carousel Section -->
   <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <div class="flex relative xl:h-[90vh] md:h-[70vh] h-[40vh] overflow-hidden">
       <div class="w-full h-full flex-shrink-0 transition duration-500 ease-in-out" *ngFor="let image of images; let i = index" [class.hidden]="i !== currentSlideIndex">
         <img src="{{ image.src }}" alt="{{ image.alt }}" class="w-full object-cover" />
       </div>
     </div>
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" (click)="prevSlide()">
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-          </svg>
-          <span class="sr-only">Previous</span>
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" (click)="prevSlide()">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+        </svg>
+        <span class="sr-only">Previous</span>
       </span>
     </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" (click)="nextSlide()">
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" (click)="nextSlide()">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
     </button>
   </div>
-  
+
+  <!-- Why Choose Us Section -->
   <div class="chooseus pt-5 z-30">
-    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1">
-      <div class="four">
-        <h5 class="will text-center">MORE EFFECTIVE TREATMENT</h5>
-        <div class="icon text-center"><i class="fas fa-check-circle"></i></div>
-        <p class="desc">Our innovative approach integrates cutting-edge medical advancements with personalized care, ensuring optimal outcomes for our patients.</p>
+    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+      <div class="four text-center">
+        <h5 class="text-xl md:text-2xl font-bold text-[#811750]">MORE EFFECTIVE TREATMENT</h5>
+        <div class="icon"><i class="fas fa-check-circle text-4xl text-[#02434b]"></i></div>
+        <p class="desc text-base md:text-lg text-[#999]">Our innovative approach integrates cutting-edge medical advancements with personalized care, ensuring optimal outcomes for our patients.</p>
       </div>
-      <div class="five">
-        <h5 class="will text-center">FAST RECOVERY</h5>
-        <div class="icon text-center"><i class="fas fa-heartbeat"></i></div>
-        <p class="desc">Our specialized healthcare team focuses on personalized preventive care strategies, lifestyle modifications, and evidence-based interventions to ensure that you not only recover from existing health challenges but also maintain a state of well-being</p>
+      <div class="five text-center">
+        <h5 class="text-xl md:text-2xl font-bold text-[#811750]">FAST RECOVERY</h5>
+        <div class="icon"><i class="fas fa-heartbeat text-4xl text-[#02434b]"></i></div>
+        <p class="desc text-base md:text-lg text-[#999]">Our specialized healthcare team focuses on personalized preventive care strategies, lifestyle modifications, and evidence-based interventions to ensure that you not only recover from existing health challenges but also maintain a state of well-being.</p>
       </div>
-      <div class="six">
-        <h5 class="will text-center">ZERO COMORBIDITIES</h5>
-        <div class="icon text-center"><i class="fas fa-fist-raised"></i></div>
-        <p class="desc">We go beyond treating individual symptoms to address the root causes of health issues, promoting longevity and a higher quality of life. Trust us to guide you towards a future where your health is optimized, and comorbidities are minimized.</p>
+      <div class="six text-center">
+        <h5 class="text-xl md:text-2xl font-bold text-[#811750]">ZERO COMORBIDITIES</h5>
+        <div class="icon"><i class="fas fa-fist-raised text-4xl text-[#02434b]"></i></div>
+        <p class="desc text-base md:text-lg text-[#999]">We go beyond treating individual symptoms to address the root causes of health issues, promoting longevity and a higher quality of life. Trust us to guide you towards a future where your health is optimized, and comorbidities are minimized.</p>
       </div>
     </div>
   </div>
 
-  <div class="about">
+  <!-- Mission and Vision Section -->
+  <div class="about grid md:grid-cols-2 grid-cols-1 gap-6 my-10">
     <div class="left">
-      <img src="https://img.freepik.com/premium-photo/support-trust-help-from-caregiver-nurse-walking-with-senior-man-patient-retirement-home-with-healthcare-insurance-hands-female-medical-worker-alzheimers-male-with-hospice-care_590464-85944.jpg?w=826" width="100%" height="100%" alt="">
+      <img src="https://img.freepik.com/premium-photo/support-trust-help-from-caregiver-nurse-walking-with-senior-man-patient-retirement-home-with-healthcare-insurance-hands-female-medical-worker-alzheimers-male-with-hospice-care_590464-85944.jpg?w=826" alt="Healthcare" class="w-full h-auto">
     </div>
     <div class="right">
-      <div class="eastt">
-        <h4 class="miss">Our Mission</h4>
-        <p class="mission">To inspire hope and contribute to health and well-being by providing exceptional care in an atmosphere of trust, safety and comfort.</p>
+      <div class="eastt mb-6">
+        <h4 class="text-xl md:text-2xl font-semibold text-[#811750]">Our Mission</h4>
+        <p class="text-base md:text-lg text-[#999]">To inspire hope and contribute to health and well-being by providing exceptional care in an atmosphere of trust, safety, and comfort.</p>
       </div>
       <div class="westt">
-        <h4 class="viss">Our Vision</h4>
-        <p class="vision">To be a premier centre of holistic care for wholesome wellness.</p>
+        <h4 class="text-xl md:text-2xl font-semibold text-[#811750]">Our Vision</h4>
+        <p class="text-base md:text-lg text-[#999]">To be a premier centre of holistic care for wholesome wellness.</p>
       </div>
     </div>
   </div>
 
-  <div class="bg-[#E5E3DD] xl:py-[5%] md:py-[5%] py-[10%] my-[20px] xl:px-[30px] md:px-[20px] px-[20px]">
-    <p class="text-center text-[#811750] xl:text-[36px] md:text-[36px] text-[28px] font-[900]">Express Services</p>
-    <div class="grid xl:grid-cols-3 gap-[40px] md:grid-cols-2 grid-cols-1 xl:my-[3%] md:my-[6%] my-[10%]">
-      <div class="flex flex-col items-center py-[5%] bg-[#D1E270] hover:bg-[#F5BBD1] rounded-[10px]">
-        <p class="text-[24px] font-[700] text-center py-[3%]">IV Procedures</p>
-        <ul class="flex flex-col items-start list-disc list-inside">
+  <!-- Express Services Section -->
+  <div class="bg-[#E5E3DD] xl:py-16 md:py-12 py-10 my-10 xl:px-8 md:px-6 px-4">
+    <p class="text-center text-[#811750] text-3xl md:text-4xl font-extrabold">Express Services</p>
+    <div class="grid xl:grid-cols-3 gap-10 md:grid-cols-2 grid-cols-1 mt-10">
+      <div class="flex flex-col items-center py-6 bg-[#D1E270] hover:bg-[#F5BBD1] rounded-xl">
+        <p class="text-xl md:text-2xl font-bold text-center py-3 text-[#243A73]">IV Procedures</p>
+        <ul class="text-sm md:text-base list-square list-inside text-[#243A73]">
           <li>IV Fluid Infusion</li>
           <li>IV Drug Administration</li>
           <li>Vitamin Infusion Package</li>
@@ -72,9 +76,9 @@
           <li>Blood Sample Collection</li>
         </ul>
       </div>
-      <div class="flex flex-col items-center py-[5%] bg-[#D1E270] hover:bg-[#F5BBD1] rounded-[10px]">
-        <p class="text-[24px] font-[700] text-center py-[3%]">Wound Care & Catheterization</p>
-        <ul class="flex flex-col items-start list-disc list-inside">
+      <div class="flex flex-col items-center py-6 bg-[#D1E270] hover:bg-[#F5BBD1] rounded-xl">
+        <p class="text-xl md:text-2xl font-bold text-center py-3 text-[#243A73]">Wound Care & Catheterization</p>
+        <ul class="text-sm md:text-base list-square list-inside text-[#243A73]">
           <li>Wound Care</li>
           <li>Stoma Care</li>
           <li>Enema</li>
@@ -82,9 +86,9 @@
           <li>Flatus tube Insertion</li>
         </ul>
       </div>
-      <div class="flex flex-col items-center py-[5%] bg-[#D1E270] hover:bg-[#F5BBD1] rounded-[10px]">
-        <p class="text-[24px] font-[700] text-center py-[3%]">Others</p>
-        <ul class="flex flex-col items-start list-disc list-inside">
+      <div class="flex flex-col items-center py-6 bg-[#D1E270] hover:bg-[#F5BBD1] rounded-xl">
+        <p class="text-xl md:text-2xl font-bold text-center py-3 text-[#243A73]">Others</p>
+        <ul class="text-sm md:text-base list-square list-inside text-[#243A73]">
           <li>Nebulization</li>
           <li>Ear Syringing/Irrigation</li>
           <li>Naso-gastric tube insertion</li>
@@ -92,29 +96,30 @@
         </ul>
       </div>
     </div>
-    <div class="text-center">
-      <a routerLink="/services" class="btn seemore">Other Services</a>
+    <div class="text-center mt-8">
+      <a routerLink="/services" class="btn seemore text-lg md:text-xl font-semibold text-[#243A73] hover:text-white hover:bg-[#811750]">Other Services</a>
     </div>
   </div>
 
   <service-slider></service-slider>
 
-  <div class="my-[20px] xl:mx-[30px] md:mx-[20px] mx-[20px] shadow-sm shadow-[#999999] transition duration-1000 delay-0">
+  <!-- Statistics Section -->
+  <div class="my-10 xl:mx-8 md:mx-6 mx-4 shadow-sm shadow-[#999999] transition duration-1000 delay-0">
     <div class="grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1">
-      <div class="text-center py-[50px] border-0 xl:border-r md:border-r border-r-1 border-[#811750]" >
-        <count-to class="text-[30px] text-[#811750]" [countTo]="2235" [countFrom]="0"></count-to>
-        <h3 class="text-[20px]">Satisfied Clients</h3>
-        <i class="fa fa-users text-[40px] text-[#811750]"></i>
-      </div> 
-      <div class="text-center py-[50px] border-0 xl:border-r md:border-r border-r-1 border-[#811750]">
-        <count-to class="text-[30px] text-[#811750]" [countTo]="45" [countFrom]="0"></count-to>
-        <h3 class="text-[20px]">Our Team</h3>
-        <i class="fa-solid fa-user-doctor text-[40px] text-[#811750]"></i>
+      <div class="text-center py-10 border-0 xl:border-r md:border-r border-r-1 border-[#811750]">
+        <count-to class="text-3xl text-[#811750]" [countTo]="2235" [countFrom]="0"></count-to>
+        <h3 class="text-lg md:text-xl mt-3 text-[#243A73]">Satisfied Clients</h3>
+        <i class="fa fa-users text-4xl text-[#811750] mt-2"></i>
       </div>
-      <div class="text-center py-[50px] border-r border-r-0 border-[#811750]">
-        <count-to class="text-[30px] text-[#811750]" [countTo]="6" [countFrom]="0"></count-to>
-        <h3 class="text-[20px]">Years of Service</h3>
-        <i class="fa-solid fa-trophy text-[40px] text-[#811750]"></i>
+      <div class="text-center py-10 border-0 xl:border-r md:border-r border-r-1 border-[#811750]">
+        <count-to class="text-3xl text-[#811750]" [countTo]="45" [countFrom]="0"></count-to>
+        <h3 class="text-lg md:text-xl mt-3 text-[#243A73]">Our Team</h3>
+        <i class="fa-solid fa-user-doctor text-4xl text-[#811750] mt-2"></i>
+      </div>
+      <div class="text-center py-10 border-r border-r-0 border-[#811750]">
+        <count-to class="text-3xl text-[#811750]" [countTo]="6" [countFrom]="0"></count-to>
+        <h3 class="text-lg md:text-xl mt-3 text-[#243A73]">Years of Service</h3>
+        <i class="fa-solid fa-trophy text-4xl text-[#811750] mt-2"></i>
       </div>
     </div>
   </div>
@@ -123,95 +128,16 @@
 
   <blogs-slider></blogs-slider>
 
-   <section class="rate-card">
-    <div class="topper">
-        <p class="reta">Aheri Care <span style="color: #811750;">Rate Card</span></p>
-        <p class="reeta">We offer the best services at affordable rates; offering a value for your money.</p>      
+  <!-- Rate Card Section -->
+  <section class="rate-card mt-10">
+    <div class="topper text-center mb-6">
+      <p class="reta text-2xl md:text-3xl font-extrabold text-[#243A73]">Aheri Care <span class="text-[#811750]">Rate Card</span></p>
+      <p class="reeta text-base md:text-lg text-[#999]">We offer the best services at affordable rates; offering a value for your money.</p>      
     </div>
     <div class="flex flex-col items-center">
-      <a href="tel:+254742964456" class="flex gap-[10px] items-center justify-center xl:w-1/4 md:w-1/2 w-2/2 py-[2%] px-[5%] xl:my-[5%] md:my-[10%] my-[20%] bg-[#811750] text-white font-[600] shadow-custom hover:bg-[#132540]"><i class="fa-solid fa-phone"></i> Enquire Now!</a>
+      <a href="tel:+254742964456" class="flex gap-2 items-center justify-center xl:w-1/4 md:w-1/2 w-full py-4 bg-[#811750] text-white font-semibold shadow-lg hover:bg-[#132540]">
+        <i class="fa-solid fa-phone"></i> Enquire Now!
+      </a>
     </div>
-    <!-- <div class="rate">
-      <div class="li">
-        <p class="rate-name">Enrolled Community Nurse</p>
-        <p class="rate-price">12hrs @2,000/= | 24hrs @3,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Kenya Registered Nurse</p>
-        <p class="rate-price">12hrs @2,500/= | 24hrs @4,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Critical Care Nurse (ICU Nurse)</p>
-        <p class="rate-price">12hrs @5,500/= | 24hrs @11,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Vital Observation Monitoring</p>
-        <p class="rate-price">2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Drug Injection</p>
-        <p class="rate-price">2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">IV Drug Infusion </p>
-        <p class="rate-price">2,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Nebulization Per Session</p>
-        <p class="rate-price">2,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Normal Wound Dressing- With Consumables</p>
-        <p class="rate-price">3,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Normal Wound Dressing</p>
-        <p class="rate-price">1,800/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Normal Colostomy- With Consumables</p>
-        <p class="rate-price">3,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Normal Colostomy</p>
-        <p class="rate-price">2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Cannular insertion</p>
-        <p class="rate-price">2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Enema</p>
-        <p class="rate-price">2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Catheterization</p>
-        <p class="rate-price">2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Ambulance Services</p>
-        <p class="rate-price">6,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Incision And Drainage</p>
-        <p class="rate-price">2,500/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Family Planning (Jadelle insertion)</p>
-        <p class="rate-price">5,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Nasogastric tube insertion</p>
-        <p class="rate-price">2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">Oxygen Concentrator 5L</p>
-        <p class="rate-price">5L @1,800/= | 10L @2,000/=</p>
-      </div>
-      <div class="li">
-        <p class="rate-name">84,000 L Oxygen Cylinder for Hire per Day</p>
-        <p class="rate-price">1,500/=</p>
-      </div>
-    </div> -->
-   </section>
+  </section>
 </div>

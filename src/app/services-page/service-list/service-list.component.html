@@ -1,25 +1,34 @@
-<div class="xl:mt-[10%] md:mt-[15%] mt-[30%] xl:mx-[30px] md:mx-[20px] mx-[20px]">
-    <p class="text-center text-[#243A73] mb-[3%] font-[800] xl:text-[40px] md:text-[40px] text-[30px]">Aheri Care Services</p>
+<div class="xl:mt-10 md:mt-15 mt-30 xl:mx-8 md:mx-6 mx-4 md:py-12 py-15">
+    <!-- <p class="text-center text-[#243A73] mb-8 font-extrabold text-3xl md:text-4xl xl:text-5xl">Aheri Care Services</p> -->
+    
     <div class="section--light-grey">
-        <div class="list">
-            <div class="discovery col-md-6 col-sm-12" *ngFor="let service of service ">
-                <div class="blog-cta">
-                    <a [routerLink]="['/services/service-details/',service.id]" class="content">
-                        <div class="blog-cta__image">
-                            <img src="{{service.image}}" alt="">
-                        </div>
-                        <div class="blog-cta__text">
-                            <div class="blog-cta__onscreen">
-                                <p class="blog-cta__heading">{{service.name}}</p>
-                            </div>
-                            <div class="blog-cta__offscreen">
-                                <p class="blog-cta__description">{{service.paragrapagh1}}</p>
-                                <a [routerLink]="['/services/service-details/',service.id]" class="btn text-cta flex justify-center text-center gap-[20px]">Read more <i class="fa-solid fa-angles-right"></i></a>
-                            </div>
-                        </div>
-                    </a>
+      <div class="list grid md:grid-cols-2 grid-cols-1 gap-8">
+        <div class="discovery" *ngFor="let service of service">
+          <div class="blog-cta">
+            <a [routerLink]="['/services/service-details/', service.id]" class="content block no-underline">
+              <!-- Service Image -->
+              <div class="blog-cta__image">
+                <img src="{{ service.image }}" alt="{{ service.name }}" class="w-full object-cover">
+              </div>
+              
+              <!-- Service Text Content -->
+              <div class="blog-cta__text mt-4">
+                <div class="blog-cta__onscreen">
+                  <p class="blog-cta__heading font-bold text-md md:text-md font-bold text-[#7C3E66]">{{ service.name }}</p>
                 </div>
-            </div>
+                <div class="blog-cta__offscreen mt-4">
+                  <p class="blog-cta__description truncate text-sm md:text-sm text-[#606060]">{{ service.paragrapagh1 }}</p>
+                  
+                  <!-- Read More Button -->
+                  <a [routerLink]="['/services/service-details/', service.id]" class="btn text-cta w-2/3 px-4 py-2 flex justify-center items-center gap-4 text-sm md:text-sm font-semibold text-[#243A73] hover:text-[#811750]">
+                    Read more <i class="fa-solid fa-angles-right"></i>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  

@@ -1,20 +1,28 @@
-<div class="xl:mt-[10%] md:mt-[15%] mt-[30%] xl:mx-[30px] md:mx-[20px] mx-[20px]">
-    <p class="text-center text-[#243A73] mb-[3%] font-[800] xl:text-[40px] md:text-[40px] text-[30px]">Aheri Care Blogs</p>
-
-    <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[20px] my-[5%]">
-        <div class="inline-block bg-[#FFFFFF14] hover:bg-[#F5BBD1] transition duration-200 ease-in-out transform translate-y-25 hover:transform-translate-y-0 hover:opacity-100 shadow-md shadow-[#00000019]"  *ngFor="let blog of blogs " >
-            <div class="product__items ">
-                <div class="product__items--thumbnail">
-                    <a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]">
-                        <img class="h-[30vh] w-full object-cover" src="{{ blog.image }}" alt="product-img">
-                    </a>
-                </div>
-            </div>
-            <div class="p-[20px]">
-                <p  class="text-center text-[13px] text-[#ae6986]"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at | date }}</p>
-                <p  class="text-[16px] font-[700] text-center"><a class="no-underline" [routerLink]="['/blogs/blog-details/',blog.id]">{{ blog.heading }}</a></p>
-                <a  [routerLink]="['/blogs/blog-details/',blog.id]" class="no-underline flex justify-center items-center bg-[#7C3E66] py-[3%] px-[6%] text-[#fff] text-[13px] font-[400] border border-1 btn">Learn More <i class='fas fa-angle-double-right'></i></a>
-            </div>
-        </div> 
+<div class="xl:mt-10 md:mt-15 mt-30 py-8 xl:mx-8 md:mx-6 mx-4">
+    <!-- <p class="text-center text-[#243A73] mb-8 font-extrabold text-3xl md:text-4xl xl:text-5xl">Aheri Care Blogs</p> -->
+  
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 my-10">
+      <div class="inline-block bg-[#FFFFFF14] hover:bg-[#F5BBD1] transition duration-200 ease-in-out transform hover:translate-y-0 shadow-md shadow-[#00000019]" *ngFor="let blog of blogs">
+        <!-- Blog Thumbnail -->
+        <div class="product__items">
+          <div class="product__items--thumbnail">
+            <a class="no-underline" [routerLink]="['/blogs/blog-details/', blog.id]">
+              <img class="h-48 w-full object-cover" src="{{ blog.image }}" alt="blog-img">
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog Text Content -->
+        <div class="p-5">
+          <p class="text-center text-xs text-[#ae6986]"><i class="fa-solid fa-calendar-days"></i> {{ blog.created_at | date }}</p>
+          <p class="text-center text-sm md:text-base font-bold my-4"><a class="no-underline" [routerLink]="['/blogs/blog-details/', blog.id]">{{ blog.heading }}</a></p>
+          
+          <!-- Learn More Button -->
+          <a [routerLink]="['/blogs/blog-details/', blog.id]" class="no-underline flex justify-center items-center bg-[#7C3E66] py-2 px-4 text-white text-xs font-medium border border-1 border-[#7C3E66] hover:bg-transparent hover:text-[#7C3E66]">
+            Learn More <i class='fas fa-angle-double-right ml-2'></i>
+          </a>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  

@@ -75,8 +75,6 @@
 .blog-cta__heading {
     display: block;
     color: #811750;
-    font-size: 18px;
-    font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: .3em;
@@ -95,14 +93,11 @@
 
 .blog-cta__description{
     color: #333;
-    font-size: 15px;
-    font-weight: 500;
     line-height: 150%;
     letter-spacing: .05em;
 }
 
 .text-cta {
-    padding: 0.85em 0;
     position: relative;
     display: block;
     color: #811750;
@@ -110,11 +105,8 @@
     text-decoration: none;
     transition: transform .4s;
     transform: translateX(0);
-    font-size: 14px;
-    font-weight: 800;
     line-height: 1.5;
     text-transform: uppercase;
-    letter-spacing: .3em;
 }
 
 @media only screen and (max-width: 850px) {
@@ -173,8 +165,6 @@
     .blog-cta__heading {
         display: block;
         color: #fff;
-        font-size: 18px;
-        font-weight: 700;
         line-height: 1.5;
         text-transform: uppercase;
         letter-spacing: .3em;
@@ -182,25 +172,19 @@
 
     .blog-cta__description{
         color: #fff;
-        font-size: 15px;
-        font-weight: 500;
         line-height: 150%;
         letter-spacing: .05em;
     }
     
     .text-cta {
-        padding: 0.85em 0;
         position: relative;
         display: block;
         color: #fff;
         text-decoration: none;
         transition: transform .4s;
         transform: translateX(0);
-        font-size: 14px;
-        font-weight: 800;
         line-height: 1.5;
         text-transform: uppercase;
-        letter-spacing: .3em;
     }
 
     
@@ -249,8 +233,6 @@
 
     .blog-cta__description{
         color: #fff;
-        font-size: 10px;
-        font-weight: 500;
         line-height: 100%;
         letter-spacing: .05em;
     }
@@ -258,8 +240,6 @@
     .blog-cta__heading {
         display: block;
         color: #fff;
-        font-size: 18px;
-        font-weight: 700;
         line-height: 1.5;
         text-transform: uppercase;
         letter-spacing: .3em;
@@ -277,26 +257,18 @@
         float: left;
     }
 
-    .blog-cta__heading {
-        font-size: .5em;
-    }
-
     .blog-cta__title {
         font-size: .6em;
     }
 
     .text-cta {
-        padding: 0.85em 0;
         position: relative;
         display: block;
         color: #fff;
         text-decoration: none;
         transition: transform .4s;
         transform: translateX(0);
-        font-size: 14px;
-        font-weight: 800;
         line-height: 1.5;
         text-transform: uppercase;
-        letter-spacing: .3em;
     }
 }
